@@ -20,16 +20,22 @@ go live without being resolved first.
 - Consultation venue exact approved wording ("private briefing at Pavilion
   KL") — used verbatim from approved-facts.md but flagged `[VERIFY]` there
 
-## 2. Technical values (blocks launch)
+## 2. Technical values — RESOLVED 2026-07-10
 
-- Web3Forms access key — `[WEB3FORM_ACCESS_KEY]` in all three forms
-  (`/villas/`, `/rental-programme/`, `/contact/`)
-- GTM container ID — commented placeholder in every page `<head>`/`<body>`
-  (currently commented out entirely; uncomment + insert `[GTM_ID]` once issued)
-- GA4 measurement ID — not wired up; depends on GTM container
-- Google Ads conversion ID / label — commented placeholder on `/thank-you/`
-- Deploy target (Cloudflare Pages / Netlify / other) — unset; site assumes a
-  static host that serves `<dir>/index.html` for pretty URLs
+- ✅ Web3Forms access key — live (`94ad1e91-a32c-4338-b45d-9bc58ef6d385`) in
+  all three forms (`/villas/`, `/rental-programme/`, `/contact/`)
+- ✅ GTM container ID `GTM-P35VKVXV` — head script + body noscript now on
+  all 9 pages
+- ✅ GA4 (`G-H1TQ1QRLTH`) and Google Ads conversion tracking — intentionally
+  **not** hardcoded on-page; both are configured as tags inside the GTM
+  container, triggered off the `whatsapp_click` / `lead_form_submit` /
+  `programme_details_request` dataLayer events already pushed by
+  `js/site.js`. Nothing further needed in the codebase — remaining work is
+  entirely inside the GTM container (tag + trigger setup).
+- ✅ Deploy target — Cloudflare Pages, **Build output directory** set to
+  `hibiscus2-site` in the Pages project's Build configuration (repo root
+  still holds an old placeholder `index.html` plus the untracked `grr/`
+  folder, so this setting is required, not optional)
 
 ## 3. Facts marked `[VERIFY]` in approved-facts.md, carried through as placeholders
 
@@ -50,11 +56,13 @@ go live without being resolved first.
   `[OK]` in approved-facts.md; both villa cards on `/villas/` and
   `/rental-programme/` use `[INSERT: confirmed sq ft / bed & bath count]`
   rather than publishing Type A specs under a generic villa name
-- Starting price RM720,000 — approved-facts.md flags this `[VERIFY]`; used
-  throughout with a `*Pricing subject to availability and official price
-  list` qualifier
-- Foreign buyer eligibility — every instance uses
-  `[INSERT: verified foreign ownership guidance]`
+- ✅ Starting price — **RESOLVED 2026-07-10**: confirmed RM774,000, updated
+  across all pages, headings and meta tags (was RM720,000 placeholder)
+- ✅ Foreign buyer eligibility — **RESOLVED 2026-07-10**: "Yes, subject to
+  minimum price thresholds that vary by state, and separate rules apply to
+  Malaysia My Second Home (MM2H) participants. Confirm the current threshold
+  for Negeri Sembilan with Summerfield before committing." — now live on
+  both LPs (FAQ + JSON-LD + purchase-process card)
 - Booking fee terms, panel banks — `[INSERT]` on `/rental-programme/`
   purchase-process section (deliberately did NOT publish the zero-down/
   cashback/rebate mechanics from approved-facts.md §5 — those are GRR-only
