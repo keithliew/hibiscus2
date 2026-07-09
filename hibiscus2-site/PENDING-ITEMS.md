@@ -39,11 +39,23 @@ go live without being resolved first.
 
 ## 3. Facts marked `[VERIFY]` in approved-facts.md, carried through as placeholders
 
-- Total units split (1,710 = 910 water homes + 800 sky pool suites) — shown
-  on `/rental-programme/` with inline `[VERIFY]` tag
+- ✅ Villa specs, unit count & completion — **RESOLVED 2026-07-10**, sourced
+  from the confirmed grrmalaysia.com/lp/villas copy: villas renamed
+  throughout from the speculative "Water Villa"/"Sky Pool Villa" naming to
+  **Type A — Upper** (872 sq ft / 81.14 m², elevated water outlook) and
+  **Type A — Lower** (858 sq ft / 79.75 m², direct water access level), each
+  2 bed/2 bath with balcony. Resort scale updated to **1,734 rooms total —
+  910 overwater villas offered for ownership, 800 tower rooms, 24 aquarium
+  rooms**, with a sunken aquarium restaurant and the largest ballroom in
+  Negeri Sembilan. **Completion targeted 2029** (was "mid-2029 [VERIFY]").
+  Applied on `/villas/`, `/rental-programme/`, `/` (home card blurb), plus
+  both pages' FAQPage JSON-LD. This supersedes the earlier "1,710 units /
+  910 water homes + 800 sky pool suites" figure, which appears to have been
+  an early/unconfirmed draft number — flag if that number was actually
+  correct and 1,734 is wrong, since the two don't reconcile.
 - Site size (80 acres) — shown on `/villas/` with inline `[VERIFY]` tag
-- GDV (RM1.6 billion) — shown on `/rental-programme/` with inline `[VERIFY]` tag
-- Completion target (mid-2029) — shown on `/rental-programme/` with inline `[VERIFY]` tag
+- GDV (RM1.6 billion) — shown on `/rental-programme/` with inline `[VERIFY]`
+  tag (not covered by the grrmalaysia.com/lp/villas excerpt provided)
 - Phase 1 sales status (~60% sold) — left as `[INSERT: verified current figure]`
   on both LPs' track-record grids (did not publish the unverified "~60%"
   figure from draft copy)
@@ -52,10 +64,6 @@ go live without being resolved first.
 - Rental-paid-since-2006 exact wording — shown with `[VERIFY exact wording]` tag
 - Tourism figure (10.2M guests / 186 countries) — shown with `[VERIFY]` tag
 - Developer heritage (est. 1996) — shown with `[VERIFY]` tag
-- Sky Pool Villa (and full Water Villa) specs — only Type A sizes are
-  `[OK]` in approved-facts.md; both villa cards on `/villas/` and
-  `/rental-programme/` use `[INSERT: confirmed sq ft / bed & bath count]`
-  rather than publishing Type A specs under a generic villa name
 - ✅ Starting price — **RESOLVED 2026-07-10**: confirmed RM774,000, updated
   across all pages, headings and meta tags (was RM720,000 placeholder)
 - ✅ Foreign buyer eligibility — **RESOLVED 2026-07-10**: "Yes, subject to
@@ -89,11 +97,14 @@ go live without being resolved first.
   low-traffic lead-gen site, but not ideal for Lighthouse performance;
   swapping to a compiled/purged Tailwind build is a reasonable follow-up if
   the ≥85 mobile performance target isn't met (not yet measured — see §5).
-- **Sky Pool Villa naming.** Master prompt calls the two types "Water
-  Villa" and "Sky Pool Villa" (§1.3–1.4); approved-facts.md only has
-  confirmed specs for "Type A Upper/Lower." Copy uses the Water/Sky Pool
-  naming per the master prompt but gates the actual dimensions as
-  `[INSERT]` rather than assuming Type A = Water Villa.
+- **Sky Pool Villa naming — superseded 2026-07-10.** The master prompt
+  (§1.3–1.4) called for two distinct villa products, "Water Villa" and "Sky
+  Pool Villa." Confirmed data from grrmalaysia.com/lp/villas shows only one
+  product ("Type A") in two floor variants (Upper/Lower) — there is no
+  second "Sky Pool" villa type in the live reference site. All copy now
+  follows the confirmed Type A Upper/Lower framing instead of the master
+  prompt's speculative naming. Flag to the user if a second villa type does
+  in fact exist and needs its own section.
 
 ## 5. Not yet done (explicitly out of scope for "Task 1 only," or requires tooling/human review)
 
