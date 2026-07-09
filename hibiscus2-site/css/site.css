@@ -1,0 +1,67 @@
+/* Lexis Hibiscus 2 (hibiscus2.com) — shared stylesheet
+   Complements Tailwind utility classes with the handful of things
+   utilities don't cover cleanly: reveal-on-scroll, sticky bar, FAQ. */
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+body { font-family: "Inter", -apple-system, "Segoe UI", sans-serif; }
+h1, h2, h3, .font-display { font-family: "Playfair Display", Georgia, serif; }
+
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* Sticky mobile CTA bar */
+.sticky-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: flex; gap: 10px; padding: 10px 14px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+  background: rgba(14, 34, 51, 0.97);
+  border-top: 1px solid rgba(201, 169, 106, 0.35);
+  transform: translateY(100%); transition: transform .25s ease;
+}
+.sticky-bar.visible { transform: translateY(0); }
+@media (min-width: 768px) { .sticky-bar { display: none; } }
+
+.float-wa { display: none; }
+@media (min-width: 768px) {
+  .float-wa {
+    display: flex; align-items: center; gap: 8px;
+    position: fixed; right: 24px; bottom: 24px; z-index: 40;
+    background: #1fbf5c; color: #fff; padding: 12px 18px;
+    border-radius: 999px; box-shadow: 0 10px 24px rgba(0,0,0,.2);
+    font-weight: 600; font-size: 14px;
+  }
+}
+
+/* FAQ accordion */
+.faq-item { border-bottom: 1px solid #e4ded2; }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+  padding: 18px 4px; font-weight: 600; color: #0e2233; font-size: 1rem;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.faq-q::after { content: "+"; font-size: 1.4rem; color: #c9a96a; flex-shrink: 0; transition: transform .2s ease; }
+.faq-item.open .faq-q::after { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.faq-item.open .faq-a { max-height: 400px; }
+.faq-a p { padding: 0 4px 18px; color: #5c6670; }
+
+/* Lightbox-free image frames */
+.render-frame { position: relative; overflow: hidden; }
+.render-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.render-caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(8,24,38,.75), transparent);
+  color: #fff; font-size: 12px; padding: 18px 12px 8px; letter-spacing: .02em;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: #0e2233; color: #fff; padding: 10px 16px; border-radius: 0 0 6px 0;
+}
+.skip-link:focus { left: 0; }
