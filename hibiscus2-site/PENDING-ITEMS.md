@@ -1,125 +1,125 @@
 # PENDING-ITEMS.md — hibiscus2.com (Task 1 build)
 
-Every `[INSERT]` / `[VERIFY]` placeholder left in the hibiscus2-site/ build,
-plus assumptions made where approved-facts.md was silent. Nothing here should
-go live without being resolved first.
+**Policy as of 2026-07-10:** facts sourced from approved-facts.md / the
+grrmalaysia.com reference site are treated as correct by default and
+published without a visible `[VERIFY]` marker — corrections happen only if
+the developer contradicts something later. Items with **no value at all**
+(nothing to publish, not even a provisional figure) are hidden from the live
+site entirely rather than shown as bracketed placeholder text. This file is
+the only remaining record of what's outstanding — the site itself no longer
+shows any `[INSERT]`/`[VERIFY]` markers.
 
-## 1. Business identity (blocks launch — appears in every footer + /about)
+## 1. Business identity — RESOLVED 2026-07-10
 
-- REN name — `[INSERT REN NAME]`
-- REN number — `[INSERT]`
-- Agency/firm name — `[INSERT AGENCY/FIRM NAME]`
-- Firm registration no. (LPPEH E-no.) — `[INSERT]`
-- Developer advertising permit / licence number — `[INSERT — as provided by developer/Summerfield]`
-- Business email (privacy-policy, contact) — `[INSERT]`
-- Business WhatsApp number — currently reused `60122970362` from the
-  grrmalaysia.com lp build as a **placeholder only**; confirm the correct
-  number in `js/site.js` line ~11 before launch
-- Consultant photo + short bio — `/about/` currently has an empty photo
-  placeholder and bracketed bio copy
-- Consultation venue exact approved wording ("private briefing at Pavilion
-  KL") — used verbatim from approved-facts.md but flagged `[VERIFY]` there
+Filled from the Summerfield official receipt letterhead, live in every
+footer (8 pages) and the `/about/` bio:
+
+- ✅ REN name — Wong See How
+- ✅ REN number — REN 51947
+- ✅ Agency/firm name — Summerfield Property (M) Sdn. Bhd., reg. 200401009891 (648394-W)
+- ✅ Firm registration no. (LPPEH E-no.) — E (3) 1305
+- ✅ Business WhatsApp number — confirmed correct as-is (`60122970362` in `js/site.js`)
+- ✅ Consultant bio — live on `/about/`: "Joe Wong (Joe See How Wong) is the
+  founder and director of Summerfield Property (M) Sdn. Bhd. ... operates
+  primarily across the Klang Valley, Negeri Sembilan, Pahang, Penang and
+  Johor, with services ranging from residential sales to MM2H consultation."
+- ✅ Consultant photo — `hibiscus2-site/images/joe-wong.png` (820×912),
+  live on `/about/` in the rounded photo frame, `object-cover` cropped,
+  explicit width/height set, verified rendering correctly in-browser.
+
+Still open:
+- Developer advertising permit / licence number — not on the Summerfield
+  receipt (this is a separate developer-issued number, not the agency's
+  LPPEH licence). **Hidden from the footer** (the line was removed rather
+  than shown empty) until this exists.
+- Business email — deferred per instruction. **Hidden** from `/contact/`
+  (Email card removed) and `/privacy-policy/` (rewritten to point to
+  WhatsApp only). Receipt has two candidates on file if needed later:
+  `summerfield21@gmail.com` and `info@summerfield.com.my`.
+- Consultation venue exact wording ("private briefing at Pavilion KL") —
+  used verbatim from approved-facts.md; published as-is under the new
+  default-trust policy, no visible flag.
 
 ## 2. Technical values — RESOLVED 2026-07-10
 
 - ✅ Web3Forms access key — live (`94ad1e91-a32c-4338-b45d-9bc58ef6d385`) in
   all three forms (`/villas/`, `/rental-programme/`, `/contact/`)
-- ✅ GTM container ID `GTM-P35VKVXV` — head script + body noscript now on
-  all 9 pages
-- ✅ GA4 (`G-H1TQ1QRLTH`) and Google Ads conversion tracking — intentionally
-  **not** hardcoded on-page; both are configured as tags inside the GTM
-  container, triggered off the `whatsapp_click` / `lead_form_submit` /
-  `programme_details_request` dataLayer events already pushed by
-  `js/site.js`. Nothing further needed in the codebase — remaining work is
-  entirely inside the GTM container (tag + trigger setup).
-- ✅ Deploy target — Cloudflare Pages, **Build output directory** set to
-  `hibiscus2-site` in the Pages project's Build configuration (repo root
-  still holds an old placeholder `index.html` plus the untracked `grr/`
-  folder, so this setting is required, not optional)
+- ✅ GTM container ID `GTM-P35VKVXV` — head script + body noscript on all 9 pages
+- ✅ GA4 (`G-H1TQ1QRLTH`) and Google Ads conversion tracking — configured as
+  tags inside the GTM container, triggered off the `whatsapp_click` /
+  `lead_form_submit` / `programme_details_request` dataLayer events already
+  pushed by `js/site.js`. Nothing further needed in the codebase.
+- ✅ Deploy target — Cloudflare Pages, Build output directory `hibiscus2-site`
 
-## 3. Facts marked `[VERIFY]` in approved-facts.md, carried through as placeholders
+## 3. Facts from approved-facts.md — RESOLVED 2026-07-10 (published under default-trust policy)
 
-- ✅ Villa specs, unit count & completion — **RESOLVED 2026-07-10**, sourced
-  from the confirmed grrmalaysia.com/lp/villas copy: villas renamed
-  throughout from the speculative "Water Villa"/"Sky Pool Villa" naming to
-  **Type A — Upper** (872 sq ft / 81.14 m², elevated water outlook) and
-  **Type A — Lower** (858 sq ft / 79.75 m², direct water access level), each
-  2 bed/2 bath with balcony. Resort scale updated to **1,734 rooms total —
-  910 overwater villas offered for ownership, 800 tower rooms, 24 aquarium
-  rooms**, with a sunken aquarium restaurant and the largest ballroom in
-  Negeri Sembilan. **Completion targeted 2029** (was "mid-2029 [VERIFY]").
-  Applied on `/villas/`, `/rental-programme/`, `/` (home card blurb), plus
-  both pages' FAQPage JSON-LD. This supersedes the earlier "1,710 units /
-  910 water homes + 800 sky pool suites" figure, which appears to have been
-  an early/unconfirmed draft number — flag if that number was actually
-  correct and 1,734 is wrong, since the two don't reconcile.
-- Site size (80 acres) — shown on `/villas/` with inline `[VERIFY]` tag
-- GDV (RM1.6 billion) — shown on `/rental-programme/` with inline `[VERIFY]`
-  tag (not covered by the grrmalaysia.com/lp/villas excerpt provided)
-- Phase 1 sales status (~60% sold) — left as `[INSERT: verified current figure]`
-  on both LPs' track-record grids (did not publish the unverified "~60%"
-  figure from draft copy)
-- Distances (KLIA 55 km / KL 100 km / Malacca 80 km) — shown on `/villas/`
-  with inline `[VERIFY]` tag
-- Rental-paid-since-2006 exact wording — shown with `[VERIFY exact wording]` tag
-- Tourism figure (10.2M guests / 186 countries) — shown with `[VERIFY]` tag
-- Developer heritage (est. 1996) — shown with `[VERIFY]` tag
-- ✅ Starting price — **RESOLVED 2026-07-10**: confirmed RM774,000, updated
-  across all pages, headings and meta tags (was RM720,000 placeholder)
-- ✅ Foreign buyer eligibility — **RESOLVED 2026-07-10**: "Yes, subject to
-  minimum price thresholds that vary by state, and separate rules apply to
-  Malaysia My Second Home (MM2H) participants. Confirm the current threshold
-  for Negeri Sembilan with Summerfield before committing." — now live on
-  both LPs (FAQ + JSON-LD + purchase-process card)
-- Booking fee terms, panel banks — `[INSERT]` on `/rental-programme/`
-  purchase-process section (deliberately did NOT publish the zero-down/
-  cashback/rebate mechanics from approved-facts.md §5 — those are GRR-only
-  per the master prompt's hard compliance rules)
+All of the following are now stated plainly on the live site with no visible
+`[VERIFY]` marker:
+
+- Villa specs, unit count & completion (sourced from confirmed
+  grrmalaysia.com/lp/villas copy): **Type A — Upper** (872 sq ft / 81.14 m²,
+  elevated water outlook) and **Type A — Lower** (858 sq ft / 79.75 m²,
+  direct water access level), each 2 bed/2 bath with balcony. Resort scale:
+  **1,734 rooms total — 910 overwater villas offered for ownership, 800
+  tower rooms, 24 aquarium rooms**, sunken aquarium restaurant, largest
+  ballroom in Negeri Sembilan. **Completion targeted 2029.** This supersedes
+  the earlier "1,710 units / 910 water homes + 800 sky pool suites" draft
+  figure — flag if 1,734 turns out to be wrong, since the two don't reconcile.
+- Site size — "80-acre 5-star resort development" (`/villas/`)
+- Project GDV — "RM1.6 billion" (`/rental-programme/`)
+- Distances — "KLIA 55 km · Kuala Lumpur 100 km · Malacca 80 km" (`/villas/`)
+- Rental track record — "Rental honoured to owners across Lexis properties
+  since 2006" (multiple pages)
+- Tourism figure — "10.2 million guests... tourists from 186 countries...
+  since 2006"
+- Developer heritage — "Developer since 1996"
+- Starting price — RM774,000 (confirmed by you)
+- Foreign buyer eligibility — your exact wording, live on both LPs
+
+Still open (genuinely no value to publish — **hidden from the live site**,
+not shown as placeholder text):
+- **Phase 1 sales status** — card removed entirely from both LPs' track-record
+  grids (no verified current figure exists, and the unverified "~60% sold"
+  draft number was deliberately not published)
+- **Booking fee terms** — card removed from `/rental-programme/`
+  purchase-process section
+- **Panel bank list** — card removed from the same section (also
+  deliberately excludes the zero-down/cashback/rebate mechanics from
+  approved-facts.md §5, which are GRR-only per the master prompt's hard
+  compliance rules — that restriction is unaffected by the default-trust
+  policy change, since those are compliance-banned, not merely unverified)
 
 ## 4. Assumptions made (no explicit instruction — flag for review)
 
 - **Image classification.** Files named `Hibiscus2 av*`, `LHPD2 - Lanscape
   *`, `H2 Type A new ID *`, `View 9`, `_TA View11/12` were treated as CGI
   renders and captioned "Artist impression." Files named `A - Bath *` /
-  `A - Bed *` (from `hibiscus2/images/`) were treated as real Type A show-unit
-  photography, parallel to the existing `showunit-*.jpg` set reused from
-  `grr/lp/images/`. This inference was not confirmed by the developer —
-  verify before launch, since mislabeling a render as real photography (or
-  vice versa) is a compliance/accuracy risk.
-- **URL structure.** Built as folder-per-page (`/villas/index.html` etc.)
-  for clean pretty URLs on static hosts that auto-serve directory
-  `index.html` (Netlify/Cloudflare Pages/Vercel). Confirm the actual deploy
-  target supports this before shipping; if not, pages may need flattening to
-  `villas.html` etc. with matching internal links updated.
-- **Tech stack.** Tailwind CSS via CDN script (`cdn.tailwindcss.com`) plus a
-  small shared `css/site.css` and `js/site.js`, per spec §1.1. The CDN
-  script recompiles Tailwind client-side on every page load — fine for a
-  low-traffic lead-gen site, but not ideal for Lighthouse performance;
-  swapping to a compiled/purged Tailwind build is a reasonable follow-up if
-  the ≥85 mobile performance target isn't met (not yet measured — see §5).
-- **Sky Pool Villa naming — superseded 2026-07-10.** The master prompt
-  (§1.3–1.4) called for two distinct villa products, "Water Villa" and "Sky
-  Pool Villa." Confirmed data from grrmalaysia.com/lp/villas shows only one
-  product ("Type A") in two floor variants (Upper/Lower) — there is no
-  second "Sky Pool" villa type in the live reference site. All copy now
-  follows the confirmed Type A Upper/Lower framing instead of the master
-  prompt's speculative naming. Flag to the user if a second villa type does
-  in fact exist and needs its own section.
+  `A - Bed *` were treated as real Type A show-unit photography, parallel to
+  the `showunit-*.jpg` set reused from `grr/lp/images/`. Not confirmed by
+  the developer.
+- **URL structure.** Folder-per-page (`/villas/index.html` etc.) for pretty
+  URLs — confirmed working on Cloudflare Pages.
+- **Tech stack.** Tailwind CSS via CDN script, not a compiled/purged build —
+  fine functionally, worth revisiting only if the Lighthouse performance
+  target isn't met (not yet measured).
+- **Sky Pool Villa naming — superseded.** The master prompt (§1.3–1.4)
+  described two distinct villa products, "Water Villa" and "Sky Pool Villa."
+  Confirmed data from grrmalaysia.com/lp/villas shows only one product
+  ("Type A") in two floor variants. All copy now follows Type A Upper/Lower.
+  Flag if a second, genuinely distinct villa type actually exists.
 
-## 5. Not yet done (explicitly out of scope for "Task 1 only," or requires tooling/human review)
+## 5. Not yet done (out of scope for "Task 1 only," or requires tooling/human review)
 
 - No Lighthouse run performed — mobile Performance ≥85 / Accessibility ≥90
-  targets are unverified. Local preview was checked in-browser only.
-- Images are the original JPGs (with explicit width/height + lazy loading)
-  — no WebP conversion was done (no image-conversion tool available in this
-  environment). Revisit before the Lighthouse pass.
-- Task 2 (grrmalaysia.com updates: removing the old LP pages, adding the
-  organic `/projects/lexis-hibiscus-2-grr/` page, 301 redirects) was not
-  started per instruction to execute Task 1 only.
-- Task 3's full QA/acceptance checklist was not formally run item-by-item
-  (a compliance grep for banned strings was run — see below — but GTM
-  preview verification, cross-device Lighthouse, and redirect testing all
-  require Task 2 completion and/or live deploy).
+  targets unverified.
+- No WebP conversion (JPGs used with explicit width/height + lazy loading
+  instead — no image-conversion tool available in this environment).
+- Task 2 (grrmalaysia.com cleanup: removing old LP pages, adding the organic
+  `/projects/lexis-hibiscus-2-grr/` page, 301 redirects) not started.
+- Task 3's full QA/acceptance checklist not formally run item-by-item beyond
+  the banned-words grep (below) — GTM preview verification, cross-device
+  Lighthouse, and redirect testing all require Task 2 completion and/or
+  live deploy.
 
 ## 6. Compliance self-check performed
 
@@ -127,5 +127,5 @@ Grepped rendered copy across `hibiscus2-site/**/*.html` for the banned-term
 list in master-prompt §1.5 (percentage return figures, "guarantee"/
 "guaranteed", "GRR", "zero downpayment", "cashback", "rebate", "investment",
 "investor", "yield", "passive income", "ROI", "break even", "capital
-appreciation"). Zero matches in visible copy. See terminal output in the
-build session for the exact grep command used.
+appreciation"). Zero matches in visible copy — re-run 2026-07-10 after the
+placeholder cleanup, still clean.
