@@ -127,18 +127,24 @@ ballroom & function rooms, sky deck, helicopter joyride, cruise, buggy &
 concierge services, health clinic. `[VERIFY] ☐ confirm which facilities are
 approved to advertise for LH2 specifically vs existing resort.`
 
-## 8. BUSINESS IDENTITY (fills footer compliance block) — ALL [INSERT]
+## 8. BUSINESS IDENTITY (fills footer compliance block)
 
-| Item | Value |
-|---|---|
-| REN name | `[INSERT]` |
-| REN number | `[INSERT]` |
-| Agency/firm name | `[INSERT]` |
-| Firm registration no. (LPPEH E-no.) | `[INSERT]` |
-| Business email on hibiscus2.com | `[INSERT]` |
-| WhatsApp number (intl format) | `[INSERT]` |
-| Consultation venue wording | private briefing at Pavilion KL `[VERIFY] ☐ exact approved wording` |
-| Summerfield authorisation on file | ☐ domain use ("Hibiscus 2") ☐ figures ☐ renders ☐ Phase 1 status |
+| Item | Value | Status | Source |
+|---|---|---|---|
+| REN name | Wong See How (Joe Wong) | [OK] | Summerfield official receipt letterhead |
+| REN number | REN 51947 | [OK] | Summerfield official receipt letterhead |
+| Agency/firm name | Summerfield Property (M) Sdn. Bhd., reg. 200401009891 (648394-W) | [OK] | Summerfield official receipt letterhead |
+| Firm registration no. (LPPEH E-no.) | E (3) 1305 ("Ejen Hartanah" no. on the receipt) | [OK] | Summerfield official receipt letterhead |
+| Business email on hibiscus2.com | `[INSERT]` — candidates on file: summerfield21@gmail.com / info@summerfield.com.my | [VERIFY] ☐ confirm which to publish | Summerfield official receipt letterhead |
+| WhatsApp number (intl format) | 60122970362 | [OK] — confirmed correct by user | draft copy, user-confirmed |
+| Developer advertising permit / licence no. | `[INSERT]` | [VERIFY] ☐ request from developer/Summerfield | — |
+| Consultant photo | `hibiscus2-site/images/joe-wong.png` | [OK] | provided by user |
+| Consultant bio | "Joe Wong (Joe See How Wong) is the founder and director of Summerfield Property (M) Sdn. Bhd., a real estate firm specialising in new project sales and marketing. The agency operates primarily across the Klang Valley, Negeri Sembilan, Pahang, Penang and Johor, with services ranging from residential sales to MM2H consultation." | [OK] | provided by user |
+| Consultation venue name | Bukit Bintang Showroom (supersedes earlier "Pavilion KL" references — corrected sitewide) | [OK] | claude-code-prompt-cta-venue-update.md |
+| Consultation venue address | `[INSERT]` | [VERIFY] ☐ confirm with Summerfield | — |
+| Consultation venue hours | 10am – 4pm, daily | [OK] | claude-code-prompt-cta-venue-update.md |
+| Consultation venue phone | `[INSERT]` | [VERIFY] ☐ confirm whether Summerfield office line or consultant's direct line | — |
+| Summerfield authorisation on file | ☐ domain use ("Hibiscus 2") ☐ figures ☐ renders ☐ Phase 1 status | | |
 
 ## 9. TECHNICAL VALUES — ALL [INSERT]
 

@@ -36,9 +36,34 @@ Still open:
   (Email card removed) and `/privacy-policy/` (rewritten to point to
   WhatsApp only). Receipt has two candidates on file if needed later:
   `summerfield21@gmail.com` and `info@summerfield.com.my`.
-- Consultation venue exact wording ("private briefing at Pavilion KL") —
-  used verbatim from approved-facts.md; published as-is under the new
-  default-trust policy, no visible flag.
+
+## 1a. CTA relabeling & venue details — RESOLVED 2026-07-10
+
+Per `claude-code-prompt-cta-venue-update.md`. All WhatsApp CTA buttons
+site-wide reframed to booking-intent (mapping table applied exactly, plus 4
+additional buttons not in the table that the user confirmed should also
+change: nav "WhatsApp Us", mobile sticky bar "WhatsApp", thank-you page
+"WhatsApp Us Now", villas gallery "Arrange a Show Unit Viewing" — now all
+read "Book a Viewing" / "Book a Viewing Now" / "Book a Show Unit Viewing").
+WhatsApp pre-fill message text updated per page to match booking intent
+(404 page intentionally left unchanged — its existing "couldn't find what I
+was looking for" message is still contextually correct and wasn't covered
+by the prompt's spec).
+
+**Venue correction:** every "Pavilion KL" reference site-wide (11 instances
+across hero copy, FAQ answers, `/about`, `/contact`, footer, CTA panels) is
+now "Bukit Bintang Showroom." `approved-facts.md` §8 updated to match and
+flag the correction.
+
+Still open (shown as "Venue details to be confirmed" / "Phone line to be
+confirmed" inline on `/contact/`, `/about/`, and the footer's new "Visit Us"
+line, per the prompt's explicit rule to placeholder rather than fabricate):
+- Full street address for Bukit Bintang Showroom
+- Phone number — and which line: Summerfield office or Wong See How's direct
+  line (prompt flagged this as needing a decision, not just a missing value)
+
+Resolved facts now live: venue name (Bukit Bintang Showroom), hours (10am –
+4pm daily) — both appear on `/contact/`, `/about/`, and the footer.
 
 ## 2. Technical values — RESOLVED 2026-07-10
 
