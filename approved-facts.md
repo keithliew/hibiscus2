@@ -53,7 +53,7 @@ BRO = Full Brochure (140525), LF = 8pg Leaflet (20260514).
 | Type A — Lower | 858 sq ft / 79.75 m² · 2 bedrooms · 2 bathrooms · private pool · balcony | [OK] | LF / SK-A |
 | Every villa | own private swimming pool | [OK] | BRO |
 | Other villa types (Sky Pool Suite specs) | `[INSERT — sizes/configs if in updated kit]` | [VERIFY] ☐ | — |
-| Starting price | from RM720,000 | [VERIFY] ☐ confirm current published starting price per type | draft copy |
+| Starting price | from RM774,000 | [OK] — confirmed current published starting price; matches live site and ads | draft copy |
 | Reference pricing in kit | average unit price RM1,000,000; working examples use RM860,000 | [OK] — internal reference; do NOT publish as "starting price" | SK-B |
 
 ## 3. RENTAL PROGRAMME — STRUCTURE [BOTH — descriptive only on hibiscus2.com]

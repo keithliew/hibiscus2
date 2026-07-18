@@ -53,9 +53,9 @@ Build from the approved "Variant B" outline with these sections in order:
 1. **Hero** — Headline: "Own a Luxury Overwater or Sky Pool Villa at Lexis
    Hibiscus 2". Subheadline: private-pool villas at Malaysia's next landmark
    resort in Port Dickson, professionally managed by the award-winning Lexis
-   Hotel Group, ownership from RM720,000. Trust badges: 2× Guinness World
+   Hotel Group, ownership from RM774,000. Trust badges: 2× Guinness World
    Records · Award-winning Lexis hospitality brand · Developer since 1996 ·
-   From RM720,000. Primary CTA: WhatsApp Our Consultant. Secondary CTA: Book
+   From RM774,000. Primary CTA: WhatsApp Our Consultant. Secondary CTA: Book
    Private Consultation (form).
 2. **Villa options** — Water Villa and Sky Pool Villa comparison cards,
    lifestyle-first copy (space, privacy, private pool, family suitability),
@@ -95,9 +95,9 @@ figure-gated version:
 1. **Hero** — Headline: "A 15-Year Managed Rental Programme — Own a Private
    Pool Villa at Lexis Hibiscus 2". Subheadline: hospitality-managed resort
    property in Port Dickson with a structured 15-year rental programme;
-   operator track record since 2006; villas from RM720,000. Trust badges:
+   operator track record since 2006; villas from RM774,000. Trust badges:
    15-Year Rental Programme · Rental paid to owners since 2006 · 2× Guinness
-   World Records · From RM720,000.
+   World Records · From RM774,000.
 2. **How the programme works** — structural description only, no percentages:
    - Years 1–3: fixed rental phase, paid quarterly; developer covers
      maintenance charges and sinking fund.
@@ -113,7 +113,7 @@ figure-gated version:
 4. **Villa options & pricing** — same two cards as /villas section 2, plus
    project scale line: 1,710 units — 910 water homes, 800 sky pool suites;
    completion targeted mid-2029; RM1.6 billion GDV.
-5. **Purchase process** — From RM720,000; bank end-financing available
+5. **Purchase process** — From RM774,000; bank end-financing available
    `[INSERT: panel banks if approved]`; booking fee `[INSERT: verified current
    terms]`; foreign buyers welcome `[INSERT: verified guidance]`.
    **Do NOT mention zero downpayment, cashback, or rebates.**
