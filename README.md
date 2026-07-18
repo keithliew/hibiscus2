@@ -13,29 +13,30 @@ different compliance regime, never link between the two).
 
 Tracks each EN page's mirror status per language. Updated after every i18n
 phase per `claude-code-prompt-multilingual.md` §9. `current` = matches the
-listed EN commit; `stale` = EN has changed since; `pending-review` = built,
-held at the Phase 1 STOP gate for native review; `—` = phase not started.
+listed EN commit; `stale` = EN has changed since; `live-review-pending` =
+deployed, native-speaker review happening in production; `—` = phase not
+started.
 
 | Page | EN | ZH (`/zh/`) | MS (`/ms/`) | JA (`/ja/`) |
 |---|---|---|---|---|
-| `/` | current | pending-review | — | — |
-| `/about/` | current | pending-review | — | — |
-| `/contact/` | current | pending-review | — | — |
-| `/villas/` | current | pending-review | — | — |
-| `/rental-programme/` | current | pending-review (STOP GATE) | — | — |
-| `/privacy-policy/` | current | pending-review | — | — |
-| `/disclaimer/` | current | pending-review | — | — |
-| `/thank-you/` | current | pending-review | — | — |
-| `/404.html` | current | pending-review | — | — |
+| `/` | current | live-review-pending | — | — |
+| `/about/` | current | live-review-pending | — | — |
+| `/contact/` | current | live-review-pending | — | — |
+| `/villas/` | current | live-review-pending | — | — |
+| `/rental-programme/` | current | live-review-pending | — | — |
+| `/privacy-policy/` | current | live-review-pending | — | — |
+| `/disclaimer/` | current | live-review-pending | — | — |
+| `/thank-you/` | current | live-review-pending | — | — |
+| `/404.html` | current | live-review-pending | — | — |
 
-ZH built from the `i18n-phase0` EN baseline on branch `i18n-zh`. Compliance
-audit clean (`i18n/compliance-audit-zh.md`); native-speaker review queue at
-`i18n/review-queue-zh.md`. **Not merged to `main` or deployed** — held at
-the Phase 1 STOP gate (rental-programme page + full legal pages) until
-Keith signs off. EN pages' hreflang/switcher intentionally still show
-EN-only — the `zh-Hans` hreflang line and the switcher's 中文 link get
-added site-wide only once this phase actually deploys, per §3/§9 of the
-multilingual spec.
+ZH built from the `i18n-phase0` EN baseline, merged `i18n-zh` → `main` and
+deployed. Compliance audit clean (`i18n/compliance-audit-zh.md`). Per
+Keith's instruction, native-speaker review is happening on the live site
+rather than pre-merge — see `i18n/review-queue-zh.md` for the specific
+items still needing sign-off (rental-programme page, the two full legal
+pages, and the "investment" → "financial or legal advice" wording
+substitution in the disclaimer boilerplate). EN pages now carry the
+`zh-Hans` hreflang line and the switcher's 中文 link site-wide.
 
 EN source baseline for future translation phases: the Phase 0 commit on
 `i18n-phase0` (hreflang plumbing + language-switcher scaffold added,
