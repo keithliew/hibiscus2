@@ -35,4 +35,44 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/disclaimer/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/disclaimer/" />
   </url>
+  <url>
+    <loc>https://hibiscus2.com/zh/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hibiscus2.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/" />
+  </url>
+  <url>
+    <loc>https://hibiscus2.com/zh/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/about/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hibiscus2.com/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/about/" />
+  </url>
+  <url>
+    <loc>https://hibiscus2.com/zh/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hibiscus2.com/zh/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/contact/" />
+  </url>
+  <url>
+    <loc>https://hibiscus2.com/zh/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hibiscus2.com/zh/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/privacy-policy/" />
+  </url>
+  <url>
+    <loc>https://hibiscus2.com/zh/disclaimer/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hibiscus2.com/disclaimer/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hibiscus2.com/zh/disclaimer/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hibiscus2.com/disclaimer/" />
+  </url>
 </urlset>

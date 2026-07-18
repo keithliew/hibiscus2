@@ -155,7 +155,8 @@
       var phone = form.querySelector('input[name="whatsapp_number"]');
       if (phone && phone.value.replace(/\D/g, "").length < 7) {
         e.preventDefault();
-        phone.setCustomValidity("Enter a valid WhatsApp number so our consultant can reach you.");
+        var invalidPhoneText = form.getAttribute("data-invalid-phone-text") || "Enter a valid WhatsApp number so our consultant can reach you.";
+        phone.setCustomValidity(invalidPhoneText);
         phone.reportValidity();
         return;
       }
