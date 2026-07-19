@@ -55,15 +55,25 @@ across hero copy, FAQ answers, `/about`, `/contact`, footer, CTA panels) is
 now "Bukit Bintang Showroom." `approved-facts.md` §8 updated to match and
 flag the correction.
 
-Still open (shown as "Venue details to be confirmed" / "Phone line to be
-confirmed" inline on `/contact/`, `/about/`, and the footer's new "Visit Us"
-line, per the prompt's explicit rule to placeholder rather than fabricate):
-- Full street address for Bukit Bintang Showroom
-- Phone number — and which line: Summerfield office or Wong See How's direct
-  line (prompt flagged this as needing a decision, not just a missing value)
+**RESOLVED 2026-07-19:**
+- ✅ Bukit Bintang Showroom address — L12, Pavilion Tower, 75 Jalan Raja
+  Chulan, 50200 Kuala Lumpur — user-confirmed, live on `/contact/`,
+  `/about/` and the footer.
+- ✅ Phone number — `+60122970362`, same number as the business WhatsApp
+  line (user confirmed this is intentional, single point of contact) —
+  live wherever the venue phone is shown.
+- ✅ **Second venue added** — Lexis Hibiscus Port Dickson Sales Gallery,
+  Ground Floor, Lexis Hibiscus Port Dickson, Batu 12, Jalan Pantai, Pasir
+  Panjang, 71250 Port Dickson. Not in scope of the original CTA/venue
+  update prompt — added per direct user instruction 2026-07-19. "Sales
+  Gallery" is Claude's descriptive label, not a confirmed official venue
+  name — flag if the developer/Summerfield has a different preferred name.
 
-Resolved facts now live: venue name (Bukit Bintang Showroom), hours (10am –
-4pm daily) — both appear on `/contact/`, `/about/`, and the footer.
+Still open:
+- Opening hours for the Port Dickson venue — not provided. Per the hidden-
+  rather-than-placeholder policy above, hours are shown for Bukit Bintang
+  Showroom only; the Port Dickson venue's hours line is simply omitted
+  until confirmed (not shown as a bracketed placeholder).
 
 ## 2. Technical values — RESOLVED 2026-07-10
 

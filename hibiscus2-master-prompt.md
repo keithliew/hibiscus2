@@ -39,7 +39,7 @@ below. grrmalaysia.com is not ad-served and may carry full programme figures.
 /villas               LANDING PAGE 1 — Lifestyle (primary Google Ads destination)
 /rental-programme     LANDING PAGE 2 — Programme/ownership (secondary Ads destination)
 /about                About the consultant (REN identity, experience, photo)
-/contact              Contact details, WhatsApp, office/meeting location (Pavilion KL briefings)
+/contact              Contact details, WhatsApp, office/meeting location (Bukit Bintang Showroom + Port Dickson briefings)
 /privacy-policy       Required — lead data collection + GTM/GA4 disclosure
 /disclaimer           Terms of use + property marketing disclaimers
 /thank-you            Form-submission success page (Google Ads conversion trigger)
@@ -83,7 +83,7 @@ Build from the approved "Variant B" outline with these sections in order:
    Who maintains and furnishes it? · Villa types and sizes? · Starting price
    and payment process? · Can foreigners buy? `[INSERT: verified foreign
    ownership guidance]` · How do I arrange a viewing/consultation?
-   (Pavilion KL private briefing).
+   (private briefing at Bukit Bintang Showroom or Port Dickson).
 7. **Final CTA** — "Your Villa at Lexis Hibiscus 2 Starts With a
    Conversation". Primary WhatsApp, secondary enquiry form.
 
@@ -121,10 +121,10 @@ figure-gated version:
    (structural answer, no %) · Can I stay in my own villa? · Who manages the
    unit? · Can I exit the programme? (3 months' notice) · Can foreigners
    buy? · How do I verify the developer's track record? (private briefing at
-   Pavilion KL with full documentation).
+   Bukit Bintang Showroom with full documentation).
 7. **Final CTA** — "Review the Full Programme Terms Before You Decide" —
    request official brochure, current pricing, private consultation at
-   Pavilion KL, no obligation.
+   Bukit Bintang Showroom, no obligation.
 
 ### 1.5 HARD COMPLIANCE RULES — hibiscus2.com (non-negotiable)
 

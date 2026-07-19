@@ -140,10 +140,13 @@ approved to advertise for LH2 specifically vs existing resort.`
 | Developer advertising permit / licence no. | `[INSERT]` | [VERIFY] ☐ request from developer/Summerfield | — |
 | Consultant photo | `hibiscus2-site/images/joe-wong.png` | [OK] | provided by user |
 | Consultant bio | "Joe Wong (Joe See How Wong) is the founder and director of Summerfield Property (M) Sdn. Bhd., a real estate firm specialising in new project sales and marketing. The agency operates primarily across the Klang Valley, Negeri Sembilan, Pahang, Penang and Johor, with services ranging from residential sales to MM2H consultation." | [OK] | provided by user |
-| Consultation venue name | Bukit Bintang Showroom (supersedes earlier "Pavilion KL" references — corrected sitewide) | [OK] | claude-code-prompt-cta-venue-update.md |
-| Consultation venue address | `[INSERT]` | [VERIFY] ☐ confirm with Summerfield | — |
-| Consultation venue hours | 10am – 4pm, daily | [OK] | claude-code-prompt-cta-venue-update.md |
-| Consultation venue phone | `[INSERT]` | [VERIFY] ☐ confirm whether Summerfield office line or consultant's direct line | — |
+| Consultation venue 1 — name | Bukit Bintang Showroom, Kuala Lumpur (supersedes earlier "Pavilion KL" references — corrected sitewide) | [OK] | claude-code-prompt-cta-venue-update.md |
+| Consultation venue 1 — address | L12, Pavilion Tower, 75 Jalan Raja Chulan, 50200 Kuala Lumpur | [OK] | user-confirmed 2026-07-19 |
+| Consultation venue 1 — hours | 10am – 4pm, daily | [OK] | claude-code-prompt-cta-venue-update.md |
+| Consultation venue 2 — name | Lexis Hibiscus Port Dickson Sales Gallery | [OK] — "Sales Gallery" is a descriptive label pending confirmation of an official venue name; flag if the developer has a different preferred name | user-confirmed address 2026-07-19 |
+| Consultation venue 2 — address | Ground Floor, Lexis Hibiscus Port Dickson, Batu 12, Jalan Pantai, Pasir Panjang, 71250 Port Dickson | [OK] | user-confirmed 2026-07-19 |
+| Consultation venue 2 — hours | `[INSERT]` | [VERIFY] ☐ confirm opening hours for the Port Dickson venue | — |
+| Consultation venue phone (shared, both venues) | +60122970362 — same number as the business WhatsApp line | [OK] — confirmed correct by user | user-confirmed 2026-07-19 |
 | Summerfield authorisation on file | ☐ domain use ("Hibiscus 2") ☐ figures ☐ renders ☐ Phase 1 status | | |
 
 ## 9. TECHNICAL VALUES — ALL [INSERT]
