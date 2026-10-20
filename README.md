@@ -1,5 +1,7 @@
 # hibiscus2.com
 
+**Status (20 Oct 2026):** live. Footer "investment" wording removed, Malay pages link to Japanese, contact descriptions no longer offer email (deployed 20 Oct). Open: Google Ads conversion tags are not in GTM yet; Search Console sitemap submission; unverified claims on the landing pages; mobile speed (~68). Full audit and plan: side-session notes `hibiscus2-audit-and-plan.md`.
+
 Static HTML + Tailwind marketing site for Lexis Hibiscus 2 (Port Dickson),
 deployed via Cloudflare Pages from `hibiscus2-site/`. See
 `claude-code-prompt-multilingual.md` for the multilingual build spec and
