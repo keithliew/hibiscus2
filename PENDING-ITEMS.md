@@ -1,5 +1,7 @@
 # PENDING-ITEMS.md — hibiscus2.com (Task 1 build)
 
+> Moved out of `hibiscus2-site/` on 20 Oct 2026: it was being served publicly at hibiscus2.com/PENDING-ITEMS.md. Internal notes never go inside `hibiscus2-site/`.
+
 **Policy as of 2026-07-10:** facts sourced from approved-facts.md / the
 grrmalaysia.com reference site are treated as correct by default and
 published without a visible `[VERIFY]` marker — corrections happen only if
@@ -108,7 +110,7 @@ All of the following are now stated plainly on the live site with no visible
 - Tourism figure — "10.2 million guests... tourists from 186 countries...
   since 2006"
 - Developer heritage — "Developer since 1996"
-- Starting price — RM774,000 (confirmed by you)
+- Starting price — RM860,000 (updated 20 Oct 2026 by Keith; was RM774,000 until the lower-priced units sold out)
 - Foreign buyer eligibility — your exact wording, live on both LPs
 
 Still open (genuinely no value to publish — **hidden from the live site**,
