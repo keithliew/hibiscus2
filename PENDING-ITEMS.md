@@ -166,3 +166,9 @@ list in master-prompt §1.5 (percentage return figures, "guarantee"/
 "investor", "yield", "passive income", "ROI", "break even", "capital
 appreciation"). Zero matches in visible copy — re-run 2026-07-10 after the
 placeholder cleanup, still clean.
+
+## 7. Events section — open items (20 Oct 2026)
+
+- MAPEX 2026 Melaka post (`/events/mapex-melaka-2026/`) says "July 2026": exact fair dates not supplied. Booth photos are dated 19–28 Jul; the organiser's stage-event poster is for 1 Aug.
+- Booth photos used have the "guaranteed rental return" banner blurred (Keith's instruction 20 Oct). The 19 Jul photo (visitors' faces visible) and the 1 Aug video are not used; the video needs watching for banners before any YouTube upload.
+- Event pages are English only so far.
