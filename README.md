@@ -1,6 +1,6 @@
 # hibiscus2.com
 
-**Status (20 Oct 2026):** live. Footer "investment" wording removed, Malay pages link to Japanese, contact descriptions no longer offer email; starting price updated to RM860,000; internal PENDING-ITEMS.md moved out of the public site folder; new Events section at /events/ with the 16 Oct October Fest showroom day post, English only (all deployed 20 Oct). Open: Google Ads conversion tags are not in GTM yet; Search Console sitemap submission; unverified claims on the landing pages; mobile speed (~68). Full audit and plan: side-session notes `hibiscus2-audit-and-plan.md`.
+**Status (20 Oct 2026):** live. Footer "investment" wording removed, Malay pages link to Japanese, contact descriptions no longer offer email; starting price updated to RM860,000; internal PENDING-ITEMS.md moved out of the public site folder; new Events section at /events/ (October Fest showroom day and MAPEX 2026 Melaka posts, English only), Events in the top menu and a Latest News row on the home page (all deployed 20 Oct). Open: Google Ads conversion tags are not in GTM yet; Search Console sitemap submission; unverified claims on the landing pages; mobile speed (~68). Full audit and plan: side-session notes `hibiscus2-audit-and-plan.md`.
 
 Static HTML + Tailwind marketing site for Lexis Hibiscus 2 (Port Dickson),
 deployed via Cloudflare Pages from `hibiscus2-site/`. See
