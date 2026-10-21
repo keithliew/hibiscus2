@@ -182,6 +182,7 @@ Done (Keith approved the 6-step list; done in the browser pane signed in as keit
 - Auto-tagging confirmed on. No tag or website change was needed.
 - Phone-call conversions were left unticked in the setup wizard on purpose.
 
+WhatsApp step done 21 Oct (afternoon): `whatsapp_click` starred as a key event in GA4 and imported into Ads as "hibiscus2 (web) whatsapp_click", Primary, in the Contacts goal. Command Centre row `w-hibiscus2-deploy` ticked.
+
 Still open:
-- `whatsapp_click`: confirmed reaching GA4 (test click 21 Oct, network hit `en=whatsapp_click` to G-H1TQ1QRLTH), but GA4's Admin event list only shows an event some hours after it first arrives. Once it appears: star it as a key event in GA4, then import it into Ads (category Contact, Primary). Then tick the Command Centre row `w-hibiscus2-deploy`.
 - Ads account notes for Keith (not changed): account-level negative keywords: none; "Lead form ads terms: not accepted", so the Google-hosted "Lead form - Submit" action can't record until those are accepted.
