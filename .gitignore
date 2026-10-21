@@ -3,5 +3,5 @@
 .DS_Store
 
 # Raw event media and account screenshots stay out of the repo
-events/
-screenshots/
+/events/
+/screenshots/
