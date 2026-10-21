@@ -178,6 +178,10 @@ Always attribute these to the EXISTING resort, never to Lexis Hibiscus 2.
 | Private pool | every guestroom has a private dip pool and steam room | [OK] | lexishibiscuspd.com news page |
 | Guests | more than 630,000 tourists in under two years after opening (as at March 2017) | [OK] — always say "as at March 2017" | Tourism Malaysia, Mar 2017 |
 | Owner / operator | owned by Kuala Lumpur Metro Group; operated by Lexis Hotel Group (as at 2017) | [OK] | Tourism Malaysia, Mar 2017 |
+| Developer of the original resort | "developed by Kuala Lumpur Metro Group and managed by Lexis Hotel Group" | [OK] | The Edge Malaysia, 1 Aug 2017 (official opening report) |
+| Completion | "Completed Apr 2015" (developer's project list); matches the 1 April 2015 soft opening | [OK] | klmetropolitan.com/projects, read 21 Oct 2026 |
+| Other Lexis completions (developer's list) | Lexis Port Dickson Aug 2006; Grand Lexis Water Homes Nov 2009; Grand Lexis Garden Wing Oct 2011; Lexis Suites Penang Jan 2016; Imperial Lexis Kuala Lumpur Oct 2023 | [OK] — for Posts 2–3 | klmetropolitan.com/projects, read 21 Oct 2026 |
+| Official photo | aerial of Lexis Hibiscus Port Dickson, `images/lexis-hibiscus-pd-aerial.jpg`, from klmetropolitan.com; Keith authorised using KL Metro's official marketing materials (21 Oct 2026); credit "Photo: Kuala Lumpur Metro Group" | [OK] | klmetropolitan.com |
 | Kuala Lumpur Metro Group founded | 1996, grew from its construction arm YBK Engineering Sdn Bhd | [OK] — also verifies §6 "Developer heritage 1996" | Tourism Malaysia, Mar 2017 |
 | Awards listed by the resort | 20 entries 2016–2024, incl. World Luxury Hotel Awards 2016/2017/2018/2019/2020/2023, Haute Grandeur 2017/2018/2019, World Travel Awards 2019, HAPA 2018 and 2023–2024, ASEAN MICE Venue Standard 2022–2024 | [OK] names and years only | lexishibiscuspd.com/awards |
 | Do not use | room total (639/643/117/122 conflict), architect (not found), plaque ceremony date (sources conflict), "first award", development cost | — | fact-table.md |
