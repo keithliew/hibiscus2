@@ -8,6 +8,11 @@ deployed via Cloudflare Pages from `hibiscus2-site/`. See
 `CLAUDE.md` / `approved-facts.md` for the compliance rules that govern all
 copy on this domain.
 
+## Checks to run
+
+- `python3 tools/compliance_scan.py [page …]`: banned and watch terms in all 4 languages, read from the "BANNED AND WATCH TERMS" section of `approved-facts.md`. Run before every deploy. Photos and flyers still need checking by eye for banner text.
+- `python3 tools/deploy_check.py --site https://hibiscus2.com --dir hibiscus2-site --wait 300`: after pushing `main`, waits for Cloudflare Pages, then confirms every live page matches the repo.
+
 Out of scope for this repo's `hibiscus2-site/`: `grr/` (grrmalaysia.com —
 different compliance regime, never link between the two).
 
