@@ -1,0 +1,7 @@
+# macOS files the external drive creates
+._*
+.DS_Store
+
+# Raw event media and account screenshots stay out of the repo
+events/
+screenshots/
