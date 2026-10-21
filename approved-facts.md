@@ -161,6 +161,27 @@ approved to advertise for LH2 specifically vs existing resort.`
 | hibiscus2.com deploy target | `[INSERT: e.g. Cloudflare Pages]` |
 | Image folder path | `[INSERT]` |
 
+## 10a. TRACK RECORD: LEXIS HIBISCUS PORT DICKSON (the existing resort) [BOTH]
+
+Researched and independently fact-checked (Claude + Codex) on 21 Oct 2026;
+full table with every source in `research/lexis-series/fact-table.md`.
+Always attribute these to the EXISTING resort, never to Lexis Hibiscus 2.
+
+| Fact | Value | Status | Source |
+|---|---|---|---|
+| Soft opening | 1 April 2015, with 100 rooms; more opened progressively | [OK] | TTG Asia, 14 Apr 2015 |
+| Official opening | 31 July 2017, officiated by the Chief Minister of Negeri Sembilan | [OK] | lexishibiscuspd.com news page |
+| Wording for "opened" | "welcoming guests since April 2015, officially opened July 2017"; avoid "completed 2015" (no public source) | [OK] | as above |
+| Guinness World Record 1 | Most swimming pools in a resort: 643 (only pools over 1.5 m x 2 m counted), verified 14 Oct 2016 | [OK] | guinnessworldrecords.com entry 430889 |
+| Guinness World Record 2 | Most overwater villas at a single resort: 522, verified 14 Oct 2016 | [OK] | guinnessworldrecords.com entry 440650 |
+| Layout | overwater villas laid out in the shape of the hibiscus, Malaysia's national flower, seen from above | [OK] | Guinness case study; Tourism Malaysia, Mar 2017 |
+| Private pool | every guestroom has a private dip pool and steam room | [OK] | lexishibiscuspd.com news page |
+| Guests | more than 630,000 tourists in under two years after opening (as at March 2017) | [OK] — always say "as at March 2017" | Tourism Malaysia, Mar 2017 |
+| Owner / operator | owned by Kuala Lumpur Metro Group; operated by Lexis Hotel Group (as at 2017) | [OK] | Tourism Malaysia, Mar 2017 |
+| Kuala Lumpur Metro Group founded | 1996, grew from its construction arm YBK Engineering Sdn Bhd | [OK] — also verifies §6 "Developer heritage 1996" | Tourism Malaysia, Mar 2017 |
+| Awards listed by the resort | 20 entries 2016–2024, incl. World Luxury Hotel Awards 2016/2017/2018/2019/2020/2023, Haute Grandeur 2017/2018/2019, World Travel Awards 2019, HAPA 2018 and 2023–2024, ASEAN MICE Venue Standard 2022–2024 | [OK] names and years only | lexishibiscuspd.com/awards |
+| Do not use | room total (639/643/117/122 conflict), architect (not found), plaque ceremony date (sources conflict), "first award", development cost | — | fact-table.md |
+
 ## 10. BANNED AND WATCH TERMS (read by `tools/compliance_scan.py`)
 
 One case-insensitive regular expression per line. `banned` terms fail the

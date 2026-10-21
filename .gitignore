@@ -5,3 +5,6 @@
 # Raw event media and account screenshots stay out of the repo
 /events/
 /screenshots/
+
+# Dispatch run logs (Codex/Gemini transcripts)
+.dispatch/
