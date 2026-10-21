@@ -161,6 +161,53 @@ approved to advertise for LH2 specifically vs existing resort.`
 | hibiscus2.com deploy target | `[INSERT: e.g. Cloudflare Pages]` |
 | Image folder path | `[INSERT]` |
 
+## 10. BANNED AND WATCH TERMS (read by `tools/compliance_scan.py`)
+
+One case-insensitive regular expression per line. `banned` terms fail the
+scan; `watch` terms are reported for a human to judge (allowed wording that
+sits close to Google's financial-services line, or claims not in this file).
+Applies to hibiscus2.com only; grrmalaysia.com has its own rules.
+
+```banned
+\d+(\.\d+)?\s?%
+guarant
+\bGRR\b
+cash\s?back
+rebate
+zero\s?down
+no money down
+\binvest
+\byield
+\bROI\b
+passive income
+break.?even
+capital appreciation
+grrmalaysia
+保证|保證|担保
+回报|回報|回酬
+投资|投資
+收益|利回り
+零首付|頭金ゼロ
+キャッシュバック|現金回扣
+保証
+pelaburan
+dijamin|jaminan
+pulangan
+tanpa deposit
+```
+
+```watch
+profit
+\bincome\b
+\breturns?\b
+landmark
+largest
+利润|利益
+收入|収入
+keuntungan
+pendapatan
+```
+
 ---
 
 ## SIGN-OFF
