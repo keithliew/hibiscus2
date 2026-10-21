@@ -172,3 +172,16 @@ placeholder cleanup, still clean.
 - MAPEX 2026 Melaka post (`/events/mapex-melaka-2026/`): publishing date set to 1 Aug 2026 per Keith (20 Oct). Body still says "In July 2026"; exact fair dates not supplied. Booth photos are dated 19–28 Jul; the organiser's stage-event poster is for 1 Aug.
 - Booth photos used have the "guaranteed rental return" banner blurred (Keith's instruction 20 Oct). The 19 Jul photo (visitors' faces visible) and the 1 Aug video are not used; the video needs watching for banners before any YouTube upload.
 - Event pages are English only so far.
+
+## 8. Google Ads conversion tracking — 21 Oct 2026
+
+Done (Keith approved the 6-step list; done in the browser pane signed in as keith@heydavid.io):
+- GA4 property "hibiscus2" (544930042, account Benih): `lead_form_submit` marked as a key event. GA4 is linked to Ads 421-009-0766 (since 10 Jul).
+- Ads 421-009-0766: new conversion "hibiscus2 (web) lead_form_submit", imported from GA4, Primary, in the Contacts goal (now an account-default goal used by both campaigns).
+- Old `manual_event_SUBMIT_LEAD_FORM` (waited for a GA4 event the site never sends) set to Secondary; now Inactive. Not deleted.
+- Auto-tagging confirmed on. No tag or website change was needed.
+- Phone-call conversions were left unticked in the setup wizard on purpose.
+
+Still open:
+- `whatsapp_click`: confirmed reaching GA4 (test click 21 Oct, network hit `en=whatsapp_click` to G-H1TQ1QRLTH), but GA4's Admin event list only shows an event some hours after it first arrives. Once it appears: star it as a key event in GA4, then import it into Ads (category Contact, Primary). Then tick the Command Centre row `w-hibiscus2-deploy`.
+- Ads account notes for Keith (not changed): account-level negative keywords: none; "Lead form ads terms: not accepted", so the Google-hosted "Lead form - Submit" action can't record until those are accepted.
