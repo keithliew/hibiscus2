@@ -185,6 +185,11 @@ Always attribute these to the EXISTING resort, never to Lexis Hibiscus 2.
 | Official photo | aerial of Lexis Hibiscus Port Dickson, `images/lexis-hibiscus-pd-aerial.jpg`, from klmetropolitan.com; Keith authorised using KL Metro's official marketing materials (21 Oct 2026); credit "Photo: Kuala Lumpur Metro Group" | [OK] | klmetropolitan.com |
 | Kuala Lumpur Metro Group founded | 1996, grew from its construction arm YBK Engineering Sdn Bhd | [OK] — also verifies §6 "Developer heritage 1996" | Tourism Malaysia, Mar 2017 |
 | Awards listed by the resort | 20 entries 2016–2024, incl. World Luxury Hotel Awards 2016/2017/2018/2019/2020/2023, Haute Grandeur 2017/2018/2019, World Travel Awards 2019, HAPA 2018 and 2023–2024, ASEAN MICE Venue Standard 2022–2024 | [OK] names and years only | lexishibiscuspd.com/awards |
+| Group guests (2017) | Lexis Hotel Group properties: more than 3.6 million tourists from 126 countries, about 50% overseas guests | [OK] — say "as at August 2017" | The Edge Malaysia, 1 Aug 2017; resort opening page, Jul 2017 |
+| Group visitors (2025) | "over 10 million visitors from 186 countries" across KL Metro developments | [OK] only attributed: "the group's own statement, 2025" | KL Metro Group corporate video description, YouTube, 31 Oct 2025 |
+| Events capacity | Hibiscus Grand Ballroom seats up to 450 banquet-style, can be split into 4 rooms; 10 function rooms, a boardroom and a VIP holding room | [OK] — described at the 2015 soft opening | TTG Asia, 14 Apr 2015 |
+| Demand mix | demand from tours, corporate and MICE (meetings, events, conventions, exhibitions) | [OK] | The Edge Malaysia, 1 Aug 2017 |
+| Still NOT for hibiscus2.com | room rates (ADR), occupancy, revenue, operator profit share: performance data, GRR-ONLY (see §6) | — | Keith/CoS decision, 22 Oct 2026 |
 | Do not use | room total (639/643/117/122 conflict), architect (not found), plaque ceremony date (sources conflict), "first award", development cost | — | fact-table.md |
 
 ## 10. BANNED AND WATCH TERMS (read by `tools/compliance_scan.py`)
