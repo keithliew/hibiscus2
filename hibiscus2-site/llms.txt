@@ -1,0 +1,20 @@
+# hibiscus2.com
+
+> Marketing site for Lexis Hibiscus 2, a 5-star resort development with private-pool villas in Port Dickson, Negeri Sembilan, Malaysia, next to the existing Lexis Hibiscus resort. Run by an authorised real estate negotiator, Wong See How (REN 51947) of Summerfield Property (M) Sdn. Bhd. This is not the developer's official website.
+
+## Key facts
+- Developer: KL Metro Property Development Sdn. Bhd., a member of Kuala Lumpur Metro Group (founded 1996).
+- Operator: Lexis Hotel Group.
+- Villas: Type A Upper (872 sq ft / 81.14 m²) and Type A Lower (858 sq ft / 79.75 m²), each with 2 bedrooms, 2 bathrooms, a balcony and a private pool.
+- Price: from RM860,000, subject to availability and official pricing.
+- Completion: targeted for 2029.
+- Viewings: Bukit Bintang Showroom, L12, Pavilion Tower, 75 Jalan Raja Chulan, 50200 Kuala Lumpur (daily 10am to 4pm), or the Lexis Hibiscus Port Dickson Sales Gallery. WhatsApp +60 12-297 0362.
+- The existing Lexis Hibiscus Port Dickson holds two Guinness World Records (most swimming pools in a resort: 643; most overwater villas at a single resort: 522; verified 14 October 2016).
+
+## Pages
+- [Home](https://hibiscus2.com/): overview of Lexis Hibiscus 2.
+- [The Lexis Track Record, Part 1: Lexis Hibiscus Port Dickson](https://hibiscus2.com/lexis-track-record/lexis-hibiscus-port-dickson/): the existing resort's history, records and awards, with sources.
+- [News](https://hibiscus2.com/news/): events, showroom days and the Track Record series.
+- [About the consultant](https://hibiscus2.com/about/)
+- [Contact and viewings](https://hibiscus2.com/contact/)
+- Also in Chinese ([/zh/](https://hibiscus2.com/zh/)), Malay ([/ms/](https://hibiscus2.com/ms/)) and Japanese ([/ja/](https://hibiscus2.com/ja/)).

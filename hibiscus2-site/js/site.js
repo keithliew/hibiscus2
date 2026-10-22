@@ -73,6 +73,50 @@
     gtmPush("lead_form_submit", { lp_variant: sessionStorage.getItem("lh2_lp_variant") || "unknown" });
   }
 
+  // ---------- Lead-form funnel: each step goes to the dataLayer (field names and counts only, never what people type) ----------
+  document.querySelectorAll("form.lead-form").forEach(function (form) {
+    var formName = form.getAttribute("data-lp-variant") || "lead";
+    var fields = [].slice.call(form.querySelectorAll("input, select, textarea")).filter(function (el) {
+      return el.type !== "hidden" && el.name !== "botcheck";
+    });
+    var done = {};
+    var started = false, submitted = false, seen = false, left = false, lastField = "";
+    function send(event, extra) {
+      var data = { form_name: formName, fields_total: fields.length, fields_filled: Object.keys(done).length };
+      for (var k in extra) data[k] = extra[k];
+      gtmPush(event, data);
+    }
+    function viewed() { if (!seen) { seen = true; send("h2_form_view", {}); } }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting) { viewed(); obs.disconnect(); }
+      }, { threshold: 0.3 }).observe(form);
+    } else {
+      viewed();
+    }
+    fields.forEach(function (el, i) {
+      function start() {
+        lastField = el.name;
+        if (!started) { started = true; viewed(); send("h2_form_start", { first_field: el.name }); }
+      }
+      el.addEventListener("focus", start);
+      el.addEventListener("input", start);
+      el.addEventListener("change", function () {
+        start();
+        if (!el.value || done[el.name]) return;
+        done[el.name] = true;
+        send("h2_form_field", { field_name: el.name, field_position: i + 1 });
+      });
+      el.addEventListener("invalid", function () { send("h2_form_error", { field_name: el.name }); });
+    });
+    form.addEventListener("submit", function () { submitted = true; send("h2_form_submit", {}); });
+    window.addEventListener("pagehide", function () {
+      if (left || !started || submitted) return;
+      left = true;
+      send("h2_form_abandon", { last_field: lastField });
+    });
+  });
+
   // ---------- Mobile nav toggle ----------
   var navToggle = document.querySelector("[data-nav-toggle]");
   var navMenu = document.querySelector("[data-nav-menu]");

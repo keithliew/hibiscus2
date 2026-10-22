@@ -1,0 +1,7 @@
+# Keep the Cloudflare Pages copies (hibiscus2.pages.dev and branch previews) out of search results.
+# hibiscus2.com itself is unaffected.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
