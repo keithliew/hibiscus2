@@ -194,4 +194,6 @@ Done in the browser pane (keith@heydavid.io):
 - Checked live: the published gtm.js has all 7 keys; on hibiscus2.com/contact a field change sent en=h2_form_field to G-H1TQ1QRLTH with form_name, first_field and field_name. Test visit used ?h2test=1 on 22 Oct; the form was never submitted.
 - GA4 property 544930042 (hibiscus2): event-scoped custom dimensions Form name, Field name, First field, Last field.
 
-Still to do (from about 24 Oct, once the events are processed): build the "Lead form funnel" exploration (contact page view → h2_form_view → h2_form_start → h2_form_submit → lead_form_submit) and a free-form table of Last field for h2_form_abandon. Report only, no settings change.
+Done 25 Oct: GA4 Explore → "Lead form funnel" (funnel exploration, last 28 days, breakdown Form name). Steps: 1 Form seen (h2_form_view) → 2 Form started (h2_form_start) → 3 Form sent (lead_form_submit on the thank-you page). h2_form_submit was not yet selectable in the step picker (no data yet), so step 3 uses the thank-you page event. First data: the 22 Oct test visit (1 seen, 1 started, form name "(not set)" because the dimension was added after it).
+
+Later, once real abandons arrive: add h2_form_submit as a step, and a free-form tab with rows Last field filtered to h2_form_abandon (shows which question people quit on).
