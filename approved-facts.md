@@ -40,7 +40,7 @@ BRO = Full Brochure (140525), LF = 8pg Leaflet (20260514).
 | Units under rental scheme | 910 units | [OK] | SK-B |
 | Site size | 80 acres | [VERIFY] ☐ | draft copy |
 | GDV | RM1.6 billion | [VERIFY] ☐ | draft copy |
-| Completion target | Conflict: developer site says "Target Completion: Q4 2028" (lexishibiscus.com.my, read 9 Nov 2026); SK-B says mid-2029 (rental Year 1 = 2029). hibiscus2.com currently says "targeted 2029" | [VERIFY] ☐ Keith to confirm which; until then change nothing on the site | developer site / SK-B |
+| Completion target | mid-2029 (rental programme Year 1 = 2029 in sales kit). On the site: "Completion targeted 2029" | [OK] — Keith chose mid-2029 on 9 Nov 2026 ("Mid-2029 (sales kit)"); note the developer site (lexishibiscus.com.my, read 9 Nov 2026) says "Target Completion: Q4 2028" | SK-B |
 | Phase 1 sales status | approx. 60% sold since 2024 launch | [VERIFY] ☐ get CURRENT figure + permission to state | draft copy |
 | Distances | KLIA 55 km · Kuala Lumpur 100 km · Malacca 80 km | [VERIFY] ☐ | draft copy |
 | Advertising permit / licence no. | `[INSERT — request from developer/Summerfield]` | [VERIFY] ☐ | — |
