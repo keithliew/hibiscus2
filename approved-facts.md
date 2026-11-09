@@ -40,7 +40,7 @@ BRO = Full Brochure (140525), LF = 8pg Leaflet (20260514).
 | Units under rental scheme | 910 units | [OK] | SK-B |
 | Site size | 80 acres | [VERIFY] ☐ | draft copy |
 | GDV | RM1.6 billion | [VERIFY] ☐ | draft copy |
-| Completion target | mid-2029 (rental programme Year 1 = 2029 in sales kit) | [VERIFY] ☐ confirm official completion wording | draft / SK-B |
+| Completion target | Conflict: developer site says "Target Completion: Q4 2028" (lexishibiscus.com.my, read 9 Nov 2026); SK-B says mid-2029 (rental Year 1 = 2029). hibiscus2.com currently says "targeted 2029" | [VERIFY] ☐ Keith to confirm which; until then change nothing on the site | developer site / SK-B |
 | Phase 1 sales status | approx. 60% sold since 2024 launch | [VERIFY] ☐ get CURRENT figure + permission to state | draft copy |
 | Distances | KLIA 55 km · Kuala Lumpur 100 km · Malacca 80 km | [VERIFY] ☐ | draft copy |
 | Advertising permit / licence no. | `[INSERT — request from developer/Summerfield]` | [VERIFY] ☐ | — |
@@ -74,18 +74,20 @@ Allowed on hibiscus2.com ONLY as structural description (no numbers, no
 ## 4. RENTAL PROGRAMME — FIGURES [GRR-ONLY]
 
 NEVER on hibiscus2.com. On grrmalaysia.com: always adjacent to the standard
-disclaimer, date-stamped "as stated in developer sales kit dated 23 Apr 2026".
+disclaimer, date-stamped with the source. Corrected 9 Nov 2026: the developer's
+site (lexishibiscus.com.my) and Keith give 6% for years 1–3, superseding the
+8% in SK-B. Rows still derived from the old 8% are marked [VERIFY].
 
 | Fact | Value | Status | Source |
 |---|---|---|---|
-| Years 1–3 rate | guaranteed rental return @ 8% per annum (24% over 3 years) | [OK] | SK-B |
-| Advance option | 6.5% p.a. (nett) guaranteed rental in advance during construction | [OK] | SK-B |
+| Years 1–3 rate | guaranteed rental return @ 6% per annum (18% over 3 years); RM60,000 a year on a RM1,000,000 unit | [OK] — corrected 9 Nov 2026; supersedes SK-B's 8% (24% over 3 years) | lexishibiscus.com.my (developer site), read 9 Nov 2026; Keith confirmed 6% (via CoS/GRR chat) |
+| Advance option | 6.5% p.a. (nett) guaranteed rental in advance during construction | [VERIFY] ☐ SK-B figure; not on the developer site and higher than the corrected 6% rate, confirm before use | SK-B |
 | Years 4–15 split | 75% of nett operating profit apportioned among participating owners; 25% shared between developer and operator | [OK] | SK-B |
 | Profit-share formula | owner return = (unit price ÷ aggregated purchase price of 910 units) × 75% of nett operating profit | [OK] | SK-B |
-| Projected 15-yr average | 11.5% gross p.a. average over 15-year tenancy (developer projection) | [OK] — label as PROJECTION | SK-B |
-| Net rate illustration | net 7.1% p.a. (first 3 yrs), 10.2% p.a. (15-yr average) after outgoings of RM8,988/yr, on RM1,000,000 unit | [OK] — label as ILLUSTRATION | SK-B |
-| Year-by-year projection | 2029–2031: 8% · 2032: 9% · 2033: 9.5% · 2034: 10.1% · 2035: 10.7% · 2036: 11.3% · 2037: 12% · 2038: 12.3% · 2039: 12.7% · 2040: 13% · 2041: 13.4% · 2042: 13.7% · 2043: 14% | [OK] — label as PROJECTION | SK-B |
-| Break-even claim | "projected principal amount can break even in 10+ years" | [OK] — label as developer projection | SK-B |
+| Projected 15-yr average | RM94,346 a year on a RM1,000,000 unit (about 9.4% p.a.), estimated average over the 15-year period (developer projection). Supersedes SK-B's 11.5% | [OK] — label as PROJECTION; quote the RM figure as the developer states it | lexishibiscus.com.my (developer site), read 9 Nov 2026; Keith confirmed 6% (via CoS/GRR chat) |
+| Net rate illustration | (old) net 7.1% p.a. (first 3 yrs), 10.2% p.a. (15-yr average) after outgoings of RM8,988/yr, on RM1,000,000 unit | [VERIFY] ☐ built on the old 8% / 11.5%; do not use until recalculated from the 6% figures and confirmed | SK-B |
+| Year-by-year projection | (old, SK-B) 2029–2031: 8% · 2032: 9% · 2033: 9.5% · 2034: 10.1% · 2035: 10.7% · 2036: 11.3% · 2037: 12% · 2038: 12.3% · 2039: 12.7% · 2040: 13% · 2041: 13.4% · 2042: 13.7% · 2043: 14% | [VERIFY] ☐ superseded: starts at the old 8% and the years assume a 2029 start. Do not publish; ask Summerfield/developer for the current year-by-year table | SK-B |
+| Break-even claim | "projected principal amount can break even in 10+ years" | [VERIFY] ☐ SK-B claim based on the old 8% projection; confirm it still holds | SK-B |
 | Loan working examples | RM860,000 price; UOB indicative 4.00% (local) / 4.10% (overseas); 60/70/75% margin; 20/25/30-yr tenures; monthly net income tables | [OK] — label as ILLUSTRATION, rates subject to bank approval | SK-B |
 
 ## 5. FINANCE PACKAGE [GRR-ONLY — and even there, use with care]
