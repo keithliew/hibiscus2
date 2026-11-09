@@ -50,14 +50,27 @@
   })();
 
   // ---------- WhatsApp links: build href + track clicks ----------
-  var pageWaText = document.body.getAttribute("data-wa-text") || "Hi, I'd like to know more about Lexis Hibiscus 2.";
+  // Ref code at the end of every pre-filled message: page, language and ad/web, e.g. "(Ref: VIL-EN-AD)"
+  var PAGE_CODES = { "": "HOME", villas: "VIL", "rental-programme": "RP", contact: "CON", about: "ABT", news: "NEWS", events: "EVT", "lexis-track-record": "TR" };
+  var pathParts = window.location.pathname.split("/").filter(Boolean);
+  var lang = ["zh", "ms", "ja"].indexOf(pathParts[0]) >= 0 ? pathParts.shift() : "en";
+  var pageCode = PAGE_CODES[pathParts[0] || ""] || "OTH";
+  var utm = {};
+  try {
+    utm = JSON.parse(sessionStorage.getItem("lh2_utm") || "{}");
+  } catch (e) {
+    utm = {};
+  }
+  var fromAd = !!utm.gclid || /^(cpc|ppc|paid)/i.test(utm.utm_medium || "");
+  var waRef = pageCode + "-" + lang.toUpperCase() + "-" + (fromAd ? "AD" : "WEB");
+  var pageWaText = (document.body.getAttribute("data-wa-text") || "Hi, I'd like to know more about Lexis Hibiscus 2.") + " (Ref: " + waRef + ")";
   var waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(pageWaText);
   document.querySelectorAll("[data-wa]").forEach(function (el) {
     el.setAttribute("href", waUrl);
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener noreferrer");
     el.addEventListener("click", function () {
-      gtmPush("whatsapp_click", { wa_source: el.getAttribute("data-wa") });
+      gtmPush("whatsapp_click", { wa_source: el.getAttribute("data-wa"), wa_ref: waRef });
     });
   });
 
@@ -115,6 +128,11 @@
       left = true;
       send("h2_form_abandon", { last_field: lastField });
     });
+  });
+
+  // ---------- Time-limited notices: remove after the end of data-show-until (Malaysia time) ----------
+  document.querySelectorAll("[data-show-until]").forEach(function (el) {
+    if (Date.now() > new Date(el.getAttribute("data-show-until") + "T23:59:59+08:00").getTime()) el.remove();
   });
 
   // ---------- Mobile nav toggle ----------
