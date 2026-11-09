@@ -95,3 +95,14 @@ In order of value, all small:
 | Paste the new ads, keywords, negatives and assets into Search-1, left **paused** | hibiscus2 chat, if you say yes (or you do it from the JSON) |
 | Set budget, dates and bidding, then switch the campaign on | Keith (budget and spend stay your decision) |
 | Search-term checks 12, 16 and 23 Nov | hibiscus2 chat |
+
+## Status, 10 Nov 2026 (loaded into Google Ads, campaign still paused)
+
+Done in Search-1 by the hibiscus2 chat, with Keith's yes ("Yes, load paused"):
+- 54 campaign-wide negative keywords (section 2), plus 8 on ad group B (review, reviews, photos, map, contact, phone number, email, address).
+- New ad groups A (9 keywords; two ads: /villas/ and /rental-programme/ for the landing-page test), B (6 keywords; headlines 1 and 2 pinned), C (5 keywords), D (5 Chinese keywords; /zh/villas/). All copy as in `2026-11-ad-copy.json`. Google's AI-suggested headlines and sitelinks were replaced or removed.
+- Old ad groups (Brand, Generic, Ownership, Foreign Buyer Intent) paused; their old ads with "RM774,000" no longer serve.
+- 6 sitelinks and 6 callouts at campaign level. All new ads and assets were "under review" at the time of loading.
+
+Still Keith's (not changed): start/end dates (old 11–31 Jul), budget (RM50/day), bidding (still "Maximise conversions"), locations (KL, JB, Penang, Kuching, Bintulu only), language (English only, so ad group D will not show to Chinese-language users until Chinese is added), ad rotation, ad schedule, campaign goal ("No goal selected"), and switching the campaign on.
+Remove the "Open House 13 Nov" sitelink after 13 Nov (hibiscus2 chat, at the 16 Nov check).
