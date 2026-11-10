@@ -117,3 +117,5 @@ Keith chose a campaign total budget (Google: "you will never be charged more tha
 - **Status: paused.** Search-1 and the Performance Max "Campaign #1" are also paused and should stay paused.
 
 To start: Keith switches "Search - Nov 2026 (RM1,000 total)" on (campaign status: Enable). Remove the "Open House 13 Nov" sitelink after 13 Nov.
+
+**Switched on 10 Nov 2026 with Keith's yes ("Yes, switch it on").** "Search - Nov 2026 (RM1,000 total)" is Enabled and starts serving 11 Nov; Search-1 and Campaign #1 remain paused. Checks: 12, 16 and 23 Nov search terms; remove the Open House sitelink after 13 Nov.
