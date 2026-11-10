@@ -148,7 +148,7 @@ approved to advertise for LH2 specifically vs existing resort.`
 | Consultation venue 1 — name | Imperial Lexis Kuala Lumpur, Level 7 (replaces the Bukit Bintang Showroom, no longer available, Keith 10 Nov 2026) | [OK] | Keith, 10 Nov 2026 |
 | Consultation venue 1 — address | Level 7, Imperial Lexis Kuala Lumpur, 15 Jalan Kia Peng, 50450 Kuala Lumpur. Hours: [INSERT] — site says "by appointment" until Keith confirms. Old: L12, Pavilion Tower, 75 Jalan Raja Chulan (daily 10am–4pm), use only for the 16 Oct October Fest post | [OK] address; hours pending | Keith 10 Nov 2026; street address from MDA / Tatler Asia |
 | Deepavali Open House (rescheduled) | Friday 20 Nov 2026, 1pm to 5pm, Imperial Lexis Kuala Lumpur, 7th floor, 15 Jalan Kia Peng, 50450 Kuala Lumpur; free admission. Was 13 Nov, 1–4pm, Bukit Bintang Showroom | [OK] | Keith, new posters 10 Nov 2026; street address from MDA and Tatler Asia listings |
-| Consultation venue 1 — hours | 10am – 4pm, daily | [OK] | claude-code-prompt-cta-venue-update.md |
+| Consultation venue 1 — hours | [INSERT] for Imperial Lexis KL; site says "by appointment". (Old Bukit Bintang hours 10am–4pm daily no longer apply) | [VERIFY] ☐ | Keith 10 Nov 2026 |
 | Consultation venue 2 — name | Lexis Hibiscus Port Dickson Sales Gallery | [OK] — "Sales Gallery" is a descriptive label pending confirmation of an official venue name; flag if the developer has a different preferred name | user-confirmed address 2026-07-19 |
 | Consultation venue 2 — address | Ground Floor, Lexis Hibiscus Port Dickson, Batu 12, Jalan Pantai, Pasir Panjang, 71250 Port Dickson | [OK] | user-confirmed 2026-07-19 |
 | Consultation venue 2 — hours | `[INSERT]` | [VERIFY] ☐ confirm opening hours for the Port Dickson venue | — |
