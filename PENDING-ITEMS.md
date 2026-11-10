@@ -197,3 +197,9 @@ Done in the browser pane (keith@heydavid.io):
 Done 25 Oct: GA4 Explore → "Lead form funnel" (funnel exploration, last 28 days, breakdown Form name). Steps: 1 Form seen (h2_form_view) → 2 Form started (h2_form_start) → 3 Form sent (lead_form_submit on the thank-you page). h2_form_submit was not yet selectable in the step picker (no data yet), so step 3 uses the thank-you page event. First data: the 22 Oct test visit (1 seen, 1 started, form name "(not set)" because the dimension was added after it).
 
 Later, once real abandons arrive: add h2_form_submit as a step, and a free-form tab with rows Last field filtered to h2_form_abandon (shows which question people quit on).
+
+## 10. Guest review ratings — 10 Nov 2026
+
+- [ ] Keith to approve the Google / Agoda / Booking.com ratings added to approved-facts §10a as [VERIFY] (read live 10 Nov 2026).
+- [ ] Draft wording in `research/lexis-series/review-ratings-2026-11.md`: Track Record Part 1 bullet and a /villas/ proof card (villas from ~18 Nov, after the first week of the h2-T02 Ads test). Staging first.
+- Not doing: weekend booking rates, occupancy, revenue on hibiscus2.com or in ads (GRR-only).
