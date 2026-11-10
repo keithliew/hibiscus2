@@ -157,10 +157,10 @@
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
     var obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) { obs.unobserve(e.target); run(e.target); }
+        if (e.isIntersecting) { obs.unobserve(e.target); show(e.target, 0); run(e.target); }
       });
-    }, { threshold: 0.5 });
-    els.forEach(function (el) { show(el, 0); obs.observe(el); });
+    }, { threshold: 0.1 });
+    els.forEach(function (el) { obs.observe(el); });
   })();
 
   // ---------- Mobile nav toggle ----------
