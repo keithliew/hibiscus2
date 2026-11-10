@@ -200,6 +200,8 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
 
 ## 10. Guest review ratings — 10 Nov 2026
 
-- [ ] Keith to approve the Google / Agoda / Booking.com ratings added to approved-facts §10a as [VERIFY] (read live 10 Nov 2026).
-- [ ] Draft wording in `research/lexis-series/review-ratings-2026-11.md`: Track Record Part 1 bullet and a /villas/ proof card (villas from ~18 Nov, after the first week of the h2-T02 Ads test). Staging first.
+- [x] Keith approved (10 Nov) the Google / Agoda / Booking.com ratings added to approved-facts §10a as [VERIFY] (read live 10 Nov 2026).
+- [x] Track Record Part 1: animated ratings panel + guest timeline LIVE 10 Nov.
+- [ ] /villas/ proof card (draft in `research/lexis-series/review-ratings-2026-11.md`) from ~18 Nov, after the first week of the h2-T02 Ads test. Staging first.
+- [ ] Re-read all three ratings quarterly (next: Feb 2027) and update numbers + "read" date together.
 - Not doing: weekend booking rates, occupancy, revenue on hibiscus2.com or in ads (GRR-only).
