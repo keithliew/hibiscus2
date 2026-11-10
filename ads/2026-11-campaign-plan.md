@@ -106,3 +106,14 @@ Done in Search-1 by the hibiscus2 chat, with Keith's yes ("Yes, load paused"):
 
 Still Keith's (not changed): start/end dates (old 11–31 Jul), budget (RM50/day), bidding (still "Maximise conversions"), locations (KL, JB, Penang, Kuching, Bintulu only), language (English only, so ad group D will not show to Chinese-language users until Chinese is added), ad rotation, ad schedule, campaign goal ("No goal selected"), and switching the campaign on.
 Remove the "Open House 13 Nov" sitelink after 13 Nov (hibiscus2 chat, at the 16 Nov check).
+
+## Status, 10 Nov 2026 (later): new campaign with a fixed RM1,000 total budget
+
+Keith chose a campaign total budget (Google: "you will never be charged more than your total budget") instead of a daily budget, which can overshoot (up to 2x a day; monthly cap 30.4x daily). Total budgets only work on new campaigns, so a new campaign was built:
+
+- **"Search - Nov 2026 (RM1,000 total)"** (campaign ID 24444757086): Search network only (no search partners, no Display), Maximise clicks with a RM4 max CPC, campaign total budget RM1,000, 11 to 30 Nov 2026, 9am to 10pm daily, ads rotate evenly, AI Max and its text/URL options off, conversion goal Contacts only (WhatsApp click + form), languages all.
+- Locations: Kuala Lumpur, Selangor, Negeri Sembilan, Melaka, Johor, Penang (states), presence only.
+- Ad groups A (two ads: /villas/ and /rental-programme/), B, C, D with the same keywords and copy as in Search-1; 54 campaign negatives plus B's 8; the 6 new sitelinks and 6 callouts. The old sitelinks (with RM774,000) were not attached.
+- **Status: paused.** Search-1 and the Performance Max "Campaign #1" are also paused and should stay paused.
+
+To start: Keith switches "Search - Nov 2026 (RM1,000 total)" on (campaign status: Enable). Remove the "Open House 13 Nov" sitelink after 13 Nov.
