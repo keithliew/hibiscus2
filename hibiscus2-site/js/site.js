@@ -135,6 +135,34 @@
     if (Date.now() > new Date(el.getAttribute("data-show-until") + "T23:59:59+08:00").getTime()) el.remove();
   });
 
+  // ---------- Count-up numbers (data-count), run once when scrolled into view ----------
+  (function () {
+    var els = document.querySelectorAll("[data-count]");
+    if (!els.length) return;
+    function show(el, v) {
+      var dec = +(el.getAttribute("data-decimals") || 0);
+      el.textContent = (el.getAttribute("data-prefix") || "") + v.toLocaleString("en", { minimumFractionDigits: dec, maximumFractionDigits: dec }) + (el.getAttribute("data-suffix") || "");
+    }
+    function run(el) {
+      var end = parseFloat(el.getAttribute("data-count")), t0 = null;
+      function step(t) {
+        if (!t0) t0 = t;
+        var p = Math.min((t - t0) / 1400, 1), e = 1 - Math.pow(1 - p, 3);
+        var dec = +(el.getAttribute("data-decimals") || 0), f = Math.pow(10, dec);
+        show(el, p < 1 ? Math.round(end * e * f) / f : end);
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { obs.unobserve(e.target); run(e.target); }
+      });
+    }, { threshold: 0.5 });
+    els.forEach(function (el) { show(el, 0); obs.observe(el); });
+  })();
+
   // ---------- Mobile nav toggle ----------
   var navToggle = document.querySelector("[data-nav-toggle]");
   var navMenu = document.querySelector("[data-nav-menu]");

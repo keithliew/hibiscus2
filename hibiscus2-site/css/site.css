@@ -65,3 +65,21 @@ h1, h2, h3, .font-display { font-family: "Playfair Display", Georgia, serif; }
   background: #0e2233; color: #fff; padding: 10px 16px; border-radius: 0 0 6px 0;
 }
 .skip-link:focus { left: 0; }
+
+/* ---------- Proof visuals (Track Record): rating meters, star fill, guest timeline ---------- */
+.meter-fill, .stars-fill { transform: scaleX(0); transform-origin: left; transition: transform 1.4s cubic-bezier(.2,.7,.2,1) .15s; }
+.reveal.in .meter-fill, .reveal.in .stars-fill { transform: scaleX(var(--v)); }
+.stars { position: relative; display: inline-block; letter-spacing: 2px; line-height: 1; }
+.stars-fill { position: absolute; inset: 0; overflow: hidden; white-space: nowrap; color: #c9a96a; }
+.tl-line { transform: scaleY(0); transform-origin: top; transition: transform 1.6s ease .1s; }
+.reveal.in .tl-line { transform: scaleY(1); }
+.tl-item { opacity: 0; transform: translateX(-8px); transition: opacity .5s ease, transform .5s ease; }
+.reveal.in .tl-item { opacity: 1; transform: none; }
+.reveal.in .tl-item:nth-child(2) { transition-delay: .35s; }
+.reveal.in .tl-item:nth-child(3) { transition-delay: .7s; }
+.reveal.in .tl-item:nth-child(4) { transition-delay: 1.05s; }
+.reveal.in .tl-item:nth-child(5) { transition-delay: 1.4s; }
+@media (prefers-reduced-motion: reduce) {
+  .meter-fill, .stars-fill { transform: scaleX(var(--v)) !important; transition: none !important; }
+  .tl-line, .tl-item { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
