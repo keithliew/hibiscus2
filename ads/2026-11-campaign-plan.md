@@ -124,3 +124,7 @@ To start: Keith switches "Search - Nov 2026 (RM1,000 total)" on (campaign status
 ## Open House moved (10 Nov 2026)
 
 The Deepavali Open House moved to Friday 20 Nov, 1pm to 5pm, Imperial Lexis Kuala Lumpur, 7th floor. With Keith's yes ("Yes, both"), the sitelink asset was edited for both campaigns: "Open House 20 Nov" / "Deepavali property open house" / "Fri 1pm-5pm, Imperial Lexis KL", same URL, with an asset end date of 20 Nov 2026, so it stops by itself and no longer needs removing at the 16 Nov check. Status after save: under review. The website strips on /villas/ and /rental-programme/ (EN and ZH) now hide after 20 Nov.
+
+## Showroom moved (11 Nov 2026)
+
+The Bukit Bintang Showroom is no longer available; the KL viewing venue is now Imperial Lexis Kuala Lumpur, Level 7, by appointment (hours not yet confirmed). With Keith's yes ("Yes, both"), in "Search - Nov 2026 (RM1,000 total)": the headline "Bukit Bintang Showroom Visit" became "Viewings at Imperial Lexis KL" in ads A (both), B and C; the showroom descriptions in A, B, C and D now name Imperial Lexis Kuala Lumpur; all 5 ads saved with "no policy issues". Sitelink "Book a Viewing" now reads "Imperial Lexis Kuala Lumpur" / "Level 7, by appointment"; callout "Showroom Open 10am-4pm" became "Viewings by Appointment" (both under review). Left as is: the "Contact Us" sitelink on the paused Performance Max campaign (Campaign #1), which still says Bukit Bintang; fix it before that campaign is ever re-enabled.

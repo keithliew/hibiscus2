@@ -211,4 +211,4 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
 - [x] Site and Ads sitelink moved to Fri 20 Nov, 1pm to 5pm, Imperial Lexis Kuala Lumpur 7F (live 10 Nov).
 - [ ] After 20 Nov: mark the event page and listings as past (or write the recap post, Keith's call).
 - [ ] Imperial Lexis KL showroom opening hours: site says "by appointment" until Keith confirms (approved-facts §8).
-- [ ] Google Ads copy still names the Bukit Bintang showroom (headlines, descriptions, callout "Showroom Open 10am-4pm", "Book a Viewing" sitelink): update with Keith's yes.
+- [x] Google Ads copy moved to Imperial Lexis KL (11 Nov). Still says Bukit Bintang: "Contact Us" sitelink on the paused PMax Campaign #1 only.
