@@ -149,3 +149,5 @@ Update 11 Nov (Keith: no need to mention Level 7 in ads): the "Book a Viewing" s
 Not proposed: "price"/"prices" (buyers ask for villa prices too) and "resort" (part of the brand searches). Why "rooms", "chalets": Google negatives do not match plurals, so "room" and "chalet" already in the list miss them.
 
 **Watch at the 16 Nov check:** if more ad-group-B leads turn out to be holiday seekers, consider pausing B (it took 47% of day-1 spend).
+
+**Added 11 Nov 2026 with Keith's yes ("Yes, add them"):** all 41 draft negatives above, campaign level, broad match, on "Search - Nov 2026 (RM1,000 total)". Negative list now 103 (95 campaign + 8 on ad group B). Google confirmed "Your negative keywords were created."
