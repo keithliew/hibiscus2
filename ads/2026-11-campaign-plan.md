@@ -130,3 +130,22 @@ The Deepavali Open House moved to Friday 20 Nov, 1pm to 5pm, Imperial Lexis Kual
 The Bukit Bintang Showroom is no longer available; the KL viewing venue is now Imperial Lexis Kuala Lumpur, Level 7, by appointment (hours not yet confirmed). With Keith's yes ("Yes, both"), in "Search - Nov 2026 (RM1,000 total)": the headline "Bukit Bintang Showroom Visit" became "Viewings at Imperial Lexis KL" in ads A (both), B and C; the showroom descriptions in A, B, C and D now name Imperial Lexis Kuala Lumpur; all 5 ads saved with "no policy issues". Sitelink "Book a Viewing" now reads "Imperial Lexis Kuala Lumpur" / "Level 7, by appointment"; callout "Showroom Open 10am-4pm" became "Viewings by Appointment" (both under review). Left as is: the "Contact Us" sitelink on the paused Performance Max campaign (Campaign #1), which still says Bukit Bintang; fix it before that campaign is ever re-enabled.
 
 Update 11 Nov (Keith: no need to mention Level 7 in ads): the "Book a Viewing" sitelink line 2 is now "10am to 4pm, by appointment" (was "Level 7, by appointment"). No other ad text mentions Level 7.
+
+## First lead check and draft negatives (11 Nov 2026)
+
+**Lead:** first WhatsApp lead "Ref: VIL-EN-AD" (5:47pm, 11 Nov) was not qualified (Keith). The person used the /villas/ "book a viewing and get villa pricing" pre-fill but wanted a holiday stay; declined once told it is a villa for sale with a showroom viewing. Logged in the hibiscus2 lead-quality sheet (row 4): Google Ads, Junk, "Wrong project", note says holiday-stay seeker.
+
+**Search terms, day 1 (11 Nov, campaign total):** 21 clicks, RM45.32, 2 conversions. 34 terms shown, 2 clicks hidden by Google.
+- Biggest spender: "lexis hibiscus port dickson" (exact, ad group B): 9 clicks, RM21.30, both conversions. This is the existing hotel's name, so most of these searchers are hotel guests; the lead above probably came from here. Negatives cannot fix that; it is what the B ad copy ("Buying, Not Booking a Stay?") is for.
+- Clearly hotel-guest terms that got clicks: "大 紅花 飯店" (Hibiscus hotel/restaurant, D, RM1.69), "lexis hibiscus port dickson restaurant" (A, RM1.55), the resort's street address (A, RM2.14).
+- Hotel-guest terms with impressions only: room-type names ("executive pool villa", "water chalets", "tower block"), "facilities", "大红花酒店", "port dickson 大红花酒店".
+- Already blocked and working: hotel, booking, room, stay, staycation, homestay, agoda and the rest of the 54 (none of them appear in the report).
+
+**Draft negatives, campaign-wide, broad match (NOT added; waiting for Keith's yes):**
+- English: restaurant, restaurants, dinner, lunch, food, holiday, vacation, getaway, honeymoon, family trip, per night, night, rooms, rates, chalets, water chalet, executive pool villa, tower block, facilities, kids, theme park, jalan pantai
+- Malay: cuti, percutian, bercuti, bilik, menginap, penginapan, harga bilik, makan, kolam renang awam
+- Chinese: 酒店, 饭店, 飯店, 住宿, 订房, 訂房, 房价, 餐厅, 度假, 自助餐
+
+Not proposed: "price"/"prices" (buyers ask for villa prices too) and "resort" (part of the brand searches). Why "rooms", "chalets": Google negatives do not match plurals, so "room" and "chalet" already in the list miss them.
+
+**Watch at the 16 Nov check:** if more ad-group-B leads turn out to be holiday seekers, consider pausing B (it took 47% of day-1 spend).
