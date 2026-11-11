@@ -128,3 +128,5 @@ The Deepavali Open House moved to Friday 20 Nov, 1pm to 5pm, Imperial Lexis Kual
 ## Showroom moved (11 Nov 2026)
 
 The Bukit Bintang Showroom is no longer available; the KL viewing venue is now Imperial Lexis Kuala Lumpur, Level 7, by appointment (hours not yet confirmed). With Keith's yes ("Yes, both"), in "Search - Nov 2026 (RM1,000 total)": the headline "Bukit Bintang Showroom Visit" became "Viewings at Imperial Lexis KL" in ads A (both), B and C; the showroom descriptions in A, B, C and D now name Imperial Lexis Kuala Lumpur; all 5 ads saved with "no policy issues". Sitelink "Book a Viewing" now reads "Imperial Lexis Kuala Lumpur" / "Level 7, by appointment"; callout "Showroom Open 10am-4pm" became "Viewings by Appointment" (both under review). Left as is: the "Contact Us" sitelink on the paused Performance Max campaign (Campaign #1), which still says Bukit Bintang; fix it before that campaign is ever re-enabled.
+
+Update 11 Nov (Keith: no need to mention Level 7 in ads): the "Book a Viewing" sitelink line 2 is now "10am to 4pm, by appointment" (was "Level 7, by appointment"). No other ad text mentions Level 7.
