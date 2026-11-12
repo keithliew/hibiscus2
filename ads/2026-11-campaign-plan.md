@@ -82,6 +82,7 @@ In order of value, all small:
 ## 6. Measuring lead quality
 
 - Google Ads counts "hibiscus2 (web) whatsapp_click" and "lead_form_submit" as conversions (set up 21 Oct). A WhatsApp click isn't a message, so the real measure is your lead sheet.
+- 13 Nov (GA4 programme chat, Keith's yes): GTM-P35VKVXV version 6 adds one GA4 tag, `form_submit`, on the existing lead_form_submit trigger, for the common monthly report only. It is not imported into Ads. The Ads conversions, triggers and the h2_form_* funnel are unchanged. GA4 Enhanced measurement "Form interactions" was turned off on property 544930042, so Google's automatic form_start/form_submit no longer fire on submit clicks. No key event or Ads import used them. Removing GTM altogether: not before about 27 Nov (landing-page test), and only with identical event names.
 - For every WhatsApp or form lead from 11 to 30 Nov, add a row with the Ref code and the stage it reached (Replied → Viewing booked → Booked).
 - I check the search terms on Thu 12 Nov, Mon 16 Nov and Mon 23 Nov and add negatives. The Monday marketing-loop report covers the rest.
 - Judge the run over 4 to 8 weeks (lesson L2): viewings booked by mid-January matter more than leads in November.
