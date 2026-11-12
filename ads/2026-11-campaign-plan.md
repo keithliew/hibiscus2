@@ -151,3 +151,14 @@ Not proposed: "price"/"prices" (buyers ask for villa prices too) and "resort" (p
 **Watch at the 16 Nov check:** if more ad-group-B leads turn out to be holiday seekers, consider pausing B (it took 47% of day-1 spend).
 
 **Added 11 Nov 2026 with Keith's yes ("Yes, add them"):** all 41 draft negatives above, campaign level, broad match, on "Search - Nov 2026 (RM1,000 total)". Negative list now 103 (95 campaign + 8 on ad group B). Google confirmed "Your negative keywords were created."
+
+## Ad copy rewrite (13 Nov 2026)
+
+A four-reviewer review (CoS: ChatGPT, Fable, Sonnet, Haiku) is in `ads/reviews/`. The rewrites are Fable's, and the exact lines are in `ads/reviews/2026-11-13-change-sheet.md`. Keith approved "Yes, all four" in the CoS chat, then "Yes, apply them" in this chat. Every line was length-checked and scanned for banned words before saving. Google reviewed each saved ad and found "no policy issues".
+
+- **Ads 2 and 3 (group A):** before the edit, they were already identical (same 15 headlines, 4 descriptions and sitelinks, no pins). Only the final URL and display path differed. Both now carry the same new "for sale" copy, with no pins. **The landing-page test restarts on 13 Nov 2026**; compare /villas/ and /rental-programme/ from this date only.
+- **Ad 1 (group B):** rewritten. Pinned to position 1: "Lexis Hibiscus 2: For Sale" and "Lexis Hibiscus 2 Villa Sales". Pinned to position 2: "Buying, Not Booking a Stay?", "Villas to Buy, Not Hotel Rooms" and "For Buyers, Not Hotel Guests". "Book" became "Arrange". The operator and programme headlines were removed. The editor's Ad Strength estimate moved from Poor to Average.
+- **Ad 5 (group C):** the keyword "hotel managed villa malaysia" was **paused**, not removed. The campaign-wide negative "hotel" blocked it, and a campaign negative can't be exempted for one ad group. Copy rewritten with "for sale" lines; "furnished" removed (not in approved-facts.md); description 1 uses "For villa owners: …" because the facts don't say whether joining the programme is automatic.
+- **Ad 4 (Chinese):** not changed. The new lines wait for a native-speaker check (see the change sheet).
+- Ad Strength in the list shows "Pending" for all four edited ads straight after saving; re-read it on the next check.
+- Keith, 13 Nov, after this was applied: replace "Buying, Not Booking a Stay?" (ad 1) because the word "booking" can draw hotel guests. Proposed replacement waiting for his yes.
