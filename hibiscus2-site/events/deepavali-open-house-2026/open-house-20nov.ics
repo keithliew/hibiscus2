@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hibiscus2.com//Open House//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:open-house-20nov-2026@hibiscus2.com
+DTSTAMP:20261113T000000Z
+DTSTART:20261120T050000Z
+DTEND:20261120T090000Z
+SUMMARY:Lexis Hibiscus 2 Property Open House
+LOCATION:Imperial Lexis Kuala Lumpur\, 7th floor\, 15 Jalan Kia Peng\, 50450 Kuala Lumpur
+DESCRIPTION:Deepavali Edition. Free admission. Drop in any time between 1pm and 5pm. Details: https://hibiscus2.com/events/deepavali-open-house-2026/
+URL:https://hibiscus2.com/events/deepavali-open-house-2026/
+END:VEVENT
+END:VCALENDAR
