@@ -222,4 +222,4 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
   - Check total spend.
 - [ ] **Stop rule (Mon evening):** 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
-- [ ] Keith to confirm the four event extras (presentation, one-to-one consultation, refreshments and treats, sweet gift) for approved-facts.md. They are live on the page since 13 Nov.
+- [x] Four event extras added to approved-facts.md §8 (13 Nov): organiser-arranged, source the organiser's 20 Nov poster.
