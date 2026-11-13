@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;position:relative;overflow:hidden;background:#2a0f45}
+.sky{position:absolute;left:0;right:0;top:0;background:linear-gradient(180deg,#b9a3d6 0%,#e7a6c0 35%,#f6b98e 70%,#f4c27a 100%)}
+.purple{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(180deg,#3b1561 0%,#2a0f45 100%)}
+.orn{position:absolute;background-size:cover}
+.brand{font-weight:800;letter-spacing:.3em;color:#7a1f3d}
+.title{font-family:'Playfair Display',serif;font-weight:700;color:#1d1a4a;line-height:1.05}
+.tag{font-family:'Playfair Display',serif;font-weight:700;color:#8d1b2c}
+.ed{font-weight:700;letter-spacing:.25em;color:#1d1a4a}
+.box{border:3px solid #d8b25a;border-radius:22px;background:linear-gradient(180deg,rgba(74,22,104,.95),rgba(42,15,69,.95));color:#fff;box-shadow:0 0 0 2px rgba(216,178,90,.35) inset}
+.gold{color:#f2cf7a}
+.pill{display:inline-block;background:linear-gradient(180deg,#f7dd8f,#d7a94a);color:#2a0f45;font-weight:800;border-radius:999px;letter-spacing:.03em;box-shadow:0 4px 0 #9c7426}
+.aimp{position:absolute;background:rgba(14,20,51,.72);color:#fff;font-weight:600;padding:5px 12px;border-radius:6px}
+.photo{position:absolute;background-size:cover;background-position:center;border:4px solid #d8b25a}
