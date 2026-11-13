@@ -33,6 +33,18 @@
 </script>
 <link rel="stylesheet" href="/css/site.css" />
 <style>
+.oh-strip{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:.25rem;padding:.9rem .5rem 1rem;background:linear-gradient(180deg,#341259,#2a0f45)}
+.oh-si{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.4rem;font-size:.68rem;line-height:1.25;color:#fff;font-weight:600;padding:0 .2rem}
+.oh-si+.oh-si{border-left:1px solid rgba(216,178,90,.45)}
+.oh-ring{width:2.3rem;height:2.3rem;border-radius:999px;border:2px solid #d8b25a;background:rgba(42,15,69,.75);display:flex;align-items:center;justify-content:center}
+.oh-ring svg{width:1.15rem;height:1.15rem}
+@media(min-width:1024px){
+ .oh-art{display:flex;flex-direction:column}
+ .oh-art picture{flex:1;position:relative}
+ .oh-strip{position:absolute;left:0;right:0;bottom:0;padding:3.2rem 2rem 1.1rem;background:linear-gradient(180deg,rgba(42,15,69,0) 0%,rgba(42,15,69,.7) 50%,rgba(42,15,69,.93) 100%)}
+ .oh-si{font-size:.85rem}
+ .oh-ring{width:3rem;height:3rem}.oh-ring svg{width:1.45rem;height:1.45rem}
+}
 .oh-banner{background:linear-gradient(180deg,#3d1463 0%,#2a0f45 100%)}
 .oh-art{position:relative;background:#2a0f45}
 .oh-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
@@ -97,7 +109,8 @@
           <source srcset="/images/open-house-hero-art.webp" type="image/webp" />
           <img src="/images/open-house-hero-art.jpg" width="1254" height="845" alt="Lexis Hibiscus 2 Property Open House, Light Up Your Future, Deepavali Edition: the hibiscus-shaped overwater villas off Port Dickson at sunset, with Deepavali lanterns" fetchpriority="high" decoding="async" />
         </picture>
-        <span class="absolute left-3 bottom-3 rounded bg-navy/75 text-white text-xs px-2 py-1">Artist's impression</span>
+        <span class="absolute right-3 top-3 lg:top-auto lg:bottom-[7.6rem] lg:right-3 rounded bg-navy/75 text-white text-xs px-2 py-1 z-10">Artist's impression</span>
+        <ul class="oh-strip" aria-label="At the open house"><li class="oh-si"><span class="oh-ring"><svg viewBox="0 0 24 24" fill="none" stroke="#f2cf7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><span>Exclusive Property Presentation</span></li><li class="oh-si"><span class="oh-ring"><svg viewBox="0 0 24 24" fill="none" stroke="#f2cf7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15 14.5c3 0 6 1.9 6 5.5"/></svg></span><span>One-to-One Consultation</span></li><li class="oh-si"><span class="oh-ring"><svg viewBox="0 0 24 24" fill="none" stroke="#f2cf7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 3v3M12 3v3"/></svg></span><span>Refreshments &amp; Festive Treats</span></li><li class="oh-si"><span class="oh-ring"><svg viewBox="0 0 24 24" fill="none" stroke="#f2cf7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M3 13h18M12 9v12"/><path d="M12 9c-2-4-6-4-6-1.5S9 9 12 9zM12 9c2-4 6-4 6-1.5S15 9 12 9z"/></svg></span><span>Complimentary Deepavali Sweet Gift</span></li></ul>
       </div>
       <div class="oh-panel relative overflow-hidden flex items-center">
         <div class="oh-orn oh-man" aria-hidden="true"></div>
