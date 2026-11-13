@@ -32,6 +32,21 @@
   };
 </script>
 <link rel="stylesheet" href="/css/site.css" />
+<style>
+.oh-hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#b9a3d6 0%,#e7a6c0 38%,#f6b98e 72%,#f4c27a 100%)}
+.oh-orn{position:absolute;pointer-events:none;background-size:contain;background-repeat:no-repeat}
+.oh-lan{top:0;right:0;width:72px;height:158px;background-image:url(/images/deepavali-lanterns.png);background-position:right top}
+.oh-hib{top:0;left:0;width:60px;height:86px;background-image:url(/images/deepavali-hibiscus.png)}
+@media(min-width:768px){.oh-lan{width:190px;height:418px}.oh-hib{width:140px;height:202px}}
+.oh-tag{font-family:'Playfair Display',Georgia,serif;color:#8d1b2c}
+.oh-title{color:#1d1a4a}
+.oh-card{background:linear-gradient(180deg,#4a1668,#2a0f45);border:2px solid #d8b25a;box-shadow:inset 0 0 0 1px rgba(216,178,90,.35)}
+.oh-pill{background:linear-gradient(180deg,#f7dd8f,#d7a94a);color:#2a0f45;box-shadow:0 3px 0 #9c7426}
+.oh-purple{background:linear-gradient(180deg,#3b1561,#2a0f45)}
+.oh-diyas{left:0;bottom:0;width:150px;height:121px;background-image:url(/images/deepavali-diyas.png)}
+.oh-man{right:0;bottom:0;width:150px;height:106px;background-image:url(/images/deepavali-mandala.png);background-position:right bottom}
+@media(min-width:768px){.oh-diyas{width:240px;height:193px}.oh-man{width:240px;height:170px}}
+</style>
 </head>
 <body class="bg-white text-ink" data-wa-text="Hi, I'd like to register for the Lexis Hibiscus 2 Property Open House on Fri 20 Nov (1pm to 5pm) at Imperial Lexis KL, 7th floor." data-wa-code="OH20" data-page="event-post">
 <!-- Google Tag Manager (noscript) -->
@@ -64,32 +79,48 @@
 </header>
 
 <main id="main">
-  <div class="relative">
-    <picture>
-      <img src="/images/render-type-a-2.jpg" width="1000" height="562" alt="A Lexis Hibiscus 2 villa: balcony with its own private pool and a sea view" class="w-full h-44 sm:h-72 md:h-96 object-cover" style="object-position:center 65%" fetchpriority="high" decoding="async" />
-    </picture>
-    <span class="absolute right-2 bottom-2 rounded bg-navy/75 text-white text-xs px-2 py-1">Artist's impression</span>
-  </div>
-
-  <article class="pt-6 pb-16 md:pt-10 md:pb-20">
-    <div class="max-w-3xl mx-auto px-5">
-      <p class="text-xs tracking-widest uppercase text-gold font-semibold">Deepavali Edition &middot; Free admission</p>
-      <h1 class="font-display text-navy text-3xl md:text-4xl font-semibold mt-2 mb-3">Lexis Hibiscus 2 Property Open House</h1>
-      <p class="font-semibold text-navy mb-4">2-bedroom villas with a private pool, for sale from RM860,000</p>
-      <p class="text-ink"><span aria-hidden="true">&#128197;</span> <strong><time datetime="2026-11-20T13:00+08:00">Friday 20 November 2026</time>, 1pm to 5pm</strong></p>
-      <p class="text-ink mt-1"><span aria-hidden="true">&#128205;</span> Imperial Lexis Kuala Lumpur, 7th floor, 15 Jalan Kia Peng, 50450 Kuala Lumpur</p>
-      <a class="mt-5 flex justify-center rounded-full bg-navy text-white font-semibold py-3.5 hover:bg-navy-deep sm:inline-flex sm:px-10" href="#register">Register Free</a>
-      <p class="text-sm text-ink/60 mt-2">Drop in any time between 1pm and 5pm.</p>
+  <!-- Festive hero (style of the 20 Nov event flyer) -->
+  <section class="oh-hero">
+    <div class="oh-orn oh-hib" aria-hidden="true"></div>
+    <div class="oh-orn oh-lan" aria-hidden="true"></div>
+    <div class="relative max-w-3xl mx-auto px-14 md:px-5 pt-8 pb-6 text-center">
+      <p class="text-xs md:text-sm tracking-[.3em] font-bold" style="color:#7a1f3d">LEXIS HIBISCUS 2 &middot; PORT DICKSON</p>
+      <h1 class="oh-title font-display font-semibold text-[2rem] md:text-6xl leading-tight mt-2">Property Open House</h1>
+      <p class="oh-tag text-2xl md:text-4xl font-semibold mt-1">Light Up Your Future</p>
+      <p class="text-xs md:text-sm tracking-[.25em] font-bold text-navy mt-1">&mdash; DEEPAVALI EDITION &mdash;</p>
+      <div class="oh-card rounded-2xl text-white mt-5 -mx-9 md:mx-auto max-w-md px-5 py-4 text-left space-y-2">
+        <p class="flex gap-3"><span aria-hidden="true">&#128197;</span><span><strong><time datetime="2026-11-20T13:00+08:00">Friday, 20 November 2026</time></strong></span></p>
+        <p class="flex gap-3"><span aria-hidden="true">&#128339;</span><span style="color:#f2cf7a" class="font-semibold">1pm to 5pm &middot; drop in any time</span></p>
+        <p class="flex gap-3"><span aria-hidden="true">&#128205;</span><span>Imperial Lexis Kuala Lumpur, 7th floor<br /><span class="text-white/70 text-sm">15 Jalan Kia Peng, 50450 Kuala Lumpur</span></span></p>
+      </div>
+      <a class="oh-pill inline-flex justify-center rounded-full font-bold text-lg px-10 py-3.5 mt-5" href="#register">Register Free</a>
+      <p class="text-sm text-navy/80 mt-2">Free admission &middot; villas for sale from RM860,000</p>
     </div>
-
-    <div class="max-w-3xl mx-auto px-5 mt-6">
-      <p class="rounded-xl bg-sand p-4 text-sm text-ink/80">A property sales event for people thinking about buying a villa at Lexis Hibiscus 2 in Port Dickson, whether you are ready now or just starting to look. This is not a hotel booking or a holiday offer.</p>
+    <div class="relative">
+      <img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 seen from above: overwater villas laid out like hibiscus flowers off Port Dickson" class="w-full h-40 md:h-72 object-cover" fetchpriority="high" decoding="async" />
+      <span class="absolute right-2 bottom-2 rounded bg-navy/75 text-white text-xs px-2 py-1">Artist's impression</span>
     </div>
+  </section>
 
-    <div class="max-w-3xl mx-auto px-5 mt-8">
-      <div id="register" class="rounded-xl border border-sand p-5 md:p-8 scroll-mt-24">
-        <h2 class="font-display text-navy text-2xl font-semibold mb-1">Register for the open house</h2>
-        <p class="text-sm text-ink/60 mb-4">Free admission. Two quick details and you are on the list.</p>
+  <!-- Overview + register -->
+  <section class="oh-purple relative overflow-hidden">
+    <div class="oh-orn oh-diyas" aria-hidden="true"></div>
+    <div class="oh-orn oh-man" aria-hidden="true"></div>
+    <div class="relative max-w-5xl mx-auto px-5 py-10 md:py-14 grid md:grid-cols-2 gap-8 items-start">
+      <div class="text-white">
+        <h2 class="font-display text-2xl md:text-3xl font-semibold">Celebrate Deepavali with us</h2>
+        <p class="mt-3 text-white/85">Join us for a festive afternoon at Imperial Lexis Kuala Lumpur and discover Lexis Hibiscus 2, the 5-star resort development in Port Dickson by Kuala Lumpur Metro Group, run by Lexis Hotel Group. See the 2-bedroom villas, each with its own private pool, and talk through your questions with our consultant over Deepavali treats.</p>
+        <p class="mt-3 text-white/85">Whether you are ready to buy or just curious, you are welcome. This is a property sales event, not a hotel booking or a holiday offer.</p>
+        <ul class="mt-5 grid grid-cols-2 gap-3 text-sm">
+          <li class="rounded-xl bg-white/10 px-3 py-2"><span class="block text-white/60 text-xs">Duration</span>4 hours, 1pm to 5pm</li>
+          <li class="rounded-xl bg-white/10 px-3 py-2"><span class="block text-white/60 text-xs">Format</span>In person</li>
+          <li class="rounded-xl bg-white/10 px-3 py-2"><span class="block text-white/60 text-xs">Admission</span>Free</li>
+          <li class="rounded-xl bg-white/10 px-3 py-2"><span class="block text-white/60 text-xs">Villas from</span>RM860,000</li>
+        </ul>
+      </div>
+      <div id="register" class="order-first md:order-none rounded-2xl bg-white p-5 md:p-7 scroll-mt-24 shadow-xl">
+        <h2 class="font-display text-navy text-2xl font-semibold mb-1">Register for free</h2>
+        <p class="text-sm text-ink/60 mb-4">Two quick details and you are on the guest list.</p>
         <form class="lead-form text-ink space-y-4" action="https://api.web3forms.com/submit" method="POST" data-lp-variant="open-house">
           <input type="hidden" name="access_key" value="94ad1e91-a32c-4338-b45d-9bc58ef6d385" />
           <input type="hidden" name="subject" value="LH2 Open House registration, Fri 20 Nov" />
@@ -142,51 +173,83 @@
           <p class="text-xs text-ink/50">Your details are used only for this event and to follow up on your enquiry. See our <a href="/privacy-policy/" class="underline">Privacy Policy</a>.</p>
         </form>
         <p class="text-sm text-ink/70 mt-4">Prefer WhatsApp? <a class="font-semibold text-navy underline" data-wa="event-post" href="#">Register on WhatsApp</a></p>
-        <details class="mt-4 text-sm text-ink/60">
+        <details class="mt-3 text-sm text-ink/60">
           <summary class="cursor-pointer">Saw the earlier invitation?</summary>
           <p class="mt-2">The open house has moved from 13 November to Friday 20 November 2026, 1pm to 5pm, at Imperial Lexis Kuala Lumpur, 7th floor.</p>
         </details>
       </div>
     </div>
+  </section>
 
-    <div class="max-w-3xl mx-auto px-5 mt-10 text-ink/70 space-y-4">
-      <h2 class="font-display text-navy text-2xl font-semibold">What to expect</h2>
-      <ul class="list-disc pl-5 space-y-1">
-          <li>A presentation of the Lexis Hibiscus 2 project</li>
-          <li>One-to-one consultations with our consultant</li>
-          <li>Refreshments and festive treats</li>
-          <li>A complimentary Deepavali sweet gift</li>
-        </ul>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-5 mt-10">
-      <h2 class="font-display text-navy text-2xl font-semibold mb-4">Lexis Hibiscus 2 at a glance</h2>
-      <dl class="grid sm:grid-cols-2 gap-x-8 gap-y-4 text-sm mb-10">
-        <div><dt class="font-semibold text-navy">Location</dt><dd class="text-ink/70">Port Dickson, Negeri Sembilan, next to the existing Lexis Hibiscus resort</dd></div>
-        <div><dt class="font-semibold text-navy">Developer</dt><dd class="text-ink/70">KL Metro Property Development Sdn. Bhd., a member of Kuala Lumpur Metro Group</dd></div>
-        <div><dt class="font-semibold text-navy">Operator</dt><dd class="text-ink/70">Lexis Hotel Group</dd></div>
-        <div><dt class="font-semibold text-navy">Villas</dt><dd class="text-ink/70">Type A Upper (872 sq ft) and Type A Lower (858 sq ft), each with 2 bedrooms, 2 bathrooms and a private pool</dd></div>
-        <div><dt class="font-semibold text-navy">Price</dt><dd class="text-ink/70">From RM860,000, subject to availability and official pricing</dd></div>
-        <div><dt class="font-semibold text-navy">Rental programme</dt><dd class="text-ink/70">15 years, run by Lexis Hotel Group</dd></div>
-        <div><dt class="font-semibold text-navy">Completion</dt><dd class="text-ink/70">Completion targeted 2029</dd></div>
-      </dl>
-      <p class="text-sm text-ink/60 -mt-4 mb-10">The existing Lexis Hibiscus resort next door holds two Guinness World Records: most swimming pools in a resort, and most overwater villas at a single resort (verified 14 October 2016).</p>
-    </div>
-
-    <div class="max-w-3xl mx-auto px-5">
-      <h2 class="font-display text-navy text-2xl font-semibold mb-2">Getting there</h2>
-      <p class="text-ink/70 mb-4">Imperial Lexis Kuala Lumpur, 7th floor, 15 Jalan Kia Peng, 50450 Kuala Lumpur</p>
-      <a class="inline-flex rounded-full border border-navy text-navy font-semibold px-6 py-3 hover:bg-sand" href="https://www.google.com/maps/search/?api=1&amp;query=Imperial+Lexis+Kuala+Lumpur%2C+15+Jalan+Kia+Peng" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
-
-      <div class="rounded-xl bg-sand p-5 mt-10">
-        <h2 class="font-display text-navy text-xl font-semibold mb-2">Can't make Friday?</h2>
-        <p class="text-ink/70 mb-4">Private viewings are available at Imperial Lexis Kuala Lumpur, Level 7, 10am to 4pm, by appointment.</p>
-        <a class="inline-flex items-center gap-2 rounded-full border border-navy text-navy font-semibold px-6 py-3 hover:bg-white" data-wa="event-viewing" href="#"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false" class="shrink-0"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>Arrange a viewing on WhatsApp</span></a>
+  <!-- What to expect -->
+  <section class="bg-sand">
+    <div class="max-w-5xl mx-auto px-5 py-12">
+      <p class="text-xs tracking-widest uppercase text-gold font-semibold text-center">At the open house</p>
+      <h2 class="font-display text-navy text-3xl font-semibold text-center mt-1">What to expect</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          <div class="rounded-2xl bg-white border border-gold/40 p-5 shadow-sm"><div class="text-3xl" aria-hidden="true">&#127968;</div><h3 class="font-semibold text-navy mt-2">Exclusive property presentation</h3><p class="text-sm text-ink/70 mt-1">See Lexis Hibiscus 2 presented: the villas, the resort and the 15-year rental programme.</p></div>
+          <div class="rounded-2xl bg-white border border-gold/40 p-5 shadow-sm"><div class="text-3xl" aria-hidden="true">&#129309;</div><h3 class="font-semibold text-navy mt-2">One-to-one consultation</h3><p class="text-sm text-ink/70 mt-1">Sit down with our consultant and ask about prices, villa types and how buying works.</p></div>
+          <div class="rounded-2xl bg-white border border-gold/40 p-5 shadow-sm"><div class="text-3xl" aria-hidden="true">&#9749;</div><h3 class="font-semibold text-navy mt-2">Refreshments &amp; festive treats</h3><p class="text-sm text-ink/70 mt-1">Enjoy refreshments and Deepavali treats while you browse.</p></div>
+          <div class="rounded-2xl bg-white border border-gold/40 p-5 shadow-sm"><div class="text-3xl" aria-hidden="true">&#127873;</div><h3 class="font-semibold text-navy mt-2">Complimentary Deepavali sweet gift</h3><p class="text-sm text-ink/70 mt-1">Every guest takes home a Deepavali sweet gift.</p></div>
       </div>
-
-      <a class="mt-10 flex justify-center rounded-full bg-navy text-white font-semibold py-3.5 hover:bg-navy-deep sm:inline-flex sm:px-10" href="#register">Register Free</a>
     </div>
-  </article>
+  </section>
+
+  <!-- The villas -->
+  <section>
+    <div class="max-w-5xl mx-auto px-5 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div class="relative">
+        <img src="/images/render-type-a-2.jpg" width="1000" height="562" alt="Villa balcony with its own private pool and a sea view" class="rounded-2xl w-full" loading="lazy" decoding="async" />
+        <span class="absolute right-2 bottom-2 rounded bg-navy/75 text-white text-xs px-2 py-1">Artist's impression</span>
+      </div>
+      <div>
+        <h2 class="font-display text-navy text-3xl font-semibold">The villas at a glance</h2>
+        <dl class="mt-4 space-y-3 text-sm">
+          <div><dt class="font-semibold text-navy">Villas</dt><dd class="text-ink/70">Type A Upper (872 sq ft) and Type A Lower (858 sq ft): 2 bedrooms, 2 bathrooms and a private pool in every villa</dd></div>
+          <div><dt class="font-semibold text-navy">Price</dt><dd class="text-ink/70">From RM860,000, subject to availability and official pricing</dd></div>
+          <div><dt class="font-semibold text-navy">Location</dt><dd class="text-ink/70">Port Dickson, Negeri Sembilan, next to the existing Lexis Hibiscus resort</dd></div>
+          <div><dt class="font-semibold text-navy">Developer</dt><dd class="text-ink/70">KL Metro Property Development Sdn. Bhd., a member of Kuala Lumpur Metro Group</dd></div>
+          <div><dt class="font-semibold text-navy">Rental programme</dt><dd class="text-ink/70">15 years, run by Lexis Hotel Group</dd></div>
+          <div><dt class="font-semibold text-navy">Completion</dt><dd class="text-ink/70">Completion targeted 2029</dd></div>
+        </dl>
+        <p class="text-xs text-ink/60 mt-4">The existing Lexis Hibiscus resort next door holds two Guinness World Records: most swimming pools in a resort, and most overwater villas at a single resort (verified 14 October 2016).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="bg-sand">
+    <div class="max-w-5xl mx-auto px-5 py-12 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="font-display text-navy text-3xl font-semibold">Location</h2>
+        <p class="mt-3 text-ink/80"><strong>Imperial Lexis Kuala Lumpur, 7th floor</strong><br />15 Jalan Kia Peng, 50450 Kuala Lumpur</p>
+        <div class="flex flex-wrap gap-2 mt-4 text-sm">
+          <a class="rounded-full border border-navy text-navy font-semibold px-4 py-2 hover:bg-white" href="https://www.google.com/maps/dir/?api=1&amp;destination=Imperial+Lexis+Kuala+Lumpur%2C+15+Jalan+Kia+Peng&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">Driving</a>
+          <a class="rounded-full border border-navy text-navy font-semibold px-4 py-2 hover:bg-white" href="https://www.google.com/maps/dir/?api=1&amp;destination=Imperial+Lexis+Kuala+Lumpur%2C+15+Jalan+Kia+Peng&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">Public transport</a>
+          <a class="rounded-full border border-navy text-navy font-semibold px-4 py-2 hover:bg-white" href="https://www.google.com/maps/dir/?api=1&amp;destination=Imperial+Lexis+Kuala+Lumpur%2C+15+Jalan+Kia+Peng&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">Walking</a>
+        </div>
+        <div class="rounded-2xl bg-white p-5 mt-8">
+          <p class="text-xs tracking-widest uppercase text-gold font-semibold">Organised by</p>
+          <div class="flex items-center gap-4 mt-3">
+            <img src="/images/joe-wong.png" width="64" height="64" alt="Joe Wong" class="w-16 h-16 rounded-full object-cover bg-sand" loading="lazy" />
+            <div class="text-sm"><p class="font-semibold text-navy">Joe Wong, REN 51947</p><p class="text-ink/70">Summerfield Property (M) Sdn. Bhd.</p></div>
+          </div>
+          <a class="mt-4 inline-flex items-center gap-2 rounded-full bg-navy text-white font-semibold px-5 py-2.5 text-sm" data-wa="event-organiser" href="#"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false" class="shrink-0"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>Contact on WhatsApp</span></a>
+        </div>
+      </div>
+      <iframe title="Map: Imperial Lexis Kuala Lumpur, 15 Jalan Kia Peng" src="https://www.google.com/maps?q=Imperial+Lexis+Kuala+Lumpur,+15+Jalan+Kia+Peng,+50450+Kuala+Lumpur&amp;output=embed" class="w-full h-72 md:h-full min-h-[18rem] rounded-2xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Can't make it + final CTA -->
+  <section class="oh-purple text-white text-center">
+    <div class="max-w-3xl mx-auto px-5 py-12">
+      <p class="oh-tag text-3xl" style="color:#f2cf7a">Light Up Your Future</p>
+      <h2 class="font-display text-2xl font-semibold mt-1">See you on Friday, 20 November</h2>
+      <a class="oh-pill inline-flex justify-center rounded-full font-bold text-lg px-10 py-3.5 mt-5" href="#register">Register Free</a>
+      <p class="text-white/75 text-sm mt-6">Can't make Friday? Private viewings are available at Imperial Lexis Kuala Lumpur, Level 7, 10am to 4pm, by appointment. <a class="underline font-semibold text-white" data-wa="event-viewing" href="#">Arrange a viewing on WhatsApp</a></p>
+    </div>
+  </section>
 </main>
 
 <footer class="bg-navy text-white/80">
