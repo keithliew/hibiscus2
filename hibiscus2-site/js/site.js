@@ -54,7 +54,7 @@
   var PAGE_CODES = { "": "HOME", villas: "VIL", "rental-programme": "RP", contact: "CON", about: "ABT", news: "NEWS", events: "EVT", "lexis-track-record": "TR" };
   var pathParts = window.location.pathname.split("/").filter(Boolean);
   var lang = ["zh", "ms", "ja"].indexOf(pathParts[0]) >= 0 ? pathParts.shift() : "en";
-  var pageCode = PAGE_CODES[pathParts[0] || ""] || "OTH";
+  var pageCode = document.body.getAttribute("data-wa-code") || PAGE_CODES[pathParts[0] || ""] || "OTH";
   var utm = {};
   try {
     utm = JSON.parse(sessionStorage.getItem("lh2_utm") || "{}");
