@@ -212,3 +212,14 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
 - [ ] After 20 Nov: mark the event page and listings as past (or write the recap post, Keith's call).
 - [x] Imperial Lexis KL showroom hours: 10am to 4pm, by appointment only (Keith, 11 Nov).
 - [x] Google Ads copy moved to Imperial Lexis KL (11 Nov). Still says Bukit Bintang: "Contact Us" sitelink on the paused PMax Campaign #1 only.
+
+## 12. Open house Display campaign checks (ID 24461928203), handed over 13 Nov 2026
+
+- [ ] **Mon 16 Nov evening:**
+  - Compare the click rate of the original ad 831439508058 (event banner) with the challenger 831442878885 (villa + price, utm_content=villa-price).
+  - In GA4, compare form starts and lead_form_submit (lp_variant open-house) by utm_content.
+  - Count WhatsApp messages ending "OH20-EN-AD".
+  - Check total spend.
+- [ ] **Stop rule (Mon evening):** 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
+- [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
+- [ ] Keith to confirm the four event extras (presentation, one-to-one consultation, refreshments and treats, sweet gift) for approved-facts.md. They are live on the page since 13 Nov.
