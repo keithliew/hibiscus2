@@ -1,0 +1,11 @@
+{
+  "name": "Lexis Hibiscus 2",
+  "short_name": "Hibiscus 2",
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0e2233",
+  "background_color": "#ffffff",
+  "display": "browser"
+}
