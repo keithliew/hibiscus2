@@ -170,3 +170,10 @@ Keith, 13 Nov: the agent's Eventbrite and Eventsize listings got 17 registration
 - Banners: `ads/creative/2026-11-open-house/` (1200x1200 and 1200x628, built from the Lexis Hibiscus 2 render, labelled "Artist's impression", without the "change of date" notice).
 - Landing page: /events/deepavali-open-house-2026/, live 13 Nov with Keith's yes. It has a registration form, and a registration counts as lead_form_submit with lp_variant open-house. WhatsApp messages carry Ref OH20-EN-AD/WEB.
 - Eventbrite listing (agent's): it still says Pavilion Tower, Bukit Bintang, drop-in until 4pm, and "investment information". Flagged to Keith; the agent should fix it there.
+- **Published 13 Nov 2026** (in Keith's Chrome; the in-app pane shows an ad-blocker wall for Display): "Display - Open House 20 Nov (RM300 total)", campaign ID 24461928203, objective Leads.
+  - Dates 13 to 20 Nov. RM37/day, so at most about RM296 over 8 days. Bidding: Maximise clicks, because a new campaign has no conversion history.
+  - Locations: Federal Territory of Kuala Lumpur and Selangor, presence only. Languages: English, Malay, Chinese (simplified).
+  - Audiences: in-market Residential Properties (For Sale), Houses, Apartments and New Apartments (For Sale). Optimised targeting is OFF.
+  - Excluded: All Apps (mobileappcategory::69500). The campaign is not otherwise limited to websites.
+  - One responsive display ad: the two banners. Headlines: Property Open House, 20 Nov / Lexis Hibiscus 2 Open House / Free Entry, Imperial Lexis KL / Villas for Sale From RM860,000 / Fri 20 Nov, 1pm to 5pm. Long headline: "Lexis Hibiscus 2 Property Open House: Fri 20 Nov, 1pm to 5pm at Imperial Lexis KL". Two descriptions, as in the creative notes.
+  - Status after publishing: Eligible (Learning); the ad is under Google review.
