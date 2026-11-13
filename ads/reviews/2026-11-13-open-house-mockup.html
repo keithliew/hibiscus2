@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Open House Mockup (proposal)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{--navy:#0e2233;--gold:#c9a96a;--sand:#f6f2ea;--ink:#1b2733;--muted:#5b6670}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:var(--ink);background:#e9e6df}
+.phone{max-width:390px;margin:0 auto;background:#fff;min-height:100vh;padding-bottom:84px;position:relative}
+.note{max-width:390px;margin:0 auto;background:#fff7d6;color:#5a4a00;font-size:12px;padding:8px 16px;border-bottom:1px solid #e8d98a}
+header{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid var(--sand)}
+header b{font-family:'Playfair Display',serif;color:var(--navy);font-size:18px}
+.hero{position:relative;height:210px;background:url(../../hibiscus2-site/images/render-type-a-2.jpg) center 65%/cover}
+.ai{position:absolute;right:8px;bottom:8px;background:rgba(14,34,51,.75);color:#fff;font-size:11px;padding:3px 8px;border-radius:4px}
+.offer{padding:18px 16px 8px}
+.eyebrow{font-size:11px;letter-spacing:.14em;color:var(--gold);font-weight:700}
+h1{font-family:'Playfair Display',serif;color:var(--navy);font-size:26px;line-height:1.15;margin:6px 0 10px}
+.price{font-weight:700;color:var(--navy);font-size:16px;margin-bottom:10px}
+.line{font-size:15px;margin:4px 0;display:flex;gap:8px}
+.btn{display:block;text-align:center;background:var(--navy);color:#fff;font-weight:700;border-radius:999px;padding:14px;margin-top:14px;text-decoration:none;border:0;width:100%;font-size:16px;font-family:inherit}
+.small{font-size:13px;color:var(--muted);margin-top:8px}
+.who{background:var(--sand);margin:14px 0 0;padding:14px 16px;font-size:14px;color:var(--ink)}
+.card{margin:16px;border:1px solid #e3dccd;border-radius:14px;padding:18px}
+h2{font-family:'Playfair Display',serif;color:var(--navy);font-size:21px;margin-bottom:12px}
+label{display:block;font-size:14px;font-weight:600;margin:12px 0 4px}
+input,select{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #d9d1bf;border-radius:10px;background:#fff}
+.row{display:flex;gap:8px}.row select{width:96px}
+.host{display:flex;gap:12px;align-items:center;margin-top:16px;font-size:13px;color:var(--muted)}
+.host img{width:48px;height:48px;border-radius:50%;object-fit:cover;background:var(--sand)}
+.fine{font-size:12px;color:var(--muted);margin-top:12px}
+a.u{color:var(--navy);font-weight:600}
+section{padding:8px 16px 14px}
+ul{list-style:none}li{padding:6px 0;border-bottom:1px solid var(--sand);font-size:14px}
+.ins{color:#9b2c1c;font-style:italic}
+dl div{padding:6px 0;font-size:14px}dt{font-weight:600;color:var(--navy)}dd{color:var(--muted)}
+.ghost{display:block;text-align:center;border:1px solid var(--navy);color:var(--navy);font-weight:700;border-radius:999px;padding:12px;margin-top:10px;text-decoration:none}
+.sticky{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:390px;background:var(--navy);padding:10px 12px;display:flex;gap:8px}
+.sticky a{flex:1;text-align:center;border-radius:999px;padding:12px;font-weight:700;text-decoration:none;font-size:15px}
+.s1{background:var(--gold);color:var(--navy)}.s2{border:1px solid #fff;color:#fff}
+details{font-size:13px;color:var(--muted);margin-top:12px}
+</style>
+</head>
+<body>
+<div class="note">Proposal mockup, 13 Nov 2026. Not live. Built from the Fable and ChatGPT reviews. Red italic text needs Keith's confirmation before use.</div>
+<div class="phone">
+<header><b>Lexis Hibiscus 2</b><span style="font-size:22px;color:var(--navy)">&#9776;</span></header>
+
+<div class="hero"><span class="ai">Artist's impression</span></div>
+
+<div class="offer">
+  <p class="eyebrow">DEEPAVALI EDITION · FREE ADMISSION</p>
+  <h1>Lexis Hibiscus 2 Property Open House</h1>
+  <p class="price">2-bedroom villas with a private pool, for sale from RM860,000</p>
+  <p class="line">&#128197; <strong>Friday 20 November 2026, 1pm to 5pm</strong></p>
+  <p class="line">&#128205; Imperial Lexis Kuala Lumpur, 7th floor, 15 Jalan Kia Peng</p>
+  <a class="btn" href="#register">Register Free</a>
+  <p class="small">Drop in any time between 1pm and 5pm.</p>
+</div>
+
+<div class="who">A property sales event for people thinking about buying a villa at Lexis Hibiscus 2 in Port Dickson, whether you are ready now or just starting to look. This is not a hotel booking or a holiday offer.</div>
+
+<form class="card" id="register" onsubmit="return false">
+  <h2>Register for the open house</h2>
+  <label for="n">Name</label>
+  <input id="n" autocomplete="name" />
+  <label for="p">WhatsApp number</label>
+  <div class="row"><select aria-label="Country code"><option>+60</option><option>+65</option><option>+852</option><option>+86</option><option>Other</option></select><input id="p" type="tel" placeholder="12 345 6789" /></div>
+  <label for="t">When will you arrive? <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+  <select id="t"><option selected>Not sure yet</option><option>1pm to 2pm</option><option>2pm to 3pm</option><option>3pm to 4pm</option><option>4pm to 5pm</option><option>I can't come on Friday. Contact me about another day.</option></select>
+  <button class="btn" type="submit">Register Free</button>
+  <p class="small">Our consultant will confirm your time on WhatsApp.</p>
+  <div class="host"><img src="../../hibiscus2-site/images/joe-wong.png" alt="Joe Wong" /><span>Your host: <strong>Joe Wong</strong>, REN 51947<br />Summerfield Property (M) Sdn. Bhd.</span></div>
+  <p class="fine">Your details are used only for this event and to follow up on your enquiry. See our <a class="u" href="#">Privacy Policy</a>.</p>
+  <p class="fine">Prefer WhatsApp? <a class="u" href="#">Register on WhatsApp</a></p>
+  <details><summary>Saw the earlier invitation?</summary>The open house has moved from 13 November to Friday 20 November 2026, 1pm to 5pm, at Imperial Lexis Kuala Lumpur, 7th floor.</details>
+</form>
+
+<section>
+  <h2>What to expect</h2>
+  <ul>
+    <li>A presentation of the Lexis Hibiscus 2 project</li>
+    <li>One-to-one consultations with our consultant</li>
+    <li>Refreshments and festive treats</li>
+    <li>A complimentary Deepavali sweet gift</li>
+  </ul>
+  <p class="small ins">[INSERT: confirm these four items from the 20 Nov poster and add them to approved-facts.md. They are on the live page today but not yet in the facts file.]</p>
+</section>
+
+<section>
+  <h2>The villas at a glance</h2>
+  <dl>
+    <div><dt>Villas</dt><dd>Type A Upper 872 sq ft, Type A Lower 858 sq ft. 2 bedrooms, 2 bathrooms and a private pool in every villa</dd></div>
+    <div><dt>Price</dt><dd>From RM860,000, subject to availability and official pricing</dd></div>
+    <div><dt>Location</dt><dd>Port Dickson, Negeri Sembilan, next to the existing Lexis Hibiscus resort</dd></div>
+    <div><dt>Developer</dt><dd>KL Metro Property Development Sdn. Bhd., a member of Kuala Lumpur Metro Group</dd></div>
+    <div><dt>Operator</dt><dd>Lexis Hotel Group, under a 15-year rental programme</dd></div>
+    <div><dt>Completion</dt><dd>Completion targeted 2029</dd></div>
+  </dl>
+  <p class="small">The existing Lexis Hibiscus resort next door holds two Guinness World Records: most swimming pools in a resort, and most overwater villas at a single resort (verified 14 October 2016).</p>
+</section>
+
+<section>
+  <h2>Getting there</h2>
+  <p style="font-size:14px">Imperial Lexis Kuala Lumpur, 7th floor, 15 Jalan Kia Peng, 50450 Kuala Lumpur</p>
+  <a class="ghost" href="#">Open in Google Maps</a>
+  <p class="small ins">[INSERT: parking and nearest station, confirmed by the agent]</p>
+</section>
+
+<section style="background:var(--sand);margin:8px 16px;border-radius:14px;padding:16px">
+  <h2 style="font-size:18px">Can't make Friday?</h2>
+  <p style="font-size:14px">Private viewings are available at Imperial Lexis Kuala Lumpur, Level 7, 10am to 4pm, by appointment.</p>
+  <a class="ghost" href="#">Arrange a viewing on WhatsApp</a>
+</section>
+
+<section><a class="btn" href="#register">Register Free</a></section>
+<p class="small" style="padding:0 16px">Footer unchanged: REN and agency credentials, disclaimers, privacy.</p>
+
+<div class="sticky"><a class="s1" href="#register">Register Free</a><a class="s2" href="#">WhatsApp</a></div>
+</div>
+</body>
+</html>
