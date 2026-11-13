@@ -163,3 +163,10 @@ A four-reviewer review (CoS: ChatGPT, Fable, Sonnet, Haiku) is in `ads/reviews/`
 - **Ad 4 (Chinese):** not changed. The new lines wait for a native-speaker check (see the change sheet).
 - Ad Strength in the list shows "Pending" for all four edited ads straight after saving; re-read it on the next check.
 - Keith, 13 Nov, after this was applied: the word "booking" can draw hotel guests. With his yes ("Yes, apply both"), ad 1 headline "Buying, Not Booking a Stay?" became "For Villa Buyers Only" (still pinned to position 2), and description "Not hotel bookings. We sell villas at Lexis Hibiscus 2, run by Lexis Hotel Group." became "For villa buyers only. We sell new villas at Lexis Hibiscus 2, run by Lexis Hotel Group." Saved with no policy issues. No line in ad 1 now contains "book".
+
+## Open house Display campaign (13 Nov 2026)
+
+Keith, 13 Nov: the agent's Eventbrite and Eventsize listings got 17 registrations, so promote the open house with Display banners too. Keith approved **RM300 in total** ("Yes, RM300 total"), with the campaign ending 20 Nov.
+- Banners: `ads/creative/2026-11-open-house/` (1200x1200 and 1200x628, built from the Lexis Hibiscus 2 render, labelled "Artist's impression", without the "change of date" notice).
+- Landing page: /events/deepavali-open-house-2026/, live 13 Nov with Keith's yes. It has a registration form, and a registration counts as lead_form_submit with lp_variant open-house. WhatsApp messages carry Ref OH20-EN-AD/WEB.
+- Eventbrite listing (agent's): it still says Pavilion Tower, Bukit Bintang, drop-in until 4pm, and "investment information". Flagged to Keith; the agent should fix it there.

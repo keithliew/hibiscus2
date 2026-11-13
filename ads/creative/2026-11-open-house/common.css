@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@500;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;color:#fff;overflow:hidden}
+.brand{font-family:Inter;font-weight:800;letter-spacing:.32em;color:#e7d9bd}
+.title{font-family:'Playfair Display',serif;font-weight:700;line-height:1.05}
+.sub{color:#e7d9bd;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.row{display:flex;gap:14px;align-items:baseline}
+.k{color:#c9a96a;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.free{display:inline-block;background:#c9a96a;color:#0e2233;font-weight:800;border-radius:999px;letter-spacing:.06em}
+.ai{position:absolute;color:rgba(255,255,255,.75);font-size:15px}
