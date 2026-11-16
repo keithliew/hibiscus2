@@ -220,9 +220,14 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
   - GA4 landing page /events/deepavali-open-house-2026/: 693 sessions (326 villa-price, 366 with no utm_content, which includes non-ad visits). Form starts on that page: 17 (8 villa-price, 9 none). lead_form_submit: 2 (1 villa-price, 1 none). Form errors: 29 events from 11 users (12 villa-price, 17 none); worth a look at the form.
   - lp_variant is not a registered custom dimension in GA4, so the split used page path + utm_content instead.
   - Spend RM145.32 of RM300 (campaign live since 13 Nov, about RM37 a day). On track for about RM293 by Fri 20 Nov.
-  - WhatsApp enquiries (Keith, via the open house review chat, 16 Nov): 2 people, Sun 15 Nov about 1am and Mon 16 Nov 5:48pm. Neither replied when Keith asked for a full name. Ref codes (Keith, 16 Nov): Mon 5:48pm ended "Ref: OH20-EN-AD" (Display ad); Sun ~1am source unknown (sender's messages disappear after 24 hours).
+  - Leads (Keith's corrected list, 16 Nov; in the lead-quality sheet rows 4 to 7): open house tally is 1 form + 1 OH20-EN-AD WhatsApp + 1 unknown, none responsive yet.
+    - Fri 13 or Sat 14 Nov about 1am: WhatsApp, ref unknown (sender's messages disappear after 24 hours). Not responsive.
+    - Sun 15 Nov 05:50: open house FORM registration (Web3Forms, lp_variant open-house, utm_campaign display-open-house-20nov, so Display ad). Not responsive.
+    - Mon 16 Nov 5:48pm: WhatsApp Ref OH20-EN-AD (Display). Did not reply when asked for full name.
+    - Not open house: Wed 11 Nov 5:47pm WhatsApp VIL-EN-AD (Search), junk, holiday-stay seeker (sheet row 4).
+    - Open question: GA4 shows 2 lead_form_submit on the open house page (1 villa-price, 1 no utm_content) but Keith has 1 registration email; asked whether a second arrived.
   - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
-- [x] **Stop rule (Mon evening), not triggered 16 Nov** (2 form registrations + 2 WhatsApp enquiries): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
+- [x] **Stop rule (Mon evening), not triggered 16 Nov** (1 confirmed form registration + 1 OH20-EN-AD WhatsApp): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
   - Context for Thu 19 and Mon 23: Ads changes on 16 Nov (Keith's yes; see ads/2026-11-campaign-plan.md "Mid-run fixes (16 Nov 2026)"). 60 junk Display placements excluded (laifeed.com alone 153 clicks), so expect fewer, dearer Display clicks. Treat Display "conversions" as accidental WhatsApp taps; count only real WhatsApp messages and form registrations.
 - [x] Open house form errors fixed, live 16 Nov (a56b6f7, Keith's yes). Cause: 9 of 11 users were in Android in-app browsers, which hide the "fill in this field" bubble, so empty Register taps did nothing visible. site.js now shows its own error under each field on all 13 lead-form pages; h2_form_submit fires only on a real send. For Thu 19: h2_form_error still counts Register taps with invalid fields.
