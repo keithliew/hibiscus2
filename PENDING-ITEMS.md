@@ -215,11 +215,13 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
 
 ## 12. Open house Display campaign checks (ID 24461928203), handed over 13 Nov 2026
 
-- [ ] **Mon 16 Nov evening:**
-  - Compare the click rate of the original ad 831439508058 (event banner) with the challenger 831442878885 (villa + price, utm_content=villa-price).
-  - In GA4, compare form starts and lead_form_submit (lp_variant open-house) by utm_content.
-  - Count WhatsApp messages ending "OH20-EN-AD".
-  - Check total spend.
+- [x] **Mon 16 Nov evening** (checked 16 Nov, Ads "All time" to 16 Nov, GA4 9 to 16 Nov; Ads reporting lags a few hours):
+  - Original 831439508058: 6,407 impressions, 451 clicks, 7.04% click rate, RM80.88, 38 WhatsApp-click conversions, 0 lead_form_submit. Challenger 831442878885: 5,270 impressions, 408 clicks, 7.74% click rate, RM64.44, 39 WhatsApp-click conversions, 1 lead_form_submit. Challenger leads on click rate by 0.7 points; not a meaningful gap yet (about 1.4 standard errors).
+  - GA4 landing page /events/deepavali-open-house-2026/: 693 sessions (326 villa-price, 366 with no utm_content, which includes non-ad visits). Form starts on that page: 17 (8 villa-price, 9 none). lead_form_submit: 2 (1 villa-price, 1 none). Form errors: 29 events from 11 users (12 villa-price, 17 none); worth a look at the form.
+  - lp_variant is not a registered custom dimension in GA4, so the split used page path + utm_content instead.
+  - Spend RM145.32 of RM300 (campaign live since 13 Nov, about RM37 a day). On track for about RM293 by Fri 20 Nov.
+  - OH20-EN-AD WhatsApp count: Keith's own count, asked for in the report.
+  - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
 - [ ] **Stop rule (Mon evening):** 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
 - [x] Four event extras added to approved-facts.md §8 (13 Nov): organiser-arranged, source the organiser's 20 Nov poster.
