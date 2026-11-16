@@ -220,7 +220,7 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
   - GA4 landing page /events/deepavali-open-house-2026/: 693 sessions (326 villa-price, 366 with no utm_content, which includes non-ad visits). Form starts on that page: 17 (8 villa-price, 9 none). lead_form_submit: 2 (1 villa-price, 1 none). Form errors: 29 events from 11 users (12 villa-price, 17 none); worth a look at the form.
   - lp_variant is not a registered custom dimension in GA4, so the split used page path + utm_content instead.
   - Spend RM145.32 of RM300 (campaign live since 13 Nov, about RM37 a day). On track for about RM293 by Fri 20 Nov.
-  - WhatsApp enquiries (Keith, via the open house review chat, 16 Nov): 2 people, Sun 15 Nov about 1am and Mon 16 Nov 5:48pm. Neither replied when Keith asked for a full name. Ref codes not yet known (OH20-EN-AD = Display ad, OH20-EN-WEB = site); Keith to check.
+  - WhatsApp enquiries (Keith, via the open house review chat, 16 Nov): 2 people, Sun 15 Nov about 1am and Mon 16 Nov 5:48pm. Neither replied when Keith asked for a full name. Ref codes (Keith, 16 Nov): Mon 5:48pm ended "Ref: OH20-EN-AD" (Display ad); Sun ~1am source unknown (sender's messages disappear after 24 hours).
   - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
 - [x] **Stop rule (Mon evening), not triggered 16 Nov** (2 form registrations + 2 WhatsApp enquiries): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
