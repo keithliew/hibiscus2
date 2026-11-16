@@ -225,7 +225,7 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
     - Sun 15 Nov 05:50: open house FORM registration (Web3Forms, lp_variant open-house, utm_campaign display-open-house-20nov, so Display ad). Not responsive.
     - Mon 16 Nov 5:48pm: WhatsApp Ref OH20-EN-AD (Display). Did not reply when asked for full name.
     - Not open house: Wed 11 Nov 5:47pm WhatsApp VIL-EN-AD (Search), junk, holiday-stay seeker (sheet row 4).
-    - Second GA4 lead_form_submit: 13 Nov 17:01 (google/cpc, mobile, Cyberjaya, Chrome) has NO Web3Forms email (Gmail incl. spam/trash checked). Count it as not a lead until known: either a phone test by Keith or Joe, or caught by the Web3Forms spam filter (check Spam in the Web3Forms dashboard). The 15 Nov 05:50 one is the real registration.
+    - Second GA4 lead_form_submit (13 Nov 17:01, Cyberjaya): test submission, not a lead (Keith, 16 Nov). Closed.
   - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
 - [x] **Stop rule (Mon evening), not triggered 16 Nov** (1 confirmed form registration + 1 OH20-EN-AD WhatsApp): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
