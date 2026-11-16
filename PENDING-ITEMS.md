@@ -224,4 +224,6 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
   - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
 - [x] **Stop rule (Mon evening), not triggered 16 Nov** (2 form registrations + 2 WhatsApp enquiries): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
+  - Context for Thu 19 and Mon 23: Ads changes on 16 Nov (Keith's yes; see ads/2026-11-campaign-plan.md "Mid-run fixes (16 Nov 2026)"). 60 junk Display placements excluded (laifeed.com alone 153 clicks), so expect fewer, dearer Display clicks. Treat Display "conversions" as accidental WhatsApp taps; count only real WhatsApp messages and form registrations.
+- [ ] Open house form: 29 form_error events from 11 users (GA4, 9 to 16 Nov). Find which field fails; fix on staging first.
 - [x] Four event extras added to approved-facts.md §8 (13 Nov): organiser-arranged, source the organiser's 20 Nov poster.
