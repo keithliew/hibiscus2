@@ -83,3 +83,7 @@ h1, h2, h3, .font-display { font-family: "Playfair Display", Georgia, serif; }
   .meter-fill, .stars-fill { transform: scaleX(var(--v)) !important; transition: none !important; }
   .tl-line, .tl-item { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+
+/* Lead-form errors (shown by site.js under each field) */
+.field-error { color: #b42318; font-size: .875rem; margin-top: .375rem; }
+.lead-form [aria-invalid="true"] { border-color: #b42318; }

@@ -241,26 +241,78 @@
         /* non-fatal */
       }
     }
-    form.addEventListener("submit", function (e) {
-      var phone = form.querySelector('input[name="whatsapp_number"]');
-      if (phone && phone.value.replace(/\D/g, "").length < 7) {
-        e.preventDefault();
-        var invalidPhoneText = form.getAttribute("data-invalid-phone-text") || "Enter a valid WhatsApp number so our consultant can reach you.";
-        phone.setCustomValidity(invalidPhoneText);
-        phone.reportValidity();
-        return;
-      }
-      var honeypot = form.querySelector('input[name="botcheck"]');
-      if (honeypot && honeypot.checked) {
-        e.preventDefault();
-        return;
-      }
-    });
-    var phoneInput = form.querySelector('input[name="whatsapp_number"]');
-    if (phoneInput) {
-      phoneInput.addEventListener("input", function () {
-        phoneInput.setCustomValidity("");
-      });
-    }
   }
+
+  // ---------- Lead forms: our own error messages under each field ----------
+  // Android in-app browsers (where most Display ad clicks open) often hide the
+  // browser's "please fill out this field" bubble, so a tap on Register looked
+  // like it did nothing. This runs before every other submit listener, so the
+  // funnel only records h2_form_submit when the form really sends.
+  var leadForms = [].slice.call(document.querySelectorAll("form.lead-form"));
+  function fieldsOf(f) {
+    return [].slice.call(f.querySelectorAll("input, select, textarea")).filter(function (el) {
+      return el.type !== "hidden" && el.name !== "botcheck";
+    });
+  }
+  function errorAnchor(el) {
+    return el.parentNode.classList.contains("flex") ? el.parentNode : el;
+  }
+  function showError(el, msg) {
+    var id = (el.id || el.name) + "-error";
+    var p = document.getElementById(id);
+    if (!p) {
+      p = document.createElement("p");
+      p.id = id;
+      p.className = "field-error";
+      p.setAttribute("role", "alert");
+      errorAnchor(el).insertAdjacentElement("afterend", p);
+    }
+    p.textContent = msg;
+    el.setAttribute("aria-invalid", "true");
+    el.setAttribute("aria-describedby", id);
+  }
+  function clearError(el) {
+    var p = document.getElementById((el.id || el.name) + "-error");
+    if (p) p.remove();
+    el.removeAttribute("aria-invalid");
+    el.removeAttribute("aria-describedby");
+  }
+  function phoneMessage(f, phone) {
+    return phone.value.replace(/\D/g, "").length < 7
+      ? f.getAttribute("data-invalid-phone-text") || "Enter a valid WhatsApp number so our consultant can reach you."
+      : "";
+  }
+  leadForms.forEach(function (f) {
+    f.noValidate = true;
+    fieldsOf(f).forEach(function (el) {
+      el.addEventListener("input", function () {
+        if (el.name === "whatsapp_number") el.setCustomValidity("");
+        if (el.getAttribute("aria-invalid")) clearError(el);
+      });
+    });
+  });
+  window.addEventListener(
+    "submit",
+    function (e) {
+      var f = e.target;
+      if (leadForms.indexOf(f) === -1) return;
+      var phone = f.querySelector('input[name="whatsapp_number"]');
+      if (phone) phone.setCustomValidity(phoneMessage(f, phone));
+      var bad = fieldsOf(f).filter(function (el) {
+        return !el.checkValidity();
+      });
+      var honeypot = f.querySelector('input[name="botcheck"]');
+      if (!bad.length && !(honeypot && honeypot.checked)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      bad.forEach(function (el) {
+        showError(el, el.validationMessage);
+      });
+      if (bad.length) {
+        bad[0].scrollIntoView({ block: "center", behavior: "smooth" });
+        bad[0].focus({ preventScroll: true });
+      }
+    },
+    true
+  );
 })();
