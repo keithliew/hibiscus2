@@ -213,3 +213,7 @@ Review in the open house review chat (Ads "All time" to 16 Nov). Keith approved:
 - **Paused** the keyword [lexis hibiscus port dickson] (ad group B, exact): RM135 and 77 clicks on the existing hotel's name. The other B keywords stay on.
 - **Ad group A negatives (exact):** [lexis hibiscus], [hibiscus port dickson], [port dickson hibiscus]. The phrase keyword "lexis hibiscus 2.0" was matching these hotel searches as close variants, which cost about RM71.
 - No change to C or D (too little search volume to act on). Compare the /villas/ and /rental-programme/ ads in group A at the Mon 23 Nov check.
+
+## Second junk Search lead (17 Nov 2026)
+
+WhatsApp "Ref: RP-EN-AD" at 10:56am on 17 Nov (the /rental-programme/ pre-fill, so a Search ad): wanted a honeymoon hotel stay 17 to 19 Nov "dalam bajet". Not qualified (Keith). Logged in the lead-quality sheet (row 8): Google Ads, Junk, Wrong project. This came after the 16 Nov mid-run fixes, and "honeymoon" is already a campaign negative, so the search was probably a hotel-name search that still matches. Both Search leads so far are holiday-stay seekers. Check at the 23 Nov search-term review which keyword brought the 17 Nov morning clicks to /rental-programme/.
