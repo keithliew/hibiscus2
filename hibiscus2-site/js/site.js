@@ -316,3 +316,66 @@
     true
   );
 })();
+
+/* ---------- Language suggestion (English pages only) ----------
+   Never redirects: Google and people on English-set phones keep the English page.
+   If the browser prefers Chinese, Malay or Japanese and this page exists in it,
+   a small bar offers to switch. "No thanks" or any use of the EN/中文/BM/日本語
+   links is remembered on this device. */
+(function () {
+  "use strict";
+  var KEY = "h2_lang_choice";
+  var TEXT = {
+    "zh-Hans": ["本页面有中文版。", "切换到中文", "不用了"],
+    "ms": ["Halaman ini ada dalam Bahasa Malaysia.", "Tukar ke Bahasa Malaysia", "Tidak, terima kasih"],
+    "ja": ["このページには日本語版があります。", "日本語で見る", "結構です"]
+  };
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return "x"; } }
+  function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function track(name) { (window.dataLayer = window.dataLayer || []).push({ event: name }); }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest(".lang-switch a, .lang-switch-mobile a");
+    if (a) set(a.getAttribute("hreflang") || a.textContent.trim());
+  });
+  if (document.documentElement.lang !== "en" || get()) return;
+
+  var alt = {};
+  [].forEach.call(document.querySelectorAll('link[rel="alternate"][hreflang]'), function (l) {
+    alt[l.getAttribute("hreflang")] = l.getAttribute("href");
+  });
+  function pick(tag) {
+    tag = tag.toLowerCase();
+    if (tag.indexOf("en") === 0) return "en";
+    if (tag.indexOf("zh") === 0) return "zh-Hans";
+    if (tag.indexOf("ms") === 0) return "ms";
+    if (tag.indexOf("ja") === 0) return "ja";
+    return null;
+  }
+  var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+  var want = null;
+  for (var i = 0; i < prefs.length && !want; i++) want = pick(prefs[i]);
+  if (!want || want === "en" || !alt[want] || !TEXT[want]) return;
+
+  var t = TEXT[want];
+  var css = document.createElement("style");
+  css.textContent = ".lang-suggest{background:#081826;color:#fff;font-size:15px}" +
+    ".lang-suggest>div{max-width:80rem;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:10px 16px}" +
+    ".lang-suggest a{color:#fff;font-weight:600;background:#E2604B;padding:6px 14px;border-radius:6px;text-decoration:none}" +
+    ".lang-suggest button{background:none;border:0;color:#fff;opacity:.8;text-decoration:underline;cursor:pointer;font:inherit;padding:6px 0}";
+  document.head.appendChild(css);
+  var bar = document.createElement("div");
+  bar.className = "lang-suggest";
+  bar.setAttribute("lang", want);
+  bar.innerHTML = "<div><span></span> <a></a> <button type=\"button\"></button></div>";
+  bar.querySelector("span").textContent = t[0];
+  var go = bar.querySelector("a");
+  go.href = new URL(alt[want], location.href).pathname + location.search + location.hash;
+  go.textContent = t[1];
+  var no = bar.querySelector("button");
+  no.textContent = t[2];
+  go.addEventListener("click", function () { set(want); track("h2_lang_suggest_accept"); });
+  no.addEventListener("click", function () { set("en"); bar.remove(); track("h2_lang_suggest_dismiss"); });
+  document.body.insertBefore(bar, document.body.firstChild);
+  track("h2_lang_suggest_shown");
+})();
