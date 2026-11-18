@@ -97,6 +97,7 @@ hover:text-gold
 hover:text-navy
 hover:text-white
 hover:underline
+in
 inline-block
 inline-flex
 inset-0
@@ -413,6 +414,7 @@ hover:shadow-lg
 hover:text-gold
 hover:text-navy
 hover:text-white
+in
 inline-block
 inline-flex
 inset-x-0
@@ -610,6 +612,7 @@ hover:shadow-lg
 hover:text-gold
 hover:text-navy
 hover:text-white
+in
 inline-block
 inline-flex
 inset-x-0
