@@ -28,9 +28,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -109,7 +108,7 @@
         </ul>
       </div>
       <div class="reveal render-frame rounded-xl shadow-lg aspect-[3/4] md:aspect-[4/5]">
-        <img src="/images/render-hero-tall.jpg" width="1000" height="1778" alt="Lexis Hibiscus 2（Port Dickson）水上别墅夜间灯光效果图" loading="eager" fetchpriority="high" decoding="async" />
+        <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-hero-tall-400.avif 400w, /images/r/render-hero-tall-640.avif 640w, /images/r/render-hero-tall-800.avif 800w, /images/r/render-hero-tall-1000.avif 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-hero-tall-400.webp 400w, /images/r/render-hero-tall-640.webp 640w, /images/r/render-hero-tall-800.webp 800w, /images/r/render-hero-tall-1000.webp 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><img src="/images/render-hero-tall.jpg" width="1000" height="1778" alt="Lexis Hibiscus 2（Port Dickson）水上别墅夜间灯光效果图" decoding="async" loading="eager" fetchpriority="high" /></picture>
         <p class="render-caption">效果图仅供参考，最终发展项目可能有所不同。</p>
       </div>
     </div>
@@ -208,7 +207,7 @@
       </div>
       <div class="grid md:grid-cols-2 gap-8 mb-6">
         <article class="reveal rounded-xl border border-sand overflow-hidden">
-          <div class="render-frame aspect-[4/3]"><img src="/images/floorplan-upper.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="A 型上层户型平面图——872平方尺水上别墅，配备私人泳池，2房2卫" loading="lazy" decoding="async" /></div>
+          <div class="render-frame aspect-[4/3]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/floorplan-upper-400.avif 400w, /images/r/floorplan-upper-640.avif 640w, /images/r/floorplan-upper-800.avif 800w, /images/r/floorplan-upper-831.avif 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/floorplan-upper-400.webp 400w, /images/r/floorplan-upper-640.webp 640w, /images/r/floorplan-upper-800.webp 800w, /images/r/floorplan-upper-831.webp 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/floorplan-upper.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="A 型上层户型平面图——872平方尺水上别墅，配备私人泳池，2房2卫" decoding="async" loading="lazy" /></picture></div>
           <div class="p-6">
             <h3 class="font-display text-navy text-xl font-semibold mb-2">A 型 — 上层</h3>
             <ul class="text-sm text-ink/70 space-y-1 mb-4">
@@ -219,7 +218,7 @@
           </div>
         </article>
         <article class="reveal rounded-xl border border-sand overflow-hidden">
-          <div class="render-frame aspect-[4/3]"><img src="/images/floorplan-lower.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="A 型下层户型平面图——858平方尺水上别墅，配备私人泳池，2房2卫" loading="lazy" decoding="async" /></div>
+          <div class="render-frame aspect-[4/3]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/floorplan-lower-400.avif 400w, /images/r/floorplan-lower-640.avif 640w, /images/r/floorplan-lower-800.avif 800w, /images/r/floorplan-lower-831.avif 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/floorplan-lower-400.webp 400w, /images/r/floorplan-lower-640.webp 640w, /images/r/floorplan-lower-800.webp 800w, /images/r/floorplan-lower-831.webp 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/floorplan-lower.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="A 型下层户型平面图——858平方尺水上别墅，配备私人泳池，2房2卫" decoding="async" loading="lazy" /></picture></div>
           <div class="p-6">
             <h3 class="font-display text-navy text-xl font-semibold mb-2">A 型 — 下层</h3>
             <ul class="text-sm text-ink/70 space-y-1 mb-4">

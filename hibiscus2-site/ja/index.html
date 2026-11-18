@@ -28,9 +28,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -84,7 +83,7 @@
         </div>
       </div>
       <div class="reveal render-frame rounded-xl shadow-lg aspect-[4/3]">
-        <img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 リゾート、Port Dickson の空撮アーティストの印象" loading="eager" fetchpriority="high" decoding="async" />
+        <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-hero-aerial-400.avif 400w, /images/r/render-hero-aerial-640.avif 640w, /images/r/render-hero-aerial-800.avif 800w, /images/r/render-hero-aerial-1000.avif 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 100vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-hero-aerial-400.webp 400w, /images/r/render-hero-aerial-640.webp 640w, /images/r/render-hero-aerial-800.webp 800w, /images/r/render-hero-aerial-1000.webp 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 100vw" /><img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 リゾート、Port Dickson の空撮アーティストの印象" decoding="async" loading="eager" fetchpriority="high" /></picture>
         <p class="render-caption">アーティストの印象。最終的な展開は異なる場合があります。</p>
       </div>
     </div>
@@ -93,7 +92,7 @@
   <section class="py-16 md:py-20">
     <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-8">
       <a href="/ja/villas/" class="reveal group rounded-xl border border-sand overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="render-frame aspect-[16/9]"><img src="/images/render-type-a-1.jpg" width="1000" height="562" alt="Lexis Hibiscus 2のヴィラのアーティスト・インプレッション" loading="lazy" decoding="async" /></div>
+        <div class="render-frame aspect-[16/9]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-type-a-1-400.avif 400w, /images/r/render-type-a-1-640.avif 640w, /images/r/render-type-a-1-800.avif 800w, /images/r/render-type-a-1-1000.avif 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-type-a-1-400.webp 400w, /images/r/render-type-a-1-640.webp 640w, /images/r/render-type-a-1-800.webp 800w, /images/r/render-type-a-1-1000.webp 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/render-type-a-1.jpg" width="1000" height="562" alt="Lexis Hibiscus 2のヴィラのアーティスト・インプレッション" decoding="async" loading="eager" /></picture></div>
         <div class="p-6">
           <h2 class="font-display text-navy text-xl font-semibold mb-2">ザ ヴィラズ</h2>
           <p class="text-sm text-ink/70 mb-3">水上タイプAのヴィラには専用のプライベートプールが付いています。ヴィラのオプション、リゾート体験、ギャラリーをご覧ください。</p>
@@ -101,7 +100,7 @@
         </div>
       </a>
       <a href="/ja/rental-programme/" class="reveal group rounded-xl border border-sand overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="render-frame aspect-[16/9]"><img src="/images/render-infinity-pool.jpg" width="1000" height="563" alt="Lexis Hibiscus 2のリゾートプールのアーティストインプレッション" loading="lazy" decoding="async" /></div>
+        <div class="render-frame aspect-[16/9]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-infinity-pool-400.avif 400w, /images/r/render-infinity-pool-640.avif 640w, /images/r/render-infinity-pool-800.avif 800w, /images/r/render-infinity-pool-1000.avif 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-infinity-pool-400.webp 400w, /images/r/render-infinity-pool-640.webp 640w, /images/r/render-infinity-pool-800.webp 800w, /images/r/render-infinity-pool-1000.webp 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/render-infinity-pool.jpg" width="1000" height="563" alt="Lexis Hibiscus 2のリゾートプールのアーティストインプレッション" decoding="async" loading="eager" /></picture></div>
         <div class="p-6">
           <h2 class="font-display text-navy text-xl font-semibold mb-2">レンタルプログラム</h2>
           <p class="text-sm text-ink/70 mb-3">Lexis Hotel Group が管理する体系的な 15 年間のレンタル プログラムで、2006 年以来所有者に支払いを行ってきた実績があります。</p>

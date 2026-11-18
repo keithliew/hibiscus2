@@ -27,9 +27,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -79,9 +78,7 @@
       <p class="text-lg text-ink/70 mb-8">Before Lexis Hibiscus 2, there was Lexis Hibiscus. Here is what the original resort built, how it opened, and the recognition it has earned since: the clearest preview there is of the resort taking shape next door.</p>
 
       <figure class="mb-10">
-        <picture>
-          <source srcset="/images/lexis-hibiscus-pd-aerial.webp" type="image/webp" />
-          <img src="/images/lexis-hibiscus-pd-aerial.jpg" width="550" height="400" alt="Aerial photo of Lexis Hibiscus Port Dickson: overwater villas laid out in the shape of a hibiscus flower beside the resort tower" class="w-full rounded-xl" loading="eager" decoding="async" />
+        <picture><source class="hidden" type="image/avif" srcset="/images/r/lexis-hibiscus-pd-aerial-400.avif 400w, /images/r/lexis-hibiscus-pd-aerial-550.avif 550w" sizes="(min-width: 1152px) 728px, (min-width: 800px) 91vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/lexis-hibiscus-pd-aerial-400.webp 400w, /images/r/lexis-hibiscus-pd-aerial-550.webp 550w" sizes="(min-width: 1152px) 728px, (min-width: 800px) 91vw, 90vw" /><img src="/images/lexis-hibiscus-pd-aerial.jpg" width="550" height="400" alt="Aerial photo of Lexis Hibiscus Port Dickson: overwater villas laid out in the shape of a hibiscus flower beside the resort tower" class="w-full rounded-xl" decoding="async" loading="eager" fetchpriority="high" />
         </picture>
         <figcaption class="text-sm text-ink/60 mt-2">Lexis Hibiscus Port Dickson today. Photo: Kuala Lumpur Metro Group.</figcaption>
       </figure>
@@ -201,7 +198,7 @@
 
         <figure class="py-2">
           <button type="button" class="yt-lite group relative block w-full aspect-video rounded-xl overflow-hidden bg-navy" data-yt="mx5MrPhVsNQ" aria-label="Play video: Kuala Lumpur Metro Group corporate video (5 min 32 s)">
-            <img src="https://i.ytimg.com/vi/mx5MrPhVsNQ/hqdefault.jpg" width="480" height="360" alt="" class="absolute inset-0 w-full h-full object-cover opacity-90" loading="lazy" decoding="async" />
+            <img src="https://i.ytimg.com/vi/mx5MrPhVsNQ/hqdefault.jpg" width="480" height="360" alt="" class="absolute inset-0 w-full h-full object-cover opacity-90" decoding="async" loading="lazy" />
             <span class="absolute inset-0 flex items-center justify-center"><span class="w-16 h-16 rounded-full bg-gold text-navy flex items-center justify-center shadow-lg group-hover:scale-105 transition"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></span>
           </button>
           <figcaption class="text-sm text-ink/60 mt-2">Kuala Lumpur Metro Group corporate video, 5 min 32 s. Video: Kuala Lumpur Metro Group on YouTube.</figcaption>
@@ -225,7 +222,7 @@
       </div>
 
       <figure class="my-10">
-        <img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Aerial view of Lexis Hibiscus 2, Port Dickson (artist impression)" class="w-full rounded-xl" loading="lazy" decoding="async" />
+        <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-hero-aerial-400.avif 400w, /images/r/render-hero-aerial-640.avif 640w, /images/r/render-hero-aerial-800.avif 800w, /images/r/render-hero-aerial-1000.avif 1000w" sizes="(min-width: 1152px) 728px, (min-width: 800px) 91vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-hero-aerial-400.webp 400w, /images/r/render-hero-aerial-640.webp 640w, /images/r/render-hero-aerial-800.webp 800w, /images/r/render-hero-aerial-1000.webp 1000w" sizes="(min-width: 1152px) 728px, (min-width: 800px) 91vw, 90vw" /><img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Aerial view of Lexis Hibiscus 2, Port Dickson (artist impression)" class="w-full rounded-xl" decoding="async" loading="lazy" /></picture>
         <figcaption class="text-sm text-ink/60 mt-2">Lexis Hibiscus 2, artist impression. Final development may vary. Completion targeted for 2029.</figcaption>
       </figure>
 

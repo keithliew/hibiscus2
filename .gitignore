@@ -8,3 +8,6 @@
 
 # Dispatch run logs (Codex/Gemini transcripts)
 .dispatch/
+
+# Build tools downloaded per machine (see tools/build_css.py)
+/tools/.bin/

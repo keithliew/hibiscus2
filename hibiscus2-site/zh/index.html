@@ -28,9 +28,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -85,7 +84,7 @@
         </div>
       </div>
       <div class="reveal render-frame rounded-xl shadow-lg aspect-[4/3]">
-        <img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 度假村鸟瞰效果图，位于 Port Dickson" loading="eager" fetchpriority="high" decoding="async" />
+        <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-hero-aerial-400.avif 400w, /images/r/render-hero-aerial-640.avif 640w, /images/r/render-hero-aerial-800.avif 800w, /images/r/render-hero-aerial-1000.avif 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-hero-aerial-400.webp 400w, /images/r/render-hero-aerial-640.webp 640w, /images/r/render-hero-aerial-800.webp 800w, /images/r/render-hero-aerial-1000.webp 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><img src="/images/render-hero-aerial.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 度假村鸟瞰效果图，位于 Port Dickson" decoding="async" loading="eager" fetchpriority="high" /></picture>
         <p class="render-caption">效果图仅供参考，最终发展项目可能有所不同。</p>
       </div>
     </div>
@@ -94,7 +93,7 @@
   <section class="py-16 md:py-20">
     <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-8">
       <a href="/zh/villas/" class="reveal group rounded-xl border border-sand overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="render-frame aspect-[16/9]"><img src="/images/render-type-a-1.jpg" width="1000" height="562" alt="Lexis Hibiscus 2 别墅效果图" loading="lazy" decoding="async" /></div>
+        <div class="render-frame aspect-[16/9]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-type-a-1-400.avif 400w, /images/r/render-type-a-1-640.avif 640w, /images/r/render-type-a-1-800.avif 800w, /images/r/render-type-a-1-1000.avif 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-type-a-1-400.webp 400w, /images/r/render-type-a-1-640.webp 640w, /images/r/render-type-a-1-800.webp 800w, /images/r/render-type-a-1-1000.webp 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/render-type-a-1.jpg" width="1000" height="562" alt="Lexis Hibiscus 2 别墅效果图" decoding="async" loading="eager" /></picture></div>
         <div class="p-6">
           <h2 class="font-display text-navy text-xl font-semibold mb-2">别墅</h2>
           <p class="text-sm text-ink/70 mb-3">水上 A 型别墅，每户皆配备私人泳池。了解别墅选择、度假村体验与相册。</p>
@@ -102,7 +101,7 @@
         </div>
       </a>
       <a href="/zh/rental-programme/" class="reveal group rounded-xl border border-sand overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="render-frame aspect-[16/9]"><img src="/images/render-infinity-pool.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 度假村泳池效果图" loading="lazy" decoding="async" /></div>
+        <div class="render-frame aspect-[16/9]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-infinity-pool-400.avif 400w, /images/r/render-infinity-pool-640.avif 640w, /images/r/render-infinity-pool-800.avif 800w, /images/r/render-infinity-pool-1000.avif 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-infinity-pool-400.webp 400w, /images/r/render-infinity-pool-640.webp 640w, /images/r/render-infinity-pool-800.webp 800w, /images/r/render-infinity-pool-1000.webp 1000w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/render-infinity-pool.jpg" width="1000" height="563" alt="Lexis Hibiscus 2 度假村泳池效果图" decoding="async" loading="eager" /></picture></div>
         <div class="p-6">
           <h2 class="font-display text-navy text-xl font-semibold mb-2">租赁计划</h2>
           <p class="text-sm text-ink/70 mb-3">由 Lexis Hotel Group 管理的15年期结构化租赁计划，自2006年起持续向业主发放租金。</p>

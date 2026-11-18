@@ -28,9 +28,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -82,7 +81,7 @@
       <div class="grid md:grid-cols-3 gap-8 mb-10">
         <div class="md:col-span-1">
           <div class="aspect-square rounded-xl bg-sand overflow-hidden">
-            <img src="/images/joe-wong.png" width="820" height="912" alt="Joe Wong (Wong See How), REN 51947, founder and director of Summerfield Property (M) Sdn. Bhd." class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/joe-wong-256.avif 256w, /images/r/joe-wong-400.avif 400w, /images/r/joe-wong-640.avif 640w, /images/r/joe-wong-800.avif 800w, /images/r/joe-wong-820.avif 820w" sizes="(min-width: 1152px) 264px, (min-width: 800px) 29vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/joe-wong-256.webp 256w, /images/r/joe-wong-400.webp 400w, /images/r/joe-wong-640.webp 640w, /images/r/joe-wong-800.webp 800w, /images/r/joe-wong-820.webp 820w" sizes="(min-width: 1152px) 264px, (min-width: 800px) 29vw, 90vw" /><img src="/images/joe-wong.png" width="820" height="912" alt="Joe Wong (Wong See How), REN 51947, founder and director of Summerfield Property (M) Sdn. Bhd." class="w-full h-full object-cover" decoding="async" loading="eager" fetchpriority="high" /></picture>
           </div>
         </div>
         <div class="md:col-span-2 text-ink/70 space-y-4">
