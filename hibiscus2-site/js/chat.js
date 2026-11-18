@@ -80,7 +80,7 @@
     "@media (max-width:767px){.h2c-bubble{display:none}}" +
     ".h2c-panel{display:none;flex-direction:column;width:370px;max-width:calc(100vw - 32px);height:560px;max-height:calc(100vh - 32px);background:#fff;border-radius:16px;box-shadow:0 18px 48px rgba(0,0,0,.28);overflow:hidden}" +
     ".h2c-root.is-open .h2c-panel{display:flex}" +
-    "@media (max-width:767px){.h2c-root.is-open{inset:0;right:0;bottom:0}.h2c-root.is-open .h2c-panel{width:100%;max-width:none;height:100%;max-height:none;border-radius:0}}" +
+    "@media (max-width:767px){.h2c-root.is-open{inset:0;right:auto;bottom:0;width:100vw;max-width:100vw}.h2c-root.is-open .h2c-panel{width:100%;max-width:none;height:100%;max-height:none;border-radius:0}}" +
     ".h2c-head{display:flex;align-items:center;gap:10px;background:#0e2233;color:#fff;padding:12px 14px}" +
     ".h2c-head b{display:block;font-size:15px}.h2c-head small{display:block;font-size:11.5px;color:#e7d9bd}" +
     ".h2c-x{margin-left:auto;background:none;border:0;color:#fff;font-size:26px;line-height:1;width:44px;height:44px;cursor:pointer}" +
