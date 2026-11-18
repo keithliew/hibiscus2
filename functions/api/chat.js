@@ -10,6 +10,9 @@
 
 import { SYSTEM_PROMPT, contextNote, safeReply, busyReply } from "../../chat/facts.js";
 import { BANNED } from "../../chat/banned.js";
+import { tooMany, sign, verified } from "../_lib/chat-guard.js";
+
+const SITE = "hibiscus2";
 
 const MODEL = "claude-opus-5-5";
 const LANGS = ["en", "zh", "ms", "ja"];
@@ -58,9 +61,21 @@ export async function onRequestPost({ request, env }) {
   try { body = await request.json(); } catch (e) { return json({ error: "bad request" }, 400); }
   const lang = LANGS.includes(body.lang) ? body.lang : "en";
   const page = typeof body.page === "string" ? body.page.slice(0, 80).replace(/[^\w\/\-.]/g, "") : "/";
-  const messages = cleanConversation(body.messages);
+  let messages = cleanConversation(body.messages);
   if (!messages) return json({ reply: busyReply(lang), intent: "unknown", offer_contact: true, limited: true });
   if (!env.ANTHROPIC_API_KEY) return json({ reply: busyReply(lang), intent: "unknown", offer_contact: true, unavailable: true, reason: "no_key" });
+  if (await tooMany(request, SITE)) return json({ reply: busyReply(lang), intent: "unknown", offer_contact: true, limited: true, reason: "rate_limit" });
+
+  // Earlier turns must carry our signature; if they were edited, keep only the latest question
+  if (messages.length > 1 && !(await verified(env.ANTHROPIC_API_KEY, SITE, messages.slice(0, -1), body.sig))) {
+    console.log("chat: unsigned or edited history, using the last message only");
+    messages = messages.slice(-1);
+  }
+  // Every answer goes back with a signature over the conversation including it
+  const answer = async (data) => {
+    data.sig = await sign(env.ANTHROPIC_API_KEY, SITE, messages.concat({ role: "assistant", content: data.reply }));
+    return json(data);
+  };
 
   let res;
   try {
@@ -86,13 +101,13 @@ export async function onRequestPost({ request, env }) {
     });
   } catch (e) {
     console.log("chat: network error", String(e));
-    return json({ reason: "network", reply: busyReply(lang), intent: "unknown", offer_contact: true, unavailable: true });
+    return answer({ reason: "network", reply: busyReply(lang), intent: "unknown", offer_contact: true, unavailable: true });
   }
   if (!res.ok) {
     const detail = (await res.text()).slice(0, 300);
     console.log("chat: api status", res.status, detail);
     const type = (detail.match(/"type"\s*:\s*"(\w+_error)"/) || [])[1] || "";
-    return json({ reason: "api_" + res.status + (type ? "_" + type : ""), reply: busyReply(lang), intent: "unknown", offer_contact: true, unavailable: true });
+    return answer({ reason: "api_" + res.status + (type ? "_" + type : ""), reply: busyReply(lang), intent: "unknown", offer_contact: true, unavailable: true });
   }
 
   const data = await res.json();
@@ -103,13 +118,13 @@ export async function onRequestPost({ request, env }) {
   }
   if (!out || typeof out.reply !== "string" || !out.reply.trim()) {
     console.log("chat: unusable reply", data.stop_reason);
-    return json({ reply: safeReply(lang), intent: "unknown", offer_contact: true, flagged: true });
+    return answer({ reply: safeReply(lang), intent: "unknown", offer_contact: true, flagged: true });
   }
 
   const hit = BANNED.find((re) => re.test(out.reply));
   if (hit) {
     console.log("chat: blocked reply, pattern", String(hit));
-    return json({ reply: safeReply(lang), intent: out.intent || "unknown", offer_contact: true, flagged: true });
+    return answer({ reply: safeReply(lang), intent: out.intent || "unknown", offer_contact: true, flagged: true });
   }
-  return json({ reply: out.reply.trim(), intent: out.intent, offer_contact: !!out.offer_contact });
+  return answer({ reply: out.reply.trim(), intent: out.intent, offer_contact: !!out.offer_contact });
 }

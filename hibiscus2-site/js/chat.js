@@ -183,12 +183,13 @@
     el.input.value = ""; save(); render();
     busy = true; el.send.disabled = true;
     var typing = make("div", "h2c-typing", T.typing); el.log.appendChild(typing); scroll();
-    fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ lang: lang, page: location.pathname, messages: state.messages }) })
+    fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ lang: lang, page: location.pathname, messages: state.messages, sig: state.sig || "" }) })
       .then(function (r) { return r.json(); })
       .catch(function () { return { reply: T.sendFail, offer_contact: true }; })
       .then(function (d) {
         busy = false; el.send.disabled = false;
         state.messages.push({ role: "assistant", content: d.reply || T.sendFail });
+        state.sig = d.sig || "";
         if (d.intent && d.intent !== "unknown") state.intent = d.intent;
         if (d.offer_contact && !state.lead) state.formShown = true;
         save(); render();
