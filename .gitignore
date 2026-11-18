@@ -8,3 +8,6 @@
 
 # Dispatch run logs (Codex/Gemini transcripts)
 .dispatch/
+
+.dev.vars
+.wrangler/

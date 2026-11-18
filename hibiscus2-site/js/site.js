@@ -65,11 +65,38 @@
   var waRef = pageCode + "-" + lang.toUpperCase() + "-" + (fromAd ? "AD" : "WEB");
   var pageWaText = (document.body.getAttribute("data-wa-text") || "Hi, I'd like to know more about Lexis Hibiscus 2.") + " (Ref: " + waRef + ")";
   var waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(pageWaText);
+
+  // ---------- Chat assistant: the contact buttons open the chat window instead of WhatsApp ----------
+  // Set CHAT_ON to false to go back to plain WhatsApp buttons. If chat.js fails to load,
+  // the buttons keep working as WhatsApp links.
+  var CHAT_ON = true;
+  if (CHAT_ON) {
+    window.H2_CHAT = {
+      lang: lang, ref: waRef, waNumber: WHATSAPP_NUMBER, waText: document.body.getAttribute("data-wa-text") || "", push: gtmPush,
+      onReady: function () {
+        document.querySelectorAll("[data-wa]").forEach(function (el) {
+          var icon = el.querySelector("svg");
+          if (icon) icon.outerHTML = window.H2Chat.icon.replace(/width="20" height="20"/, 'width="' + (icon.getAttribute("width") || 18) + '" height="' + (icon.getAttribute("height") || 18) + '" class="shrink-0"');
+          if (el.classList.contains("float-wa")) el.style.display = "none";
+        });
+      },
+    };
+    var chatScript = document.createElement("script");
+    chatScript.src = "/js/chat.js?v=1";
+    chatScript.defer = true;
+    document.body.appendChild(chatScript);
+  }
+
   document.querySelectorAll("[data-wa]").forEach(function (el) {
     el.setAttribute("href", waUrl);
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener noreferrer");
-    el.addEventListener("click", function () {
+    el.addEventListener("click", function (e) {
+      if (CHAT_ON && window.H2Chat) {
+        e.preventDefault();
+        window.H2Chat.open(el.getAttribute("data-wa"));
+        return;
+      }
       gtmPush("whatsapp_click", { wa_source: el.getAttribute("data-wa"), wa_ref: waRef });
     });
   });
