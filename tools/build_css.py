@@ -30,6 +30,15 @@ CDN_BLOCK = re.compile(r'<script src="https://cdn\.tailwindcss\.com"></script>\s
 TW_LINK = re.compile(r'<link rel="stylesheet" href="/css/tw(?:-zh|-ja)?\.css\?v=[0-9a-f]+" />\n')
 
 
+def squeeze(css):
+    """Whitespace-only minify. Tailwind's own --minify rewrites colour values (a 1/255 shift on
+    semi-transparent gold), so values are left exactly as the Play CDN produced them."""
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r" ?([{};]) ?", r"\1", css)
+    return css.replace(";}", "}").strip() + "\n"
+
+
 def group_of(page):
     return page.split("/")[0] if page.split("/")[0] in ("zh", "ja") else ""
 
@@ -65,7 +74,8 @@ def main():
     for lang, name in GROUPS.items():
         dest = SITE / "css" / name
         subprocess.run([str(BIN), "-c", str(ROOT / "tools/tailwind/config.js"), "-i", str(ROOT / "tools/tailwind/input.css"),
-                        "-o", str(dest), "--minify"], check=True, env={**os.environ, "H2_LANG": lang, "BROWSERSLIST_IGNORE_OLD_DATA": "1"})
+                        "-o", str(dest)], check=True, env={**os.environ, "H2_LANG": lang, "BROWSERSLIST_IGNORE_OLD_DATA": "1"})
+        dest.write_text(squeeze(dest.read_text(encoding="utf-8")), encoding="utf-8")
         version[lang] = hashlib.sha256(dest.read_bytes()).hexdigest()[:10]
         print(name, dest.stat().st_size, "bytes")
     for p in pages():
