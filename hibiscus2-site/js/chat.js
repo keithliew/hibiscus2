@@ -19,7 +19,8 @@
       hello: "Hi! I'm the automated assistant for Lexis Hibiscus 2, the new private-pool villa project in Port Dickson. Are you looking to buy a villa, or planning a holiday stay?",
       chips: ["Villa sizes and prices", "How the rental programme works", "Book a viewing", "I want a holiday stay"],
       placeholder: "Type your question…", send: "Send", close: "Close chat", open: "Chat with us",
-      formTitle: "Get a call back on WhatsApp", name: "Your name", phone: "WhatsApp number", phoneHint: "+60 12 345 6789",
+      formTitle: "Book a viewing", date: "Preferred date", time: "Preferred time", loc: "Preferred showroom", choose: "Choose…", slots: ["10am – 12pm", "12pm – 2pm", "2pm – 4pm"], locs: ["Imperial Lexis Kuala Lumpur, Level 7", "Lexis Hibiscus Port Dickson Sales Gallery"], badDate: "Please choose a date.", badTime: "Please choose a time.", badLoc: "Please choose a showroom.", confirm: "Our consultant confirms your appointment on WhatsApp.",
+      name: "Your name", phone: "WhatsApp number", phoneHint: "+60 12 345 6789",
       consent: "By sending, you agree that Summerfield Property (M) Sdn. Bhd. may contact you on WhatsApp about Lexis Hibiscus 2, and receives this chat. See our", privacy: "privacy policy",
       submit: "Send my details", leave: "Leave my number", wa: "WhatsApp us instead",
       thanks: "Thank you! Our consultant, Joe Wong (REN 51947), will message you on WhatsApp during office hours. Want to start now?",
@@ -32,7 +33,8 @@
       hello: "您好！我是马来西亚大红花2.0（Lexis Hibiscus 2）的自动助手，这是波德申全新的私人泳池别墅项目。请问您是想购买别墅，还是计划度假入住？",
       chips: ["别墅面积与价格", "租赁计划如何运作", "预约参观", "我想度假入住"],
       placeholder: "请输入您的问题…", send: "发送", close: "关闭聊天", open: "在线咨询",
-      formTitle: "通过WhatsApp回电", name: "您的姓名", phone: "WhatsApp号码", phoneHint: "+60 12 345 6789",
+      formTitle: "预约参观", date: "首选日期", time: "首选时间", loc: "首选展厅", choose: "请选择…", slots: ["上午10点 – 中午12点", "中午12点 – 下午2点", "下午2点 – 4点"], locs: ["吉隆坡 Imperial Lexis，7楼", "波德申 Lexis Hibiscus 销售展厅"], badDate: "请选择日期。", badTime: "请选择时间。", badLoc: "请选择展厅。", confirm: "顾问会通过WhatsApp与您确认预约。",
+      name: "您的姓名", phone: "WhatsApp号码", phoneHint: "+60 12 345 6789",
       consent: "提交即表示您同意Summerfield Property (M) Sdn. Bhd.通过WhatsApp就马来西亚大红花2.0与您联系，并接收本次聊天记录。详见", privacy: "隐私政策",
       submit: "提交我的资料", leave: "留下我的号码", wa: "改用WhatsApp联系",
       thanks: "谢谢！我们的顾问 Joe Wong（REN 51947）将在办公时间通过WhatsApp联系您。想现在就开始吗？",
@@ -45,7 +47,8 @@
       hello: "Hai! Saya pembantu automatik Lexis Hibiscus 2, projek vila kolam renang persendirian baharu di Port Dickson. Anda ingin membeli vila, atau merancang percutian?",
       chips: ["Saiz dan harga vila", "Cara program sewaan berfungsi", "Tempah lawatan", "Saya mahu bercuti"],
       placeholder: "Taip soalan anda…", send: "Hantar", close: "Tutup sembang", open: "Sembang dengan kami",
-      formTitle: "Minta kami hubungi melalui WhatsApp", name: "Nama anda", phone: "Nombor WhatsApp", phoneHint: "+60 12 345 6789",
+      formTitle: "Tempah lawatan", date: "Tarikh pilihan", time: "Masa pilihan", loc: "Bilik pameran pilihan", choose: "Pilih…", slots: ["10 pagi – 12 tengah hari", "12 tengah hari – 2 petang", "2 petang – 4 petang"], locs: ["Imperial Lexis Kuala Lumpur, Aras 7", "Galeri Jualan Lexis Hibiscus Port Dickson"], badDate: "Sila pilih tarikh.", badTime: "Sila pilih masa.", badLoc: "Sila pilih bilik pameran.", confirm: "Perunding kami akan mengesahkan temujanji anda melalui WhatsApp.",
+      name: "Nama anda", phone: "Nombor WhatsApp", phoneHint: "+60 12 345 6789",
       consent: "Dengan menghantar, anda bersetuju Summerfield Property (M) Sdn. Bhd. boleh menghubungi anda melalui WhatsApp tentang Lexis Hibiscus 2, dan menerima sembang ini. Lihat", privacy: "dasar privasi",
       submit: "Hantar butiran saya", leave: "Tinggalkan nombor saya", wa: "Hubungi melalui WhatsApp",
       thanks: "Terima kasih! Perunding kami, Joe Wong (REN 51947), akan menghantar mesej WhatsApp kepada anda pada waktu pejabat. Mahu mula sekarang?",
@@ -58,7 +61,8 @@
       hello: "こんにちは！ポートディクソンのプライベートプール付きヴィラの新プロジェクト、Lexis Hibiscus 2の自動アシスタントです。ヴィラのご購入をご検討ですか、それともご旅行での宿泊をお考えですか？",
       chips: ["ヴィラの広さと価格", "賃貸プログラムの仕組み", "見学の予約", "旅行で宿泊したい"],
       placeholder: "ご質問を入力してください…", send: "送信", close: "チャットを閉じる", open: "チャットで相談",
-      formTitle: "WhatsAppで折り返し連絡", name: "お名前", phone: "WhatsApp番号", phoneHint: "+60 12 345 6789",
+      formTitle: "見学を予約", date: "ご希望日", time: "ご希望の時間帯", loc: "ご希望のショールーム", choose: "選択してください…", slots: ["午前10時～12時", "午後12時～2時", "午後2時～4時"], locs: ["インペリアル・レクシス・クアラルンプール 7階", "レクシス・ハイビスカス・ポートディクソン セールスギャラリー"], badDate: "日付を選択してください。", badTime: "時間帯を選択してください。", badLoc: "ショールームを選択してください。", confirm: "担当コンサルタントがWhatsAppで予約を確定します。",
+      name: "お名前", phone: "WhatsApp番号", phoneHint: "+60 12 345 6789",
       consent: "送信すると、Summerfield Property (M) Sdn. Bhd.がLexis Hibiscus 2についてWhatsAppでご連絡すること、およびこのチャット内容を受け取ることに同意したものとみなされます。詳しくは", privacy: "プライバシーポリシー",
       submit: "送信する", leave: "連絡先を残す", wa: "WhatsAppで連絡",
       thanks: "ありがとうございます！担当コンサルタントのJoe Wong（REN 51947）が営業時間内にWhatsAppでご連絡します。今すぐ始めますか？",
@@ -88,7 +92,7 @@
     ".h2c-chip{background:#fff;border:1px solid #c9a96a;color:#0e2233;border-radius:999px;padding:8px 12px;font-size:13.5px;cursor:pointer;min-height:36px}" +
     ".h2c-form{background:#fff;border:1px solid #e7d9bd;border-radius:12px;padding:12px;margin:4px 0 10px;font-size:13.5px}" +
     ".h2c-form b{display:block;margin-bottom:8px}.h2c-form label{display:block;margin:6px 0 2px;font-weight:600;font-size:12.5px}" +
-    ".h2c-form input{width:100%;box-sizing:border-box;border:1px solid #d6cfc0;border-radius:8px;padding:10px;font-size:16px}" +
+    ".h2c-form input,.h2c-form select{width:100%;box-sizing:border-box;border:1px solid #d6cfc0;border-radius:8px;padding:10px;font-size:16px}" +
     ".h2c-form p{font-size:11.5px;color:#4b5563;margin:8px 0}.h2c-form a{color:#0e2233;text-decoration:underline}" +
     ".h2c-err{color:#b42318;font-size:12.5px;margin-top:4px;min-height:1px}" +
     ".h2c-btn{display:block;width:100%;background:#c9a96a;color:#0e2233;border:0;border-radius:999px;padding:11px;font-weight:700;font-size:14.5px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box}" +
@@ -196,16 +200,23 @@
     f.appendChild(make("b", null, T.formTitle));
     var ln = make("label", null, T.name); var n = make("input"); n.name = "name"; n.autocomplete = "name"; n.required = true; ln.htmlFor = n.id = "h2c-name";
     var lp = make("label", null, T.phone); var p = make("input"); p.name = "whatsapp_number"; p.type = "tel"; p.inputMode = "tel"; p.autocomplete = "tel"; p.placeholder = T.phoneHint; lp.htmlFor = p.id = "h2c-phone";
+    var ld = make("label", null, T.date); var d = make("input"); d.type = "date"; d.name = "preferred_date"; d.min = dayAfter(); ld.htmlFor = d.id = "h2c-date";
+    var lt = make("label", null, T.time); var t = picker("preferred_time", T.slots); lt.htmlFor = t.id = "h2c-time";
+    var ll = make("label", null, T.loc); var l = picker("location", T.locs); ll.htmlFor = l.id = "h2c-loc";
     var err = make("div", "h2c-err");
     var c = make("p", null, T.consent + " "); var a = make("a", null, T.privacy); a.href = PRIVACY; a.target = "_blank"; c.appendChild(a); c.appendChild(document.createTextNode("."));
     var b = make("button", "h2c-btn", T.submit); b.type = "submit";
-    [ln, n, lp, p, err, c, b].forEach(function (x) { f.appendChild(x); });
+    var note = make("p", null, T.confirm);
+    [ln, n, lp, p, ld, d, lt, t, ll, l, err, note, c, b].forEach(function (x) { f.appendChild(x); });
     f.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!n.value.trim()) { err.textContent = T.badName; n.focus(); return; }
       if (p.value.replace(/\D/g, "").length < 7) { err.textContent = T.badPhone; p.focus(); return; }
+      if (!d.value) { err.textContent = T.badDate; d.focus(); return; }
+      if (!t.value) { err.textContent = T.badTime; t.focus(); return; }
+      if (!l.value) { err.textContent = T.badLoc; l.focus(); return; }
       err.textContent = ""; b.disabled = true;
-      sendLead(n.value.trim(), p.value.trim()).then(function (ok) {
+      sendLead(n.value.trim(), p.value.trim(), { preferred_date: d.value, preferred_time: t.value, location: l.value }).then(function (ok) {
         if (!ok) { b.disabled = false; err.textContent = T.sendFail; return; }
         state.lead = true; save();
         push("chat_lead", { chat_ref: cfg.ref, chat_lang: lang, chat_intent: state.intent });
@@ -221,12 +232,21 @@
     d.appendChild(a); return d;
   }
 
-  function sendLead(name, phone) {
+  function dayAfter() { return new Date(Date.now() + 864e5).toLocaleDateString("en-CA", { timeZone: "Asia/Kuala_Lumpur" }); }
+  // The inbox always gets the English wording, whatever language the visitor chose
+  var EN = { preferred_time: ["10am – 12pm", "12pm – 2pm", "2pm – 4pm"], location: ["Imperial Lexis Kuala Lumpur, Level 7", "Lexis Hibiscus Port Dickson Sales Gallery"] };
+  function picker(name, options) {
+    var sel = make("select"); sel.name = name;
+    [T.choose].concat(options).forEach(function (o, i) { var op = make("option", null, o); op.value = i ? EN[name][i - 1] : ""; sel.appendChild(op); });
+    return sel;
+  }
+
+  function sendLead(name, phone, booking) {
     var utm = {}; try { utm = JSON.parse(sessionStorage.getItem("lh2_utm") || "{}"); } catch (e) { utm = {}; }
     var transcript = state.messages.map(function (m) { return (m.role === "user" ? "Visitor: " : "Assistant: ") + m.content; }).join("\n\n");
     var body = {
-      access_key: FORM_KEY, subject: "Chat lead from hibiscus2.com (Ref " + cfg.ref + "-CHAT)", from_name: "hibiscus2.com chat",
-      name: name, whatsapp_number: phone, ref: cfg.ref + "-CHAT", language: lang, page: location.pathname,
+      access_key: FORM_KEY, subject: "Chat booking " + booking.preferred_date + " from hibiscus2.com (Ref " + cfg.ref + "-CHAT)", from_name: "hibiscus2.com chat",
+      name: name, whatsapp_number: phone, preferred_date: booking.preferred_date, preferred_time: booking.preferred_time, location: booking.location, ref: cfg.ref + "-CHAT", language: lang, page: location.pathname,
       intent: state.intent, lp_variant: "chat", transcript: transcript || "(no messages, details left straight away)",
       utm_source: utm.utm_source || "", utm_medium: utm.utm_medium || "", utm_campaign: utm.utm_campaign || "", gclid: utm.gclid || "", botcheck: "",
     };
