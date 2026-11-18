@@ -11,3 +11,6 @@
 
 .dev.vars
 .wrangler/
+
+# Build tools downloaded per machine (see tools/build_css.py)
+/tools/.bin/

@@ -28,22 +28,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: { extend: {
-      colors: { navy:{DEFAULT:'#0e2233',deep:'#081826'}, gold:{DEFAULT:'#c9a96a',soft:'#e7d9bd'}, coral:'#e2604b', sand:'#f6f2ea', ink:'#1b2733' },
-      fontFamily: { display:['"Playfair Display"','Georgia','"PingFang SC"','"Hiragino Sans GB"','"Microsoft YaHei"','serif'], sans:['Inter','-apple-system','"PingFang SC"','"Hiragino Sans GB"','"Microsoft YaHei"','sans-serif'] }
-    } }
-  };
-</script>
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <link rel="stylesheet" href="/css/site.css" />
 <style>body{line-height:1.8}</style>
 <!-- Google Ads conversion fires via GTM, triggered by the lead_form_submit
      dataLayer event pushed in js/site.js on this page's load. -->
+<link rel="stylesheet" href="/css/tw-zh.css?v=8448c7c1e8" />
 </head>
 <body class="bg-white text-ink" data-wa-text="您好，我想预约参观——跟进我早前有关 Lexis Hibiscus 2 的咨询。" data-page="thank-you">
 <!-- Google Tag Manager (noscript) -->

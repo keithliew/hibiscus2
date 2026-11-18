@@ -23,19 +23,10 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: { extend: {
-      colors: { navy:{DEFAULT:'#0e2233',deep:'#081826'}, gold:{DEFAULT:'#c9a96a',soft:'#e7d9bd'}, coral:'#e2604b', sand:'#f6f2ea', ink:'#1b2733' },
-      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','-apple-system','sans-serif'] }
-    } }
-  };
-</script>
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/tw.css?v=7dd9e50bb4" />
 </head>
 <body class="bg-white text-ink" data-wa-text="Hi, I'd like to know about upcoming Lexis Hibiscus 2 showroom days." data-page="news">
 <!-- Google Tag Manager (noscript) -->
@@ -79,9 +70,7 @@
         <a href="/events/" class="text-sm font-semibold text-navy underline whitespace-nowrap">All events</a>
       </div>
       <a href="/events/deepavali-open-house-2026/" class="group grid sm:grid-cols-3 gap-5 rounded-xl border border-gold bg-sand p-4 hover:border-navy mb-6">
-        <picture class="sm:col-span-1">
-          <source srcset="/images/event-deepavali-2026-flyer-20nov.webp" type="image/webp" />
-          <img src="/images/event-deepavali-2026-flyer-20nov.jpg" width="1000" height="1000" alt="" class="w-full rounded-lg" loading="lazy" decoding="async" />
+        <picture class="sm:col-span-1"><source class="hidden" type="image/avif" srcset="/images/r/event-deepavali-2026-flyer-20nov-256.avif 256w, /images/r/event-deepavali-2026-flyer-20nov-400.avif 400w, /images/r/event-deepavali-2026-flyer-20nov-640.avif 640w, /images/r/event-deepavali-2026-flyer-20nov-800.avif 800w, /images/r/event-deepavali-2026-flyer-20nov-1000.avif 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><source class="hidden" type="image/webp" srcset="/images/r/event-deepavali-2026-flyer-20nov-256.webp 256w, /images/r/event-deepavali-2026-flyer-20nov-400.webp 400w, /images/r/event-deepavali-2026-flyer-20nov-640.webp 640w, /images/r/event-deepavali-2026-flyer-20nov-800.webp 800w, /images/r/event-deepavali-2026-flyer-20nov-1000.webp 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><img src="/images/event-deepavali-2026-flyer-20nov.jpg" width="1000" height="1000" alt="" class="w-full rounded-lg" decoding="async" loading="eager" fetchpriority="high" />
         </picture>
         <div class="sm:col-span-2">
           <p class="text-xs text-ink/50"><span class="font-semibold text-gold uppercase tracking-widest">Upcoming</span> &middot; <span class="font-semibold text-coral">New date:</span> <time datetime="2026-11-20">Fri 20 November 2026</time>, 1pm to 5pm &middot; Imperial Lexis Kuala Lumpur, 7th floor</p>
@@ -91,9 +80,7 @@
       </a>
 
       <a href="/events/october-fest-2026/" class="group grid sm:grid-cols-3 gap-5 rounded-xl border border-sand p-4 hover:border-gold">
-        <picture class="sm:col-span-1">
-          <source srcset="/images/event-octoberfest-2026-consultation.webp" type="image/webp" />
-          <img src="/images/event-octoberfest-2026-consultation.jpg" width="1200" height="900" alt="" class="w-full rounded-lg" loading="lazy" decoding="async" />
+        <picture class="sm:col-span-1"><source class="hidden" type="image/avif" srcset="/images/r/event-octoberfest-2026-consultation-256.avif 256w, /images/r/event-octoberfest-2026-consultation-400.avif 400w, /images/r/event-octoberfest-2026-consultation-640.avif 640w, /images/r/event-octoberfest-2026-consultation-800.avif 800w, /images/r/event-octoberfest-2026-consultation-1000.avif 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><source class="hidden" type="image/webp" srcset="/images/r/event-octoberfest-2026-consultation-256.webp 256w, /images/r/event-octoberfest-2026-consultation-400.webp 400w, /images/r/event-octoberfest-2026-consultation-640.webp 640w, /images/r/event-octoberfest-2026-consultation-800.webp 800w, /images/r/event-octoberfest-2026-consultation-1000.webp 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><img src="/images/event-octoberfest-2026-consultation.jpg" width="1200" height="900" alt="" class="w-full rounded-lg" decoding="async" loading="eager" />
         </picture>
         <div class="sm:col-span-2">
           <p class="text-xs text-ink/50"><time datetime="2026-10-16">16 October 2026</time> &middot; Bukit Bintang Showroom, Kuala Lumpur</p>
@@ -103,9 +90,7 @@
       </a>
 
       <a href="/events/mapex-melaka-2026/" class="group grid sm:grid-cols-3 gap-5 rounded-xl border border-sand p-4 hover:border-gold mt-6">
-        <picture class="sm:col-span-1">
-          <source srcset="/images/event-mapex-2026-booth-side.webp" type="image/webp" />
-          <img src="/images/event-mapex-2026-booth-side.jpg" width="1600" height="720" alt="" class="w-full rounded-lg" loading="lazy" decoding="async" />
+        <picture class="sm:col-span-1"><source class="hidden" type="image/avif" srcset="/images/r/event-mapex-2026-booth-side-256.avif 256w, /images/r/event-mapex-2026-booth-side-400.avif 400w, /images/r/event-mapex-2026-booth-side-640.avif 640w, /images/r/event-mapex-2026-booth-side-800.avif 800w, /images/r/event-mapex-2026-booth-side-1000.avif 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><source class="hidden" type="image/webp" srcset="/images/r/event-mapex-2026-booth-side-256.webp 256w, /images/r/event-mapex-2026-booth-side-400.webp 400w, /images/r/event-mapex-2026-booth-side-640.webp 640w, /images/r/event-mapex-2026-booth-side-800.webp 800w, /images/r/event-mapex-2026-booth-side-1000.webp 1000w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><img src="/images/event-mapex-2026-booth-side.jpg" width="1600" height="720" alt="" class="w-full rounded-lg" loading="lazy" decoding="async" />
         </picture>
         <div class="sm:col-span-2">
           <p class="text-xs text-ink/50"><time datetime="2026-08-01">1 August 2026</time> &middot; AEON Mall Bandaraya Melaka</p>
@@ -119,9 +104,7 @@
         <a href="/lexis-track-record/" class="text-sm font-semibold text-navy underline whitespace-nowrap">The series</a>
       </div>
       <a href="/lexis-track-record/lexis-hibiscus-port-dickson/" class="group grid sm:grid-cols-3 gap-5 rounded-xl border border-sand p-4 hover:border-gold">
-        <picture class="sm:col-span-1">
-          <source srcset="/images/lexis-hibiscus-pd-aerial.webp" type="image/webp" />
-          <img src="/images/lexis-hibiscus-pd-aerial.jpg" width="550" height="400" alt="" class="w-full rounded-lg" loading="lazy" decoding="async" />
+        <picture class="sm:col-span-1"><source class="hidden" type="image/avif" srcset="/images/r/lexis-hibiscus-pd-aerial-256.avif 256w, /images/r/lexis-hibiscus-pd-aerial-400.avif 400w, /images/r/lexis-hibiscus-pd-aerial-550.avif 550w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><source class="hidden" type="image/webp" srcset="/images/r/lexis-hibiscus-pd-aerial-256.webp 256w, /images/r/lexis-hibiscus-pd-aerial-400.webp 400w, /images/r/lexis-hibiscus-pd-aerial-550.webp 550w" sizes="(min-width: 1152px) 218px, (min-width: 800px) 28vw, 81vw" /><img src="/images/lexis-hibiscus-pd-aerial.jpg" width="550" height="400" alt="" class="w-full rounded-lg" decoding="async" loading="lazy" />
         </picture>
         <div class="sm:col-span-2">
           <p class="text-xs text-ink/50">Part 1 &middot; <time datetime="2026-10-22">22 October 2026</time></p>

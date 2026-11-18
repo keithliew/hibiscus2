@@ -28,18 +28,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0e2233" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: { extend: {
-      colors: { navy:{DEFAULT:'#0e2233',deep:'#081826'}, gold:{DEFAULT:'#c9a96a',soft:'#e7d9bd'}, coral:'#e2604b', sand:'#f6f2ea', ink:'#1b2733' },
-      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','-apple-system','sans-serif'] }
-    } }
-  };
-</script>
+<link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/fonts.css" />
 <link rel="stylesheet" href="/css/site.css" />
 
 <script type="application/ld+json">
@@ -56,6 +46,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="/css/tw.css?v=7dd9e50bb4" />
 </head>
 <body class="bg-white text-ink" data-wa-text="Hi, I'd like to book a consultation for the full 15-year rental programme terms for Lexis Hibiscus 2." data-page="rental-programme">
 <!-- Google Tag Manager (noscript) -->
@@ -92,7 +83,7 @@
   <!-- HERO -->
   <header class="hero relative">
     <div class="max-w-6xl mx-auto px-5 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div class="reveal">
+      <div class="reveal in">
         <span class="inline-block text-xs tracking-widest uppercase text-gold font-semibold mb-4">Lexis Hibiscus 2 &middot; Port Dickson, Malaysia</span>
         <h1 class="font-display text-navy text-3xl md:text-5xl font-semibold leading-tight mb-5">A 15-Year Managed Rental Programme — Own a Private Pool Villa at Lexis Hibiscus 2</h1>
         <p class="text-base md:text-lg text-ink/70 mb-6">A hospitality-managed resort property in Port Dickson with a structured 15-year rental programme, run by Lexis Hotel Group. Villas from RM860,000.</p>
@@ -107,8 +98,8 @@
           <li>From RM860,000</li>
         </ul>
       </div>
-      <div class="reveal render-frame rounded-xl shadow-lg aspect-[3/4] md:aspect-[4/5]">
-        <img src="/images/render-hero-tall.jpg" width="1000" height="1778" alt="Artist impression of overwater villas at Lexis Hibiscus 2, Port Dickson, illuminated at night" loading="eager" fetchpriority="high" decoding="async" />
+      <div class="reveal in render-frame rounded-xl shadow-lg aspect-[3/4] md:aspect-[4/5]">
+        <picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/render-hero-tall-400.avif 400w, /images/r/render-hero-tall-640.avif 640w, /images/r/render-hero-tall-800.avif 800w, /images/r/render-hero-tall-1000.avif 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><source class="hidden" type="image/webp" srcset="/images/r/render-hero-tall-400.webp 400w, /images/r/render-hero-tall-640.webp 640w, /images/r/render-hero-tall-800.webp 800w, /images/r/render-hero-tall-1000.webp 1000w" sizes="(min-width: 1152px) 536px, (min-width: 800px) 45vw, 90vw" /><img src="/images/render-hero-tall.jpg" width="1000" height="1778" alt="Artist impression of overwater villas at Lexis Hibiscus 2, Port Dickson, illuminated at night" decoding="async" loading="eager" fetchpriority="high" /></picture>
         <p class="render-caption">Artist impression. Final development may vary.</p>
       </div>
     </div>
@@ -207,7 +198,7 @@
       </div>
       <div class="grid md:grid-cols-2 gap-8 mb-6">
         <article class="reveal rounded-xl border border-sand overflow-hidden">
-          <div class="render-frame aspect-[4/3]"><img src="/images/floorplan-upper.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="Type A Upper floor plan — 872 sq ft overwater villa with private pool, 2 bedrooms and 2 bathrooms" loading="lazy" decoding="async" /></div>
+          <div class="render-frame aspect-[4/3]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/floorplan-upper-400.avif 400w, /images/r/floorplan-upper-640.avif 640w, /images/r/floorplan-upper-800.avif 800w, /images/r/floorplan-upper-831.avif 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/floorplan-upper-400.webp 400w, /images/r/floorplan-upper-640.webp 640w, /images/r/floorplan-upper-800.webp 800w, /images/r/floorplan-upper-831.webp 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/floorplan-upper.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="Type A Upper floor plan — 872 sq ft overwater villa with private pool, 2 bedrooms and 2 bathrooms" decoding="async" loading="lazy" /></picture></div>
           <div class="p-6">
             <h3 class="font-display text-navy text-xl font-semibold mb-2">Type A — Upper</h3>
             <ul class="text-sm text-ink/70 space-y-1 mb-4">
@@ -218,7 +209,7 @@
           </div>
         </article>
         <article class="reveal rounded-xl border border-sand overflow-hidden">
-          <div class="render-frame aspect-[4/3]"><img src="/images/floorplan-lower.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="Type A Lower floor plan — 858 sq ft overwater villa with private pool, 2 bedrooms and 2 bathrooms" loading="lazy" decoding="async" /></div>
+          <div class="render-frame aspect-[4/3]"><picture class="contents"><source class="hidden" type="image/avif" srcset="/images/r/floorplan-lower-400.avif 400w, /images/r/floorplan-lower-640.avif 640w, /images/r/floorplan-lower-800.avif 800w, /images/r/floorplan-lower-831.avif 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><source class="hidden" type="image/webp" srcset="/images/r/floorplan-lower-400.webp 400w, /images/r/floorplan-lower-640.webp 640w, /images/r/floorplan-lower-800.webp 800w, /images/r/floorplan-lower-831.webp 831w" sizes="(min-width: 1152px) 538px, (min-width: 800px) 46vw, 89vw" /><img src="/images/floorplan-lower.jpg" width="831" height="1119" style="object-fit:contain;background:#fff;" alt="Type A Lower floor plan — 858 sq ft overwater villa with private pool, 2 bedrooms and 2 bathrooms" decoding="async" loading="lazy" /></picture></div>
           <div class="p-6">
             <h3 class="font-display text-navy text-xl font-semibold mb-2">Type A — Lower</h3>
             <ul class="text-sm text-ink/70 space-y-1 mb-4">
