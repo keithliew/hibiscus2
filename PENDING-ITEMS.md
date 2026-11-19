@@ -228,6 +228,11 @@ Later, once real abandons arrive: add h2_form_submit as a step, and a free-form 
     - Second GA4 lead_form_submit (13 Nov 17:01, Cyberjaya): test submission, not a lead (Keith, 16 Nov). Closed.
   - Stop rule not triggered: 859 clicks but 2 registrations in GA4. Ages 55 to 64 left excluded; volume is not thin.
 - [x] **Stop rule (Mon evening), not triggered 16 Nov** (1 confirmed form registration + 1 OH20-EN-AD WhatsApp): 150+ clicks with 0 registrations and 0 OH20-EN-AD → recommend pausing, and ask Keith first. Ages 55–64 are excluded; offer to add them back if volume is thin.
+- Leads 19 Nov (Keith's Gmail + WhatsApp desktop, read 19 Nov; lead-quality sheet rows 9 to 13):
+  - Open house: 1 form (3:08pm, Display villa-price) + 2 WhatsApp OH20-EN-AD (2:56pm, 3:19pm). None has replied to Keith's name request yet. Running open house tally: 2 forms + 3 OH20-EN-AD + 1 unknown.
+  - Search VIL-EN-AD 3:49pm: **viewing booked**, Fri 20 Nov 10:30am, Imperial Lexis KL (business partner attends). First quality lead from Ads.
+  - VIL-EN-WEB 9:55am (website, not an ad): honeymoon hotel seeker, junk.
+  - WhatsApp showed "Syncing paused" on the Mac; messages Keith's phone hasn't synced may be missing.
 - [ ] **Mon 23 Nov: Search search-term review** (Search - Nov 2026, 24444757086). Find which keyword brought the 17 Nov morning clicks to /rental-programme/ (junk lead RP-EN-AD, honeymoon hotel stay; see ads/2026-11-campaign-plan.md, 17 Nov). Both Search leads so far are holiday-stay seekers. Since then (17 Nov, Keith's yes): 52 more campaign negatives (list now 158, incl. "event"/"events") ; see campaign plan "Hotel-guest filter (17 Nov 2026)", c88ff7b. The stay/event note on the lead forms was removed the same day at Keith's request (5aef082), so judge leads after 17 Nov against the 158 negatives only. Draft negatives; Keith's yes before adding.
 - [ ] **Thu 19 Nov:** spend check against the RM300 total. RM37/day is an average, and Google can spend up to 2x on a day.
   - Context for Thu 19 and Mon 23: Ads changes on 16 Nov (Keith's yes; see ads/2026-11-campaign-plan.md "Mid-run fixes (16 Nov 2026)"). 60 junk Display placements excluded (laifeed.com alone 153 clicks), so expect fewer, dearer Display clicks. Treat Display "conversions" as accidental WhatsApp taps; count only real WhatsApp messages and form registrations.
